@@ -1,0 +1,42 @@
+
+
+.header {
+  background-color: #7EAF3B;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color:rgba(255, 255, 255, 0.87);
+  
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+
+  transition: top ease-in-out 0.5s;
+
+  height: 64px;
+  display: flex;
+  align-items: center;
+
+  .header-logo{
+    display: block;
+    height: 16px;
+    padding-left: 8px;
+  }
+}
+
+.navigation {
+  padding-left: 20px;
+  .navigation-button {
+    background-color: #2fbc44;
+  }
+}
+
+.social-network{
+  padding-left: 100px;
+}
+
+.icon{
+  font-size:36px;
+  padding-left: 15px;
+  color: white;
+}

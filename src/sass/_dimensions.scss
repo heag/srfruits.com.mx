@@ -1,0 +1,32 @@
+//--- base margins/paddings ---
+$space-xxs: 4px;
+$space-xs: 8px;
+$space-sm: 16px;
+$space-md: 24px;
+$space-lg: 32px;
+$space-xl: 64px;
+$space-xxl: 128px;
+
+//--- base heights/widths
+$dimension-xxs: 8px;
+$dimension-xs: 16px;
+$dimension-sm: 32px;
+$dimension-md: 40px;
+$dimension-lg: 64px;
+$dimension-xl: 128px;
+$dimension-xxl: 256px;
+
+//--- page dimensions ---
+$container-xs:599px;
+$container-md:992px;
+
+//--- multipliers
+$ratio-xs: 1.3;
+$ratio-sm: 1.5;
+$ratio-md: 1.7;
+$ratio-lg: 1.8;
+$ratio-xl: 2.0;
+
+//-- top banners ---
+$announcement-banner-height: 64px;
+$redirect-to-old-ui-bar-height: 40px;

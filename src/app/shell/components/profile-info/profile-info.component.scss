@@ -1,0 +1,25 @@
+#profile-info-btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 40px;
+    width: 40px;
+    margin-right: 32px;
+    overflow: visible;
+    padding: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  #profile-info-btn {
+    .mat-icon {
+      position: absolute;
+      top: 20%;
+      left: 110%;
+    }
+  }
+  
+  .user-initials {
+    color: white;
+  }
