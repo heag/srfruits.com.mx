@@ -1,6 +1,6 @@
 .header-logo{
   display: block;
-  height: 46px;
+  height: 60px;
   padding-left: 8px;
 }
 
@@ -16,6 +16,20 @@
   color: white;
   padding-left: 5px;
   font-size: 22px;
+}
+
+.social-network{
+  padding-left: 100px;
+}
+
+.icon{
+  font-size:26px;
+  padding-left: 8px;
+  color: white;
+}
+
+.white-background{
+  color: white;
 }
 
 // .header {
@@ -49,17 +63,3 @@
 //     background-color: #2fbc44;
 //   }
 // }
-
-.social-network{
-  padding-left: 100px;
-}
-
-.icon{
-  font-size:26px;
-  padding-left: 15px;
-  color: white;
-}
-
-.white-background{
-  color: white;
-}
