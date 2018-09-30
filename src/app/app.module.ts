@@ -13,7 +13,8 @@ import { SocialNetworkComponent } from './shell/components/social-network/social
 import { OurCompanyComponent } from './forms/about-us/our-company/our-company.component';
 import { BenefitsComponent } from './forms/about-us/benefits/benefits.component';
 import { ContactComponent } from './forms/contact/contact/contact.component';
-import { OfferComponent } from './forms/products/offer/offer.component'
+import { OfferComponent } from './forms/products/offer/offer.component';
+import { FooterComponent } from './shell/components/footer/footer.component'
 
 const materialModules = [MatToolbarModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule ];
 
@@ -26,7 +27,8 @@ const materialModules = [MatToolbarModule, MatFormFieldModule, MatSelectModule, 
     OurCompanyComponent,
     BenefitsComponent,
     ContactComponent,
-    OfferComponent
+    OfferComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
