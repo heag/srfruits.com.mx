@@ -1,35 +1,62 @@
-<mat-toolbar id="header" class="header">
-    <a routerLink="/">
-      <img src="assets/icons/logo.png" class="header-logo">
+<nav class="navbar navbar-expand-lg navbar-light navigation">
+    <a class="navbar-brand" href="#">
+        <img src="assets/icons/fruit-box.png" class="header-logo">
     </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="navigation">
-      <button mat-button class="navigation-button">
-        <mat-icon>restaurant</mat-icon>
-        Nuestros productos
-      </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+          
+        <li class="nav-item dropdown">            
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <mat-icon>people</mat-icon><span> Nosotros</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">¿Por qué elegirnos?</a>
+                <a class="dropdown-item" href="#">Misión y Visión</a>
+                <a class="dropdown-item" href="#">Logros</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <mat-icon>sentiment_satisfied_alt</mat-icon> Beneficios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Para el empleado</a>
+                <a class="dropdown-item" href="#">Para la empresa</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#"><mat-icon>restaurant</mat-icon> Oferta</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <mat-icon>add_shopping_cart</mat-icon><span class="bar-items-text"> Pedidos</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Realizar pedido</a>
+                <a class="dropdown-item" href="#">Cálculo de cantidad</a>
+                <a class="dropdown-item" href="#">Pago</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#"><mat-icon>comment</mat-icon> Contacto</a>
+        </li>
+        
+      </ul>
     </div>
 
-    <div class="navigation">
-        <button mat-button class="navigation-button">
-          <mat-icon>person</mat-icon>
-          Acerca de nosotros
-        </button>
-    </div>
-
-    <div class="navigation">
-        <button mat-button class="navigation-button">
-          <mat-icon>shopping_cart</mat-icon>
-          Pedidos
-        </button>
-    </div>
-
-    <div class="social-network">
+    <div class="collapse navbar-collapse social-network">
+        <mat-icon class="white-background">phone</mat-icon><span class="telephone">336-059-8886</span>
         <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram icon"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter icon"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-instagram icon"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-twitter icon"></i></a>
     </div>
-    
 
-</mat-toolbar>
-
+  </nav>
