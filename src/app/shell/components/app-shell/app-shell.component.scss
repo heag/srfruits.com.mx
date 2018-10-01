@@ -6,6 +6,7 @@
 
 .navigation{
   background-color: #7EAF3B;
+  top: 0;
 }
 
 .bar-items-text{
@@ -13,7 +14,7 @@
 }
 
 .telephone{
-  color: white;
+  color: antiquewhite;
   padding-left: 5px;
   font-size: 22px;
 }
@@ -25,11 +26,15 @@
 .icon{
   font-size:26px;
   padding-left: 8px;
-  color: white;
+  color: antiquewhite;
+}
+
+.white-color > *{
+  color: antiquewhite;
 }
 
 .white-background{
-  color: white;
+  background-color: antiquewhite;
 }
 
 // .header {
