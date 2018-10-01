@@ -14,9 +14,9 @@
                 <mat-icon>people</mat-icon><span> Nosotros</span>
             </a>
             <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">¿Por qué elegirnos?</a>
-                <a class="dropdown-item" href="#">Misión y Visión</a>
-                <a class="dropdown-item" href="#">Logros</a>
+                <a class="dropdown-item" routerLink="/porque-nosotros" routerLinkActive="active">¿Por qué elegirnos?</a>
+                <a class="dropdown-item" routerLink="/mision-vision" routerLinkActive="active">Misión y Visión</a>
+                <a class="dropdown-item" routerLink="/logros" routerLinkActive="active">Logros</a>
             </div>
         </li>
 
@@ -25,13 +25,13 @@
                 <mat-icon>sentiment_satisfied_alt</mat-icon> Beneficios
             </a>
             <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Para el empleado</a>
-                <a class="dropdown-item" href="#">Para la empresa</a>
+                <a class="dropdown-item" routerLink="/beneficios-empleado" routerLinkActive="active">Para el empleado</a>
+                <a class="dropdown-item" routerLink="/beneficios-empresa" routerLinkActive="active">Para la empresa</a>
             </div>
         </li>
 
         <li class="nav-item white-color">
-            <a class="nav-link" href="#"><mat-icon>restaurant</mat-icon> Oferta</a>
+            <a class="nav-link" routerLink="/oferta" routerLinkActive="active"><mat-icon>restaurant</mat-icon> Oferta</a>
         </li>
 
         <li class="nav-item dropdown white-color">
@@ -39,9 +39,9 @@
               <mat-icon>add_shopping_cart</mat-icon><span class="bar-items-text"> Pedidos</span>
             </a>
             <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Realizar pedido</a>
-                <a class="dropdown-item" href="#">Cálculo de cantidad</a>
-                <a class="dropdown-item" href="#">Pago</a>
+                <a class="dropdown-item" routerLink="/pedido" routerLinkActive="active">Realizar pedido</a>
+                <a class="dropdown-item" routerLink="/cotizacion" routerLinkActive="active">Cálculo de cantidad</a>
+                <a class="dropdown-item" routerLink="/pago" routerLinkActive="active">Pago</a>
             </div>
         </li>
 
@@ -50,8 +50,8 @@
               <mat-icon>comment</mat-icon><span class="bar-items-text"> Contacto</span>
             </a>
             <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Contactanos</a>
-                <a class="dropdown-item" href="#">Preguntas frecuentes</a>
+                <a class="dropdown-item" routerLink="/contact" routerLinkActive="active">Contactanos</a>
+                <a class="dropdown-item" routerLink="/preguntas" routerLinkActive="active">Preguntas frecuentes</a>
             </div>
         </li>
         
@@ -64,5 +64,4 @@
         <a href="https://www.facebook.com" target="_blank"><i class="fa fa-instagram icon"></i></a>
         <a href="https://www.facebook.com" target="_blank"><i class="fa fa-twitter icon"></i></a>
     </div>
-
   </nav>
