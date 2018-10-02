@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, Validators} from '@angular/forms';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  email = new FormControl('', [Validators.required, Validators.email]);
+
+  constructor(public snackBar: MatSnackBar) { }
 
   ngOnInit() {
+  }
+
+  getErrorMessage() {
+    return this.email.hasError('required') ? 'Ingresa un correo electrónico' :
+        this.email.hasError('email') ? 'Correo electrónico inválido' :
+            '';
+  }
+
+  sendComment(){
+    this.snackBar.open('Comentario enviado', 'OK', {
+      duration: 3000
+    });
   }
 
 }

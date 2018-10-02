@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
 import { AppShellComponent } from './shell/components/app-shell/app-shell.component';
-import { MatToolbarModule, MatSelectModule, MatIconModule, MatFormFieldModule, MatCardModule, MatButtonModule, MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule } from '@angular/material';
-import {} from '@angular/material/select'
+import { MatToolbarModule, MatSelectModule, MatInputModule, MatIconModule, MatFormFieldModule, MatCardModule, MatButtonModule, MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule } from '@angular/material';
 import {} from '@angular/material/form-field';
 import { ProfileInfoComponent } from './shell/components/profile-info/profile-info.component';
 import { SocialNetworkComponent } from './shell/components/social-network/social-network.component';
@@ -24,8 +24,9 @@ import { CalculatorComponent } from './forms/requests/calculator/calculator.comp
 import { PaymentComponent } from './forms/requests/payment/payment.component';
 import { QuestionsComponent } from './forms/contact/questions/questions.component';
 
-const materialModules = [MatToolbarModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, 
-  MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule ];
+
+const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, 
+  MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule, MatInputModule ];
 
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, WhyUsComponent,
@@ -52,10 +53,9 @@ const routes: Routes =  [
   declarations: [
     ...appComponents
   ],
-  imports: [
-    ...materialModules,
-    BrowserModule,
+  imports: [BrowserModule,
     BrowserAnimationsModule,
+    ...materialModules,
     RouterModule.forRoot(routes)
   ],
   providers: [],
