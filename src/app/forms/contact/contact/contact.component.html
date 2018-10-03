@@ -1,48 +1,56 @@
 <div class="content">
-  <div class="left-div">
-      <mat-card class="example-card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <p>
-              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-              bred for hunting.
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
+  <div id="#left-panel" class="left-div">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 
-  <div class="example-container contact-form">
+  <div id="#right-panel" class="form-container contact-form">
 
-    <mat-form-field>
-      <input matInput placeholder="Nombre o Empresa">
-    </mat-form-field>
+      <mat-form-field class="left-xs">
+        <input matInput placeholder="Nombre o Empresa" [formControl]="name" required>
+        <mat-error *ngIf="name.invalid">{{getErrorMessages('name')}}</mat-error>
+      </mat-form-field>
 
-    <mat-form-field>
-      <input matInput placeholder="Correo electrónico" [formControl]="email" required>
-      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field>
+      <mat-form-field class="left-xs">
+        <input matInput placeholder="Correo electrónico" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessages('email')}}</mat-error>
+      </mat-form-field>
 
-    <mat-form-field class="half-width">
-      <input #subject matInput placeholder="Asunto" maxlength="50">
-    </mat-form-field>
+    <div class="full-width left-xs">
+      <mat-form-field>
+        <input matInput placeholder="Asunto" maxlength="50" [formControl]="subject">
+      </mat-form-field>
+    </div>
 
-    <mat-form-field>
-      <textarea matInput placeholder="Comentario" rows="10"></textarea>
+    <mat-form-field class="left-xs">
+      <textarea matInput placeholder="Comentario" rows="10" [formControl]="comment" required></textarea>
+      <mat-error *ngIf="comment.invalid">{{getErrorMessages('comment')}}</mat-error>
       <mat-hint align="start"><i>No enviar información personal</i></mat-hint>
     </mat-form-field>
 
-    <div>
-      <button mat-button color="primary" (click)="sendComment()" class="submit-btn">
+    <div class="top-s notification-check left-xs">
+      <mat-checkbox>Recibir novedades en correo</mat-checkbox>
+    </div>
+
+    <div class="top-s">
+      <button mat-button color="primary" (click)="send()" class="submit-btn">
         <span class="text">Enviar</span>
       </button>
     </div>

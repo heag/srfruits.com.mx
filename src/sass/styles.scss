@@ -3,3 +3,38 @@
 @import "colors";
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.content{
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.top-s{
+    margin-top: 10px;
+}
+
+.half-width{
+    width: 50% !important;
+}
+
+.full-width{
+    width: 100% !important;
+}
+
+.middle-align{
+    text-align: center !important;
+}
+
+.outlet{
+    background-color: aquamarine !important;
+}
+
+.left-xs{
+    margin-left: 5px;
+}
+
+.right{
+    //float: right !important;
+    position: fixed;
+    margin-right: 50px;
+}

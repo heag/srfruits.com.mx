@@ -6,7 +6,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
 import { AppShellComponent } from './shell/components/app-shell/app-shell.component';
-import { MatToolbarModule, MatSelectModule, MatInputModule, MatIconModule, MatFormFieldModule, MatCardModule, MatButtonModule, MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule } from '@angular/material';
+import { MatToolbarModule, MatSelectModule, MatInputModule, MatIconModule, MatFormFieldModule, 
+  MatCardModule, MatButtonModule, MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, 
+  MatButtonToggleModule, MatProgressBarModule, MatSlideToggleModule, MatCheckboxModule, MatDialogModule,
+  MatTreeModule, MatExpansionModule } from '@angular/material';
 import {} from '@angular/material/form-field';
 import { ProfileInfoComponent } from './shell/components/profile-info/profile-info.component';
 import { SocialNetworkComponent } from './shell/components/social-network/social-network.component';
@@ -25,8 +28,10 @@ import { PaymentComponent } from './forms/requests/payment/payment.component';
 import { QuestionsComponent } from './forms/contact/questions/questions.component';
 
 
-const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, 
-  MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule, MatInputModule ];
+const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, 
+  MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
+  MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule, 
+  MatInputModule, MatCheckboxModule, MatDialogModule, MatTreeModule, MatExpansionModule ];
 
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, WhyUsComponent,

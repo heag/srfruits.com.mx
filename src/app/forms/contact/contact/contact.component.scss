@@ -1,20 +1,10 @@
-.content{
-    padding-top: 100px;
-    overflow: hidden;
-}
+
 
 @media(min-width: 600px){
 .left-div{
   float: left;
   width: 30%;
   margin-left: 10%;
-}
-}
-
-@media(max-width: 600px){
-  .left-div{
-    display: none;
-  }
 }
 
 .contact-form{
@@ -24,17 +14,28 @@
   margin-right: 5%;
 }
 
-.example-container {
+}
+
+@media(max-width: 600px){
+  .left-div{
+    display: none;
+  }
+
+  .contact-form{
+    margin-right: 0px;
+    width: 100%;
+    float: none;
+    margin-right: 0%;
+  }
+}
+
+.form-container {
   display: flex;
   flex-direction: column;
 }
 
 .example-container > * {
   width: 100%;
-}
-
-.half-width{
-  width: 50% !important;
 }
 
 .submit-btn{
@@ -58,4 +59,15 @@
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
+}
+
+.notification-check{
+  margin-left: 5px;
+  font-size: 13px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+#right-panel{
+  padding-left: 10px;
 }

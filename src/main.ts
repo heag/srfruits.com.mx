@@ -10,3 +10,16 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
+
+
+  export interface IComment {
+    name: string;
+    email: string;
+    subject?: string;
+    comment: string;
+}
+
+export interface IQuestion{
+  title: string,
+  answer: string
+}

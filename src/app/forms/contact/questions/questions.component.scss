@@ -1,3 +1,31 @@
 .content{
   padding-top: 100px;
 }
+
+#questions mat-expansion-panel{
+  border-left: 3px solid rgb(51, 122, 204);
+  margin: 10px;
+}
+
+#right{
+   float: right;
+   width: 70%;
+}
+
+#left{
+  float: left;
+  margin-left: 15px;
+}
+
+@media(min-width: 600px){
+  
+  }
+  
+@media(max-width: 600px){
+  #left{
+    display: none;
+  }
+  #right{
+    width: 100%
+  }
+}

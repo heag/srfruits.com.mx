@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
+import { IComment } from '../../../../main';
 
 @Component({
   selector: 'app-contact',
@@ -9,23 +10,63 @@ import { MatSnackBar } from '@angular/material';
 })
 export class ContactComponent implements OnInit {
 
-  email = new FormControl('', [Validators.required, Validators.email]);
+  form: IComment;
 
-  constructor(public snackBar: MatSnackBar) { }
+  email = new FormControl('', [Validators.required, Validators.email]);
+  name = new FormControl('', [Validators.required]);
+  comment = new FormControl('', [Validators.required]);
+  subject = new FormControl('', [Validators.required]);
+
+  isValidForm: boolean = false;
+
+  isNameValid: boolean = false;
+  isEmailValid: boolean = false;
+  isCommentValid: boolean = false;
+
+  constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit() {
   }
 
-  getErrorMessage() {
-    return this.email.hasError('required') ? 'Ingresa un correo electrónico' :
-        this.email.hasError('email') ? 'Correo electrónico inválido' :
+  getErrorMessages(controlName: string) {
+    switch (controlName) {
+      case 'email':
+        return this.email.hasError('required') ? 'Ingresa un correo electrónico' :
+          this.email.hasError('email') ? 'Correo electrónico inválido' :
             '';
+      case 'name':
+        return this.name.hasError('required'), 'Ingresa un nombre';
+      case 'comment':
+        return this.name.hasError('required'), 'Ingresa un comentario';
+      default:
+        break;
+    }
   }
 
-  sendComment(){
-    this.snackBar.open('Comentario enviado', 'OK', {
-      duration: 3000
-    });
+  send() {
+    if (this.checkFormValid()) {
+      this.sendEmail();
+      this.snackBar.open('Comentario enviado', 'OK', {
+        duration: 3000
+      });
+      return;
+    }
+    alert('Favor de llenar todos los campos faltantes');
   }
+
+  private checkFormValid(): boolean {
+    return this.isValidForm = (this.name.valid && this.email.valid && this.comment.valid);
+  }
+
+  private sendEmail(){
+    this.form = {
+      name: this.name.value,
+      email: this.email.value,
+      subject: this.subject.value,
+      comment: this.subject.value
+    }
+  }
+
+  
 
 }
