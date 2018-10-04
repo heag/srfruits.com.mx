@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-request',
+  selector: 'request',
   templateUrl: './request.component.html',
   styleUrls: ['./request.component.scss']
 })

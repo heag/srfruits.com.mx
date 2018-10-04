@@ -26,6 +26,7 @@ import { RequestComponent } from './forms/requests/request/request.component';
 import { CalculatorComponent } from './forms/requests/calculator/calculator.component';
 import { PaymentComponent } from './forms/requests/payment/payment.component';
 import { QuestionsComponent } from './forms/contact/questions/questions.component';
+import { CalculatorResultComponent } from './forms/requests/calculator/calculator-result/calculator-result.component';
 
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, 
@@ -35,7 +36,7 @@ const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, Mat
 
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, WhyUsComponent,
-  AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent];
+  AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent];
 
 const routes: Routes =  [
                           {path: '', component: HomeComponent},
@@ -51,19 +52,23 @@ const routes: Routes =  [
                           {path: 'pago', component: PaymentComponent},
                           {path: 'contacto', component: ContactComponent},
                           {path: 'preguntas', component: QuestionsComponent},
+                          {path: 'resultado', component: CalculatorResultComponent},
                           {path: '**', component: HomeComponent} // siempre al final
                         ];
 
 @NgModule({
   declarations: [
-    ...appComponents
+    ...appComponents    
   ],
   imports: [BrowserModule,
     BrowserAnimationsModule,
     ...materialModules,
     RouterModule.forRoot(routes)
   ],
+  exports: [
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

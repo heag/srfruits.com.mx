@@ -1,0 +1,59 @@
+<div>
+    <mat-card>
+      <span class="title">Calculo de fruta necesaria:</span>
+      <mat-card-content>
+
+        <p>Empleados: {{employees}}</p>
+        <p>Entregas: {{deliveries}}</p>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+<!-- <div class="content">
+    <div id="#right-panel" class="form-container contact-form">
+        <mat-card class="example-card">
+          <span class="title">¿Cuanta fruta necesitamos diariamente?</span>
+          <mat-card-content>
+            <p>
+              Comer siete o más porciones de frutas y vegetales al día es más sano que las cinco
+              recomendadas actualmente por muchos países del mundo y la Organización Mundial de la Salud,
+              debido a que -según un nuevo estudio- ayuda a prolongar la vida.
+            </p>
+    
+            <div>
+              <div id="inputs" class="full-width">
+                <mat-card-subtitle>Llenar los datos:</mat-card-subtitle>
+                <mat-form-field>
+                  <mat-label>Entregas semanales:</mat-label>
+                  <mat-select #fontSize [formControl]="deliveries" (selectionChange)="getWeeklyDeliveries()">
+                    <mat-option value="1">1</mat-option>
+                    <mat-option value="2">2</mat-option>
+                    <mat-option value="3">3</mat-option>
+                    <mat-option value="4">4</mat-option>
+                    <mat-option value="5">5</mat-option>
+                  </mat-select>
+                </mat-form-field>
+    
+                <mat-form-field>
+                  <input matInput #postalCode type="number" min="0" max="100" required [formControl]="employeeQty"
+                    placeholder="Cantidad de empleados">
+                  <mat-hint align="end">Entre 20 y 1000 - {{postalCode.value.length}} / 5</mat-hint>
+                </mat-form-field>
+              </div>
+    
+              <div>
+                <div class="top-s">
+                  <button mat-button color="primary" (click)="calculate()" class="green-btn">
+                    <span class="text">Calcular</span>
+                  </button>
+                </div>
+              </div>
+    
+            </div>
+    
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+</div> -->

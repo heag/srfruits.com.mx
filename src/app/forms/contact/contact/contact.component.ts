@@ -4,7 +4,7 @@ import { MatSnackBar } from '@angular/material';
 import { IComment } from '../../../../main';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
@@ -18,7 +18,6 @@ export class ContactComponent implements OnInit {
   subject = new FormControl('', [Validators.required]);
 
   isValidForm: boolean = false;
-
   isNameValid: boolean = false;
   isEmailValid: boolean = false;
   isCommentValid: boolean = false;
@@ -66,7 +65,5 @@ export class ContactComponent implements OnInit {
       comment: this.subject.value
     }
   }
-
-  
 
 }

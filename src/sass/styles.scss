@@ -4,13 +4,22 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+$space-xs: 5px;
+$space-s: 10px;
+$space-m: 25px;
+$space-l: 50px;
+
 .content{
     padding-top: 100px;
     overflow: hidden;
 }
 
 .top-s{
-    margin-top: 10px;
+    margin-top: $space-s;
+}
+
+.top-m{
+    margin-top: $space-m;
 }
 
 .half-width{
@@ -37,4 +46,10 @@
     //float: right !important;
     position: fixed;
     margin-right: 50px;
+}
+
+.green-btn{
+    background-color: #7EAF3B;
+    margin-top: $space-m;
+    color: whitesmoke !important;
 }

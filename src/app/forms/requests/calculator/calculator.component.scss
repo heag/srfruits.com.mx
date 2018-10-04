@@ -1,3 +1,53 @@
-.content{
-  padding-top: 100px;
-}
+@media(min-width: 600px){
+  .left-div{
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+  }
+  
+  .contact-form{
+    margin-right: 25px;
+    width: 50%;
+    float: right;
+    margin-right: 5%;
+  }
+  
+  }
+  
+  @media(max-width: 600px){
+    .left-div{
+      display: none;
+    }
+  
+    .contact-form{
+      margin-right: 0px;
+      width: 100%;
+      float: none;
+      margin-right: 0%;
+    }
+  }
+
+  .submit-btn{
+    background-color: #7EAF3B;
+    width: 55px !important; 
+    right: 5px;
+    bottom: 0;
+    .text{
+      font-size: 18px;
+      color: whitesmoke !important;
+    }
+  }
+
+  #inputs mat-form-field{
+    width: 70%;
+    margin: 10px;;
+  }
+
+  .send-btn{
+    float: right;
+  }
+
+  .title{
+    color: #7EAF3B;
+    font-size: 22px;
+  }
