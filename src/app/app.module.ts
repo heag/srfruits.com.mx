@@ -9,7 +9,7 @@ import { AppShellComponent } from './shell/components/app-shell/app-shell.compon
 import { MatToolbarModule, MatSelectModule, MatInputModule, MatIconModule, MatFormFieldModule, 
   MatCardModule, MatButtonModule, MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, 
   MatButtonToggleModule, MatProgressBarModule, MatSlideToggleModule, MatCheckboxModule, MatDialogModule,
-  MatTreeModule, MatExpansionModule } from '@angular/material';
+  MatTreeModule, MatExpansionModule, MatGridListModule } from '@angular/material';
 import {} from '@angular/material/form-field';
 import { ProfileInfoComponent } from './shell/components/profile-info/profile-info.component';
 import { SocialNetworkComponent } from './shell/components/social-network/social-network.component';
@@ -32,7 +32,7 @@ import { CalculatorResultComponent } from './forms/requests/calculator/calculato
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, 
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
   MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule, 
-  MatInputModule, MatCheckboxModule, MatDialogModule, MatTreeModule, MatExpansionModule ];
+  MatInputModule, MatCheckboxModule, MatDialogModule, MatTreeModule, MatExpansionModule, MatGridListModule ];
 
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, WhyUsComponent,
