@@ -39,7 +39,7 @@ const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, So
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent];
 
 const routes: Routes =  [
-                          {path: '', component: HomeComponent},
+                          {path: 'home', component: HomeComponent},
                           {path: 'contact', component: ContactComponent},
                           {path: 'porque-nosotros', component: WhyUsComponent},
                           {path: 'mision-vision', component: MisionVisionComponent},
