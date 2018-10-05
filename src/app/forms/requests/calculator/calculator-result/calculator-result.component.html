@@ -1,14 +1,31 @@
 <div>
-    <mat-card>
-      <span class="title">Calculo de fruta necesaria:</span>
-      <mat-card-content>
+  <mat-card>
+    <span class="title">Calculo de fruta necesaria:</span>
+    <mat-card-content>
+      <p>Una caja puede proveer a {{peoplePerBox}} colaboradores</p>
+      <br>
+      <p>Número de porciones: {{employees * deliveries}}</p>
+      <p>Número de cajas necesarias: {{boxes}}</p>
 
-        <p>Empleados: {{employees}}</p>
-        <p>Entregas: {{deliveries}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
 
-      </mat-card-content>
-    </mat-card>
+<div class="top-s" id="buttons">
+  <div id="left-btn">
+    <button mat-button color="" [mat-dialog-close]="true" class="">
+      <span class="text">Cerrar</span>
+    </button>
   </div>
+
+  <div id="right-btn">
+    <button mat-button color="primary" (click)="redirectToRequest()" [mat-dialog-close]="true" class="green-btn">
+      <span class="text">Realizar pedido</span>
+    </button>
+  </div>
+
+
+</div>
 
 <!-- <div class="content">
     <div id="#right-panel" class="form-container contact-form">

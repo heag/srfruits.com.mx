@@ -48,7 +48,7 @@ const routes: Routes =  [
                           {path: 'beneficios-empresa', component: BenefitsCompanyComponent},
                           {path: 'oferta', component: OfferComponent},
                           {path: 'pedido', component: RequestComponent},
-                          {path: 'cotizacion', component: CalculatorComponent},
+                          {path: 'calculo', component: CalculatorComponent},
                           {path: 'pago', component: PaymentComponent},
                           {path: 'contacto', component: ContactComponent},
                           {path: 'preguntas', component: QuestionsComponent},

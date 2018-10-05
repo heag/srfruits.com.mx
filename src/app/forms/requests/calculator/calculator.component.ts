@@ -21,16 +21,17 @@ export class CalculatorComponent implements OnInit {
   ngOnInit() {
   }
 
-  private calculate(){
-    if(this.employees.valid && this.deliveries.valid)
-    {
+  public calculate() {
+    if (this.employees.valid && this.deliveries.valid) {
       this.dialog.open(CalculatorResultComponent, {
-        data: {employees: this.employees.value, deliveries: this.deliveries.value}
+        data: {
+          employees: this.employees.value,
+          deliveries: this.deliveries.value
+        }
       });
     }
-    else
-    {
-      alert("Verificar que los datos sean correctos \n Número de empleados entre 20 y 900");
+    else {
+      alert("Verificar que los datos sean correctos \n Cantidad de colaboradores entre 20 y 1000");
     }
   }
 
