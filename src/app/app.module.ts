@@ -27,7 +27,7 @@ import { CalculatorComponent } from './forms/requests/calculator/calculator.comp
 import { PaymentComponent } from './forms/requests/payment/payment.component';
 import { QuestionsComponent } from './forms/contact/questions/questions.component';
 import { CalculatorResultComponent } from './forms/requests/calculator/calculator-result/calculator-result.component';
-
+import {  ProcessStepsComponent } from './forms/home/process-steps/process-steps.component'
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, 
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
@@ -36,7 +36,8 @@ const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, Mat
 
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, WhyUsComponent,
-  AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent];
+  AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
+  ProcessStepsComponent];
 
 const routes: Routes =  [
                           {path: 'home', component: HomeComponent},

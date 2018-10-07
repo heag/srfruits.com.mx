@@ -9,6 +9,8 @@ $space-s: 10px;
 $space-m: 25px;
 $space-l: 50px;
 
+$verde: #7EAF3B;
+
 .content{
     padding-top: 100px;
     overflow: hidden;
@@ -49,13 +51,20 @@ $space-l: 50px;
 }
 
 .right{
-    //float: right !important;
     position: fixed;
     margin-right: 50px;
 }
 
 .green-btn{
-    background-color: #7EAF3B;
+    background-color: $verde;
     margin-top: $space-m;
     color: whitesmoke !important;
+}
+
+.green-color{
+    color: $verde;
+}
+
+.green-bkg{
+    background-color: $verde;
 }

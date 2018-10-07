@@ -12,14 +12,21 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
 
-  export interface IComment {
-    name: string;
-    email: string;
-    subject?: string;
-    comment: string;
+export interface IComment {
+  name: string;
+  email: string;
+  telephone: string;
+  comment: string;
 }
 
-export interface IQuestion{
+enum TypeEmail
+{
+    Contacto = 0,
+    Pedido = 1,
+    Cotizacion = 2
+}
+
+export interface IQuestion {
   title: string,
   answer: string
 }

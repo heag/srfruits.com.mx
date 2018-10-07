@@ -1,0 +1,42 @@
+@media(min-width: 600px){
+    #process{
+        padding-top: 10px;
+        margin: 1%;
+        span{
+            padding-top: 15px;
+        }
+        mat-icon{
+            margin-top: 10px;
+        }
+    }
+}
+    
+@media(max-width: 600px){
+    #process{
+        padding-top: 20px;
+        margin: 1%;
+        p{
+            font-size: 10px;
+        }
+        h6{
+            display: none;
+        }
+
+        mat-icon{
+            font-size: 25px;
+        }
+    }
+}
+
+mat-grid-tile {
+    text-align: center;
+    border: 1px solid rgb(220, 224, 232);
+    p{
+        font-size: 13px;
+    }
+
+    mat-icon{
+        font-size: 35px;
+        text-align: center !important;
+    }
+  }

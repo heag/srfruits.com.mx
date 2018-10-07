@@ -1,11 +1,45 @@
 <div>
-  <mat-card>
-    <span class="title">Calculo de fruta necesaria:</span>
+  <mat-card class="background green-color">
+    <h5 class="send-title">Calculo de fruta necesaria:</h5>
     <mat-card-content>
-      <p>Una caja puede proveer a {{peoplePerBox}} colaboradores</p>
+      <p #info>Una caja puede proveer a <b>{{peoplePerBox}}</b> colaboradores</p>
       <br>
-      <p>Número de porciones: {{employees * deliveries}}</p>
-      <p>Número de cajas necesarias: {{boxes}}</p>
+      <p>
+        <mat-icon>group</mat-icon><b> Colaboradores:</b> {{employees}}&nbsp;
+        &nbsp;<mat-icon>local_shipping</mat-icon><b> Entregas semanales:</b> {{deliveries}}
+      </p>
+      <p>
+        <mat-icon>shopping_basket</mat-icon><b> Porciones:</b> {{employees * deliveries}}&nbsp;
+        &nbsp;<mat-icon>inbox</mat-icon><b> Cajas semanales:</b> {{boxes}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div class="card-buttom">
+  <mat-card class="background green">
+    <h5 class="send-title">Solicitar pedido:</h5>
+    <mat-card-content>
+      <div>
+        <mat-form-field>
+          <input matInput placeholder="Nombre o Empresa" [formControl]="name" required>
+          <mat-error *ngIf="name.invalid">{{getErrorMessages('name')}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <input matInput placeholder="Correo electrónico" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessages('email')}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <input matInput type="tel" placeholder="Teléfono" #tel maxlength="20" [formControl]="telephone" required>
+          <mat-hint align="end">{{tel.value.length}} / 20</mat-hint>
+        </mat-form-field>
+      </div>
 
     </mat-card-content>
   </mat-card>

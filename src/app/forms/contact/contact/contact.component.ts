@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   email = new FormControl('', [Validators.required, Validators.email]);
   name = new FormControl('', [Validators.required]);
   comment = new FormControl('', [Validators.required]);
-  subject = new FormControl('', [Validators.required]);
+  telephone = new FormControl('', [Validators.required, Validators.minLength(10)]);
 
   isValidForm: boolean = false;
   isNameValid: boolean = false;
@@ -61,8 +61,8 @@ export class ContactComponent implements OnInit {
     this.form = {
       name: this.name.value,
       email: this.email.value,
-      subject: this.subject.value,
-      comment: this.subject.value
+      telephone: this.telephone.value,
+      comment: this.comment.value
     }
   }
 

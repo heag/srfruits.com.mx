@@ -33,9 +33,10 @@
         <mat-error *ngIf="email.invalid">{{getErrorMessages('email')}}</mat-error>
       </mat-form-field>
 
-    <div class="full-width left-xs">
+    <div class="left-xs">
       <mat-form-field>
-        <input matInput placeholder="Asunto" maxlength="50" [formControl]="subject">
+        <input matInput type="tel" placeholder="Teléfono" #tel maxlength="20" [formControl]="telephone">
+        <mat-hint align="end">{{tel.value.length}} / 20</mat-hint>
       </mat-form-field>
     </div>
 

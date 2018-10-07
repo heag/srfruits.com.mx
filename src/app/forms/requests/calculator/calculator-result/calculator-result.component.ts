@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material';
 import { Router, NavigationExtras } from '@angular/router'
+import { FormControl, Validators } from '@angular/forms';
 
 export interface DialogData {
   employees: any
@@ -14,6 +15,10 @@ export interface DialogData {
 })
 
 export class CalculatorResultComponent implements OnInit {
+
+  email = new FormControl('', [Validators.required, Validators.email]);
+  name = new FormControl('', [Validators.required]);
+  telephone = new FormControl('', [Validators.required]);
 
   employees: number
   deliveries: number
@@ -39,6 +44,21 @@ export class CalculatorResultComponent implements OnInit {
     };
 
     this.router.navigate(['pedido'], navigationParams);
+  }
+
+  getErrorMessages(controlName: string) {
+    switch (controlName) {
+      case 'email':
+        return this.email.hasError('required') ? 'Ingresa un correo electrónico' :
+          this.email.hasError('email') ? 'Correo electrónico inválido' :
+            '';
+      case 'name':
+        return this.name.hasError('required'), 'Ingresa un nombre';
+      case 'tel':
+        return this.name.hasError('required'), 'Ingresa un número telefónico  ';
+      default:
+        break;
+    }
   }
 
 }
