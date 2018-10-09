@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
-import { IComment } from '../../../../main';
+import { EmailData, TypeEmail } from '../../../../index'
+import { EmailRestService } from '../../../../services/email.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'contact',
@@ -10,7 +12,7 @@ import { IComment } from '../../../../main';
 })
 export class ContactComponent implements OnInit {
 
-  form: IComment;
+  emailData: EmailData;
 
   email = new FormControl('', [Validators.required, Validators.email]);
   name = new FormControl('', [Validators.required]);
@@ -22,7 +24,9 @@ export class ContactComponent implements OnInit {
   isEmailValid: boolean = false;
   isCommentValid: boolean = false;
 
-  constructor(private snackBar: MatSnackBar) { }
+  constructor(private snackBar: MatSnackBar,
+    private router: Router,
+              private emailService: EmailRestService) { }
 
   ngOnInit() {
   }
@@ -35,6 +39,8 @@ export class ContactComponent implements OnInit {
             '';
       case 'name':
         return this.name.hasError('required'), 'Ingresa un nombre';
+      case 'telephone':
+        return this.name.hasError('required'), 'Ingresa un teléfono, mínimo 10 caracteres';
       case 'comment':
         return this.name.hasError('required'), 'Ingresa un comentario';
       default:
@@ -45,25 +51,41 @@ export class ContactComponent implements OnInit {
   send() {
     if (this.checkFormValid()) {
       this.sendEmail();
-      this.snackBar.open('Comentario enviado', 'OK', {
+      this.snackBar.open('Comentario enviado, verificar su bandeja de entrada', 'OK', {
         duration: 3000
       });
+      this.clearForms();
+      this.router.navigate(['contacto']);
       return;
     }
     alert('Favor de llenar todos los campos faltantes');
   }
 
-  private checkFormValid(): boolean {
-    return this.isValidForm = (this.name.valid && this.email.valid && this.comment.valid);
-  }
-
   private sendEmail(){
-    this.form = {
+    this.emailData = {
       name: this.name.value,
+      comment: this.comment.value,
       email: this.email.value,
       telephone: this.telephone.value,
-      comment: this.comment.value
+      typeEmail: TypeEmail.Contacto
     }
+    this.emailService.sendEmail(this.emailData)
+  }
+
+  private checkFormValid(): boolean {
+    return this.isValidForm = (this.name.valid && 
+                            this.email.valid && 
+                            this.comment.valid && 
+                            this.telephone.valid
+                            );
+  }
+
+
+  private clearForms(){
+    this.name.setValue("")
+    this.email.setValue("")
+    this.telephone.setValue("")
+    this.comment.setValue("")
   }
 
 }
