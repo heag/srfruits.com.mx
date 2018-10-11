@@ -52,7 +52,7 @@ export class ContactComponent implements OnInit {
     if (this.checkFormValid()) {
       this.sendEmail();
       this.snackBar.open('Comentario enviado, verificar su bandeja de entrada', 'OK', {
-        duration: 3000
+        duration: 4000
       });
       this.clearForms();
       this.router.navigate(['contacto']);

@@ -1,3 +1,38 @@
-.content{
-  padding-top: 100px;
+.main-card{
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: hidden;
+  mat-card{
+    height: 250px;
+  }
+}
+
+@media(min-width: 600px){
+  .image-div{
+    float: left;
+    padding: 15px 0 0 15px;
+    max-width: 30%;
+  }
+
+  .main-card{
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+    mat-card{
+      height: 260px;
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .image-div{
+    display: none;
+  }
+}
+
+.image{
+  min-width: 250px;   //cambiar
+  min-height: 230px;
+  max-height: 230px;
+  max-width: 280px;
 }

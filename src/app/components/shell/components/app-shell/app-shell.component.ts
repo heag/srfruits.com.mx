@@ -1,10 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Route } from '@angular/router'
-
-export interface Food {
-  value: string;
-  viewValue: string;
-}
 
 @Component({
   selector: 'app-shell',
@@ -13,16 +7,10 @@ export interface Food {
 })
 export class AppShellComponent implements OnInit {
 
-  foods: Food[];
 
   constructor() { }
 
   ngOnInit() {
-    this.foods = [
-      {value: 'steak-0', viewValue: 'Steak'},
-      {value: 'pizza-1', viewValue: 'Pizza'},
-      {value: 'tacos-2', viewValue: 'Tacos'}
-    ];
   }
 
 }
