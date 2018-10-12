@@ -10,6 +10,9 @@ $space-m: 25px;
 $space-l: 50px;
 
 $verde: #7EAF3B;
+$strong-green: rgb(3, 96, 42);
+$faded-green: rgba(3, 96, 42, 0.8);
+
 
 .content{
     padding-top: 100px;
@@ -22,8 +25,14 @@ $verde: #7EAF3B;
     background-repeat: repeat;
 }
 
-.background-white{
-    background-color: #7EAF3B;
+.background-strong-green{
+    background-color: $strong-green;
+    
+}
+
+.background-faded-green{
+    background-color: $faded-green;
+    
 }
 
 .top-s{
@@ -46,10 +55,6 @@ $verde: #7EAF3B;
     text-align: center !important;
 }
 
-.outlet{
-    background-color: aquamarine !important;
-}
-
 .left-xs{
     margin-left: 5px;
 }
@@ -67,6 +72,10 @@ $verde: #7EAF3B;
 
 .green-color{
     color: $verde;
+}
+
+.white-color{
+    color: whitesmoke;
 }
 
 .green-bkg{
