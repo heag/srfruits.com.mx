@@ -20,17 +20,18 @@
     </mat-card>
   </div>
 
+  <!-- FORMULARIO -->
   <div id="#right-panel" class="form-container contact-form">
 
-      <mat-form-field class="left-xs">
-        <input matInput placeholder="Nombre o Empresa" [formControl]="name" required>
-        <mat-error *ngIf="name.invalid">{{getErrorMessages('name')}}</mat-error>
-      </mat-form-field>
+    <mat-form-field class="left-xs" style="margin-top: 10px;">
+      <input matInput placeholder="Nombre o Empresa" [formControl]="name" required>
+      <mat-error *ngIf="name.invalid">{{getErrorMessages('name')}}</mat-error>
+    </mat-form-field>
 
-      <mat-form-field class="left-xs">
-        <input matInput placeholder="Correo electrónico" [formControl]="email" required>
-        <mat-error *ngIf="email.invalid">{{getErrorMessages('email')}}</mat-error>
-      </mat-form-field>
+    <mat-form-field class="left-xs">
+      <input matInput placeholder="Correo electrónico" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessages('email')}}</mat-error>
+    </mat-form-field>
 
     <div class="left-xs">
       <mat-form-field>

@@ -1,5 +1,6 @@
+$faded-green: rgba(18, 76, 84, 0.1);
 
-
+// BIG SCREEN
 @media(min-width: 600px){
 .left-div{
   float: left;
@@ -11,11 +12,17 @@
   margin-right: 25px;
   width: 50%;
   float: right;
-  margin-right: 5%;
+  margin-right: 5%;  //change
+  background-image: url('https://www.misskatecuttables.com/uploads/shopping_cart/8012/large_fruit-slices.png');
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position-x: 500px;
+  background-position-y: 300px;
   }
 
 }
 
+// SMALL SCREEN
 @media(max-width: 600px){
   .left-div{
     display: none;
@@ -25,7 +32,12 @@
     margin-left: 2%;
     width: 93%;
     float: none;
-    margin-right: 2%
+    margin-right: 2%; //change
+    background-image: url('https://www.misskatecuttables.com/uploads/shopping_cart/8012/large_fruit-slices.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position-x: 170px;
+    background-position-y: 300px;
   }
 }
 
@@ -70,4 +82,24 @@
 
 #right-panel{
   padding-left: 10px;
+}
+
+.contact-form{
+  background-color: $faded-green;
+  border-radius: 15px;
+  border: 3px solid rgba(126, 175, 59, 1);
+
+  height: 500px;
+  mat-form-field{
+    margin-left: 10px;
+    margin-right: 15px;
+    input{
+      color: black;
+      opacity: .9;
+    }
+  }
+}
+
+.back{
+  
 }
