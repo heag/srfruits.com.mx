@@ -1,20 +1,22 @@
+$background: rgba(126, 175, 59, .7);
+
 // BIG SCREEN
 @media(min-width: 600px){
     #process{
         padding-top: 10px;
+        padding-bottom: 45px;
         margin: 1%;
         span{
             padding-top: 15px;
         }
         mat-icon{
             margin-top: 12px;
-            opacity: .9;
         }
         h6{
-            opacity: .9;
+            //opacity: .9;
         }
         mat-grid-tile{
-            background-color: #03602a;
+            //background-color: whitesmoke;
             border-radius: 10px;
         }
     }
@@ -24,9 +26,10 @@
 @media(max-width: 600px){
     #process{
         padding-top: 20px;
+        padding-bottom: 45px;
         margin: 1%;
         p{
-            font-size: 10px;
+            font-size: 11px;
             opacity: .8;
         }
         h6{
@@ -39,7 +42,7 @@
             opacity: .9;
         }
         mat-grid-tile{
-            background-color: #03602a;
+            background-color: whitesmoke;
             border-radius: 15px;
         }
     }
@@ -47,8 +50,8 @@
 
 mat-grid-tile {
     text-align: center;
-    border: 1px solid rgb(220, 224, 232);
-    color: whitesmoke;
+    border: 1px dotted black;
+    //color: whitesmoke;
     opacity: .8;
     p{
         font-size: 15px;
@@ -59,4 +62,10 @@ mat-grid-tile {
         font-size: 33px;
         text-align: center !important;
     }
+  }
+
+  .main-process{
+      padding-top: 10px;
+      margin-top: 40px;
+      background-color: $background;
   }

@@ -1,3 +1,5 @@
+$orange-faded: rgba(255, 191, 0, .9);
+
 #offer{
     overflow: auto;
     .offer-card{
@@ -11,7 +13,19 @@
 }
 
 .center{
-   text-align: center;
+    text-align: center;
+   .card-body{
+       background-color: $orange-faded;
+       opacity: .9;
+       height: 272px;
+   }
+   .btn-link{
+       background-color: rgba(126, 175, 59, 1);
+       button{
+           width: 100%;
+           color: whitesmoke;
+       }
+   }
 }
 
 mat-grid-tile {
@@ -55,4 +69,8 @@ mat-grid-tile {
             font-size: 25px;
         }
     }
+}
+.card-img-top{
+    height: 200px; //change en imagenes ya hechas con medidas correctas
+    width: 240px;
 }
