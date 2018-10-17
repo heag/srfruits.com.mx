@@ -34,7 +34,9 @@ import { CalculatorComponent } from './components/forms/requests/calculator/calc
 import { PaymentComponent } from './components/forms/requests/payment/payment.component';
 import { QuestionsComponent } from './components/forms/contact/questions/questions.component';
 import { CalculatorResultComponent } from './components/forms/requests/calculator/calculator-result/calculator-result.component';
-import {  ProcessStepsComponent } from './components/forms/home/process-steps/process-steps.component'
+import {  ProcessStepsComponent } from './components/forms/home/process-steps/process-steps.component';
+import { ExtraContentComponent } from './components/forms/home/extra-content/extra-content.component';
+import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component'
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, 
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
@@ -46,7 +48,7 @@ const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientMo
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, WhyUsComponent,
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
-  ProcessStepsComponent];
+  ProcessStepsComponent, ExtraAddInfoComponent, ExtraContentComponent];
 
 const routes: Routes =  [
                           {path: 'home', component: HomeComponent},
@@ -68,7 +70,7 @@ const routes: Routes =  [
 
 @NgModule({
   declarations: [
-    ...appComponents    
+    ...appComponents 
   ],
   imports: [...angularCoreModules,
     ...materialModules,
