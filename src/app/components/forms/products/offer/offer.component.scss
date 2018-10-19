@@ -1,3 +1,71 @@
-.content{
-  padding-top: 100px;
+$orange-faded: rgba(255, 191, 0, .9);
+
+#offer{
+  overflow: auto;
+  .offer-card{
+      display: inline-block;
+      margin: 5px;
+  }
+
+  #offer > img{
+      height: 50px;
+  }
+}
+
+.center{
+  text-align: center;
+ .card-body{
+     background-color: $orange-faded;
+     opacity: .9;
+     //min-height: 228px;
+     font-size: 15px;
+     text-align: center;
+     span{
+       font-size: 25px;
+       color: rgb(0, 71, 0);
+     }
+     p{
+      color: rgba(0, 71, 0, .9);
+     }
+ }
+ .btn-link{
+     background-color: rgba(126, 175, 59, 1);
+     height: 55px;
+     button{
+         width: 100%;
+         color: whitesmoke;
+         font-size: 23px;
+         padding-top: 8px;
+     }
+ }
+}
+
+.card-img-top{
+  height: 200px; //change en imagenes ya hechas con medidas correctas
+  width: 240px;
+}
+
+.pkg-description{
+  height: 160px;
+}
+
+.capacity{
+  font-size: 15px; 
+  background-color: $orange-faded; 
+  span{
+    color: black;
+    opacity: .6;
+  }
+}
+
+@media(min-width: 600px){
+ .margin-top{
+  margin-top: 25px;
+ }
+}
+  
+@media(max-width: 600px){
+  .margin-top{
+    margin-top: 0px;
+  }
 }
