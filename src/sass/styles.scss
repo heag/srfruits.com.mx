@@ -12,6 +12,7 @@ $space-l: 50px;
 $verde: rgba(126, 175, 59, 1);
 $strong-green: rgb(3, 96, 42);
 $faded-green: rgba(3, 96, 42, 0.8);
+$verde-ok:rgba(81, 158, 45, 1);
 
 
 .content{
@@ -31,7 +32,7 @@ $faded-green: rgba(3, 96, 42, 0.8);
 }
 
 .background-faded-green{
-    background-color: $faded-green;
+    background-color: $verde-ok;
     
 }
 

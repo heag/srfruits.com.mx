@@ -1,4 +1,4 @@
-$strong-green: #03602a;
+$strong-green: rgb(81, 158, 45);
 $orange: rgba(252, 122, 0, .8);
 $opacity-min: .85;
 
@@ -53,19 +53,18 @@ $opacity-min: .85;
     }
     p{
         padding-top: 20px;
-        color: rgb(104, 104, 104);
+        color:rgba(3, 96, 42, .80);
         font-family: Arial, Helvetica, sans-serif; //change
         opacity: 1;
         text-align: justify;
     }
 }
 
-.btn{
-    
+.btn{    
     button{
         width: 170px;
         border-radius: 15px;
-        background-color: rgba(3, 96, 42, .85);
+        background-color: rgb(81, 158, 45);
     }
     span{
         font-size: 18px;

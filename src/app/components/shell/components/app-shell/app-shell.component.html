@@ -12,14 +12,19 @@
     <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
         <img src="assets/icons/fruit-box.png" class="header-logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav color-white">
-          
-        <li class="nav-item dropdown white-color">            
+        <ul class="navbar-nav color-white">
+
+            <li class="nav-item white-color">
+                <a class="nav-link" routerLink="/porque-nosotros" routerLinkActive="active">Nosotros</a>
+            </li>
+
+            <!-- <li class="nav-item dropdown white-color">            
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span> Nosotros</span>
             </a>
@@ -28,44 +33,48 @@
                 <a class="dropdown-item" routerLink="/mision-vision" routerLinkActive="active">Misión y Visión</a>
                 <a class="dropdown-item" routerLink="/logros" routerLinkActive="active">Logros</a>
             </div>
-        </li>
+        </li> -->
 
-        <li class="nav-item dropdown white-color">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Beneficios
-            </a>
-            <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" routerLink="/beneficios-empleado" routerLinkActive="active">Para el empleado</a>
-                <a class="dropdown-item" routerLink="/beneficios-empresa" routerLinkActive="active">Para la empresa</a>
-            </div>
-        </li>
+            <li class="nav-item dropdown white-color">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Beneficios
+                </a>
+                <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="/beneficios-empleado" routerLinkActive="active">Para el
+                        empleado</a>
+                    <a class="dropdown-item" routerLink="/beneficios-empresa" routerLinkActive="active">Para la empresa</a>
+                </div>
+            </li>
 
-        <li class="nav-item white-color">
-            <a class="nav-link" routerLink="/oferta" routerLinkActive="active">Oferta</a>
-        </li>
+            <li class="nav-item white-color">
+                <a class="nav-link" routerLink="/oferta" routerLinkActive="active">Oferta</a>
+            </li>
 
-        <li class="nav-item dropdown white-color">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="bar-items-text"> Pedidos</span>
-            </a>
-            <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" routerLink="/pedido" routerLinkActive="active">Realizar pedido</a>
-                <a class="dropdown-item" routerLink="/calculo" routerLinkActive="active">Cálculo de cantidad</a>
-                <a class="dropdown-item" routerLink="/pago" routerLinkActive="active">Pago</a>
-            </div>
-        </li>
+            <li class="nav-item dropdown white-color">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="bar-items-text"> Pedidos</span>
+                </a>
+                <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="/pedido" routerLinkActive="active">Realizar pedido</a>
+                    <a class="dropdown-item" routerLink="/calculo" routerLinkActive="active">Cálculo de cantidad</a>
+                    <a class="dropdown-item" routerLink="/pago" routerLinkActive="active">Pago</a>
+                </div>
+            </li>
 
-        <li class="nav-item dropdown white-color">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="bar-items-text"> Contacto</span>
-            </a>
-            <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" routerLink="/contact" routerLinkActive="active">Contactanos</a>
-                <a class="dropdown-item" routerLink="/preguntas" routerLinkActive="active">Preguntas frecuentes</a>
-            </div>
-        </li>
-        
-      </ul>
+            <li class="nav-item dropdown white-color">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="bar-items-text"> Contacto</span>
+                </a>
+                <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="/contact" routerLinkActive="active">Contactanos</a>
+                    <a class="dropdown-item" routerLink="/preguntas" routerLinkActive="active">Preguntas frecuentes</a>
+                </div>
+            </li>
+
+        </ul>
     </div>
 
     <div class="collapse navbar-collapse social-network white-color">
@@ -74,4 +83,4 @@
         <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram icon"></i></a>
         <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter icon"></i></a>
     </div>
-  </nav>
+</nav>

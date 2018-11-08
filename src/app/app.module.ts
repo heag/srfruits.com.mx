@@ -36,7 +36,8 @@ import { QuestionsComponent } from './components/forms/contact/questions/questio
 import { CalculatorResultComponent } from './components/forms/requests/calculator/calculator-result/calculator-result.component';
 import {  ProcessStepsComponent } from './components/forms/home/process-steps/process-steps.component';
 import { ExtraContentComponent } from './components/forms/home/extra-content/extra-content.component';
-import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component'
+import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
+import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component'
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, 
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
@@ -53,7 +54,7 @@ const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, So
 const routes: Routes =  [
                           {path: 'home', component: HomeComponent},
                           {path: 'contact', component: ContactComponent},
-                          {path: 'porque-nosotros', component: WhyUsComponent},
+                          {path: 'porque-nosotros', component: OurCompanyComponent},
                           {path: 'mision-vision', component: MisionVisionComponent},
                           {path: 'logros', component: AchievementsComponent},
                           {path: 'beneficios-empleado', component: BenefitsEmployeeComponent},
@@ -70,7 +71,8 @@ const routes: Routes =  [
 
 @NgModule({
   declarations: [
-    ...appComponents 
+    ...appComponents,
+    OurCompanyComponent 
   ],
   imports: [...angularCoreModules,
     ...materialModules,

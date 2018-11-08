@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
-import { EmailData, TypeEmail } from '../../../../index'
-import { EmailRestService } from '../../../../services/email.service'
+import { EmailData, TypeEmail } from '../../../../index';
+import { EmailRestService } from '../../../../services/email.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -19,10 +19,10 @@ export class ContactComponent implements OnInit {
   comment = new FormControl('', [Validators.required]);
   telephone = new FormControl('', [Validators.required, Validators.minLength(10)]);
 
-  isValidForm: boolean = false;
-  isNameValid: boolean = false;
-  isEmailValid: boolean = false;
-  isCommentValid: boolean = false;
+  isValidForm: boolean;
+  isNameValid: boolean;
+  isEmailValid: boolean;
+  isCommentValid: boolean;
 
   constructor(private snackBar: MatSnackBar,
     private router: Router,
@@ -61,31 +61,31 @@ export class ContactComponent implements OnInit {
     alert('Favor de llenar todos los campos faltantes');
   }
 
-  private sendEmail(){
+  private sendEmail() {
     this.emailData = {
       name: this.name.value,
       comment: this.comment.value,
       email: this.email.value,
       telephone: this.telephone.value,
       typeEmail: TypeEmail.Contacto
-    }
-    this.emailService.sendEmail(this.emailData)
+    };
+    this.emailService.sendEmail(this.emailData);
   }
 
   private checkFormValid(): boolean {
-    return this.isValidForm = (this.name.valid && 
-                            this.email.valid && 
-                            this.comment.valid && 
+    return this.isValidForm = (this.name.valid &&
+                            this.email.valid &&
+                            this.comment.valid &&
                             this.telephone.valid
                             );
   }
 
 
-  private clearForms(){
-    this.name.setValue("")
-    this.email.setValue("")
-    this.telephone.setValue("")
-    this.comment.setValue("")
+  private clearForms() {
+    this.name.setValue('');
+    this.email.setValue('');
+    this.telephone.setValue('');
+    this.comment.setValue('');
   }
 
 }
