@@ -1,69 +1,52 @@
-<div class="tittle">
-  <span class="advantages">Ventajas</span> y <span class="disadvantages">desventajas</span> de consumir frutas y verduras
-</div>
+<div class="main">
 
-<div class="benefits">
-  <div class="red">
-    <mat-card>
-      <div class="benefit-card">
-        <div class="benefit-photo" style="background-image: url('assets/fat.jpg')">
-        </div>
-        <div class="benefit-info">
-          <span>Obesidad en México</span>
-          <p>El 73% de la población adulta sufre de obesidad o sobrepeso. Lamentablemente México es uno de los países
-            líderes en obesidad, tanto en hombres como en mujeres y niños.</p>
-        </div>
-      </div>
-    </mat-card>
+  <div class="tittle">
+    <span>¿Por qué elegirnos?</span>
   </div>
 
-  <div class="green">
-    <mat-card>
-      <div class="benefit-card">
-        <div class="benefit-photo" style="background-image: url('assets/happy-orange.jpg')">
-        </div>
-
-        <div class="benefit-info">
-          <span>Beneficios de las frutas</span>
-          <p>Las frutas nos aportan agua, vitaminas, minerales, fibra y diferentes compuestos
-            beneficiosos para el organismo además por sus antioxidantes, previenen el envejecimiento
-            prematuro de las células, dándote una piel más limpia, joven, suave y sana y mayor calidad de vida.
-          </p>
-        </div>
+  <!-- SECCION TARJETAS -->
+  <div class="center" id="offer">
+    <div class="card offer-card" id="card1" style="width: 18rem;">
+      <img class="card-img-top" src="assets/quality.png" alt="calidad">
+      <div class="card-body">
+        <h5 class="card-title">Altos estándares de calidad</h5>
+        <p class="card-text">
+          Estamos comprometidos en seleccionar y distribuir productos de la más
+          alta calidad, llevando hasta donde estés la mejor selección de frutas.
+        </p>
       </div>
-    </mat-card>
-  </div>
-
-  <div class="red">
-      <mat-card>
-        <div class="benefit-card">
-          <div class="benefit-photo" style="background-image: url('assets/sick-person.jpg')">
-          </div>
-  
-          <div class="benefit-info">
-            <span>Enfermedades</span>
-            <p>Sin frutas ni verduras se reducen las defensas del organismo, ya que la mayor 
-              parte de los antioxidantes que luchan contra los radicales libres que estresan 
-              las células de nuestro cuerpo se encuentran en estos alimentos. 
-            </p>
-          </div>
-        </div>
-      </mat-card>
+      <div class="btn-link">
+        <a routerLink="/oferta" routerLinkActive="active"><button mat-button>Visitar</button></a>
+      </div>
     </div>
 
-  <div class="green">
-    <mat-card>
-      <div class="benefit-card">
-        <div class="benefit-photo" style="background-image: url('assets/happy-fruits.jpg')">
-        </div>
-        <div class="benefit-info">
-          <span>Deliciosas</span>
-          <p>Son dulces, sabrosas, tienen pocas calorías y prácticamente nada de grasas saturadas 
-            (aquellas más perjudiciales para el organismo), por lo que son un buen capricho cuando 
-            te entre tu vena más golosa.</p>
-        </div>
+    <div class="card offer-card" id="card2" style="width: 18rem;">
+      <img class="card-img-top" src="assets/fruit-field.jpg" alt="Frutas">
+      <div class="card-body">
+        <h5 class="card-title">Nuestros proveedores</h5>
+        <p class="card-text">
+          Seleccionamos cuidadosamente a nuestros proveedores para que la fruta
+          esté siempre fresca y los productos de snack cuiden la salud del consumidor desde sus
+          ingredientes hasta su proceso de elaboración.
+        </p>
       </div>
-    </mat-card>
-  </div>
+      <div class="btn-link">
+        <a routerLink="/oferta" routerLinkActive="active"><button mat-button>Visitar</button></a>
+      </div>
+    </div>
 
+    <div class="card offer-card" id="card3" style="width: 18rem;">
+      <img class="card-img-top" src="assets/wood-box.png" alt="box">
+      <div class="card-body">
+        <h5 class="card-title">Empaques</h5>
+        <p class="card-text">
+          Nos comprometemos con el ambiente al utilizar cajas de madera reutilizables en la
+          distribución y almacenamientos de nuestros productos.
+        </p>
+      </div>
+      <div class="btn-link">
+        <a routerLink="/oferta" routerLinkActive="active"><button mat-button>Visitar</button></a>
+      </div>
+    </div>
+  </div>
 </div>

@@ -24,7 +24,7 @@ import { ContactComponent } from './components/forms/contact/contact/contact.com
 import { OfferComponent } from './components/forms/products/offer/offer.component';
 import { FooterComponent } from './components/shell/components/footer/footer.component';
 import { HomeComponent } from './components/forms/home/home.component';
-import { WhyUsComponent } from './components/forms/about-us/why-us/why-us.component'
+import { AdvantagesComponent } from './components/forms/about-us/advantages/advantages.component';
 import { MisionVisionComponent } from './components/forms/about-us/mision-vision/mision-vision.component';
 import { AchievementsComponent } from './components/forms/about-us/achievements/achievements.component';
 import { BenefitsEmployeeComponent } from './components/forms/benefits/for-employee/benefits-employee';
@@ -37,17 +37,18 @@ import { CalculatorResultComponent } from './components/forms/requests/calculato
 import {  ProcessStepsComponent } from './components/forms/home/process-steps/process-steps.component';
 import { ExtraContentComponent } from './components/forms/home/extra-content/extra-content.component';
 import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
-import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component'
+import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
+import { WhyUsComponent } from './components/forms/about-us/why-us/why-us.component'
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, 
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
-  MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule, 
+  MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule,
   MatInputModule, MatCheckboxModule, MatDialogModule, MatTreeModule, MatExpansionModule, MatGridListModule ];
 
-const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientModule, HttpModule] 
+const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientModule, HttpModule]
 
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
-  BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, WhyUsComponent,
+  BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
   ProcessStepsComponent, ExtraAddInfoComponent, ExtraContentComponent];
 
@@ -72,7 +73,8 @@ const routes: Routes =  [
 @NgModule({
   declarations: [
     ...appComponents,
-    OurCompanyComponent 
+    OurCompanyComponent,
+    WhyUsComponent 
   ],
   imports: [...angularCoreModules,
     ...materialModules,

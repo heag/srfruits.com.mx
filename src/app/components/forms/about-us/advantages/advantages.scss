@@ -1,0 +1,129 @@
+$strong-green: #03602a;
+$orange: #fc7a00;
+$red: rgb(206, 12, 12);
+$opacity-min: .9;
+$background-green: rgba(81, 158, 45, .3);
+
+.benefits{
+    padding-top: 3px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    word-wrap: break-word;
+    mat-card{
+      min-height: 150px; //change
+      border-radius: 20px;
+    }
+  }
+  
+  .benefit-card{
+    overflow: hidden;
+  }
+  
+  .benefit-photo{
+    float: left;
+    min-height: 110px;
+    min-width: 110px;  
+    border-radius: 85px; //change
+    background-size: cover;
+  }
+  
+  .benefit-info{
+    padding-left: 135px;
+    span {
+      font-weight: bold;
+      font-size: 21px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  
+  .green{
+    margin-top: 25px;
+    .benefit-photo{
+      border: 4px solid $strong-green;
+    }
+    .benefit-info{
+      color: $strong-green;
+    }
+    mat-card{
+      border-left: 8px solid $strong-green;
+      background-color: rgba(3, 96, 42, 0.2);    
+    }  
+  }
+  
+  .orange{
+    margin-top: 25px;
+    .benefit-photo{
+      border: 4px solid $orange;
+    }
+    .benefit-info{
+      color: #962f03;
+    }
+    mat-card{
+      border-right: 8px solid $orange;
+      background-color: rgba(255, 98, 7, 0.1);
+    }
+  }
+
+  .red{
+    margin-top: 25px;
+    .benefit-photo{
+      border: 4px solid $red;
+    }
+    .benefit-info{
+      color: $red;
+    }
+    mat-card{
+      border-right: 8px solid $red;
+      background-color: rgba(232, 0, 0, .1);
+    }
+  }
+
+  .advantages{
+    color: $strong-green;
+  }
+
+  .disadvantages{
+    color: $red;
+  }
+
+
+  //BIG SCREEN
+  @media(min-width: 600px){
+    .tittle{
+      background-color: $background-green;
+      text-align: center;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+      opacity: .85;
+    }
+  }
+  
+  //SMALL SCREEN
+  @media(max-width: 601px){
+    .tittle{
+      background-color: $background-green;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      opacity: .85;
+    }
+
+    .image-div{
+      display: none;
+    }
+  
+    .benefit-photo{
+      display: none;
+    }
+    .benefit-info{
+      padding-left: 15px;
+    }
+
+    .benefit-card {
+      display: hidden;
+    }
+  }
