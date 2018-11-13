@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'request',
@@ -9,13 +9,13 @@ import { ActivatedRoute } from "@angular/router";
 
 export class RequestComponent implements OnInit {
 
-  public employees: number
-  public deliveries: number
+  public employees: number;
+  public deliveries: number;
 
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {
-      this.employees = params["employees"];
-      this.deliveries = params["deliveries"];
+      this.employees = params['employees'];
+      this.deliveries = params['deliveries'];
     });
 
   }

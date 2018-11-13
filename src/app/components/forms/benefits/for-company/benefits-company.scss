@@ -1,6 +1,7 @@
 $strong-green: #03602a;
 $orange: #fc7a00;
 $opacity-min: .85;
+$white-text: white;
 
 // BIG SCREEN
 @media(min-width: 600px){
@@ -15,27 +16,24 @@ $opacity-min: .85;
 
   .image-div{
     float: left;
-    padding: 10px 0 0 30px;
-    max-width: 42%;
+    padding: 10px 0 0 0px;
+    max-width: 21%;
   }
 
   .benefit-info{
-    margin-top: 20px;
-    margin-left: 137px;
+    margin-left: 140px;
   }
 
   .content-info{
-    color: whitesmoke;
-    margin-left: 100px;
-    font-size: 15px;
+    color: $white-text;
+    margin-left: 120px; //margin contenido
+    text-align: justify;
+    font-size: 13px;
     span{
-      font-size: 25px;
+      font-size: 20px;
     }
     p{
       opacity: $opacity-min;
-    }
-    h6{
-      opacity: 1;
     }
   }
 }
@@ -63,7 +61,7 @@ $opacity-min: .85;
   }
 
   .content-info{
-    color: whitesmoke;
+    color: $white-text;
     padding-left: 10px;
     font-size: 13px;
     span{
@@ -76,10 +74,10 @@ $opacity-min: .85;
 }
 
 .image{
-  min-width: 50px;   //cambiar
-  min-height: 280px;
-  max-height: 330px;
-  max-width: 80px;
+  min-width: 180px;   //cambiar
+  min-height: 200px;
+  max-height: 225px;
+  max-width: 225px;
 }
 
 .benefits{
@@ -87,7 +85,7 @@ $opacity-min: .85;
   padding-left: 10%;
   padding-right: 10%;
   mat-card{
-    min-height: 170px; //change
+    min-height: 150px; //change
     background-repeat: repeat;
     border-radius: 20px;
   }

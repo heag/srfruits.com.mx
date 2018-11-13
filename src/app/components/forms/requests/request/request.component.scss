@@ -1,3 +1,55 @@
-.content{
-  padding-top: 100px;
+
+$opacity-min: .85;
+$white-text: white;
+
+// BIG SCREEN
+@media(min-width: 600px){
+  .main-card{
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+    text-align: center;
+    mat-card{
+      border-radius: 50px;
+    }
+  }
+
+  .content-info{
+    color: $white-text;
+    font-size: 14px;
+    span{
+      font-size: 20px;
+      text-align: center;
+    }
+    p{
+      text-align: justify;
+      opacity: $opacity-min;
+    }
+  }
+}
+
+//SMALL SCREEN
+@media(max-width: 600px){
+  .main-card{
+    padding-left: 3%;
+    padding-right: 3%;
+    overflow: hidden;
+    mat-card{
+      border-radius: 20px;
+    }
+  }
+
+  .content-info{
+    color: $white-text;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 13px;
+    span{
+      font-size: 20px;      
+    }
+    p{
+      opacity: $opacity-min;
+      text-align: justify;
+    }
+  }
 }

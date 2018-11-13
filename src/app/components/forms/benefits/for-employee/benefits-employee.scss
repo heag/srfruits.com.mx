@@ -1,13 +1,14 @@
 $strong-green: #03602a;
 $orange: #fc7a00;
-$opacity-min: .9;
+$opacity-min: .85;
+$white-text: white;
 
 // BIG SCREEN
 @media(min-width: 600px){
   .main-card{
     padding-left: 5%;
     padding-right: 5%;
-    overflow: hidden;    
+    overflow: hidden;
     mat-card{
       border-radius: 50px;
     }
@@ -15,26 +16,24 @@ $opacity-min: .9;
 
   .image-div{
     float: left;
-    padding: 10px 0 0 15px;  //padding de imagen con info
-    max-width: 42%;
+    padding: 10px 0 0 0px;
+    max-width: 21%;
   }
 
   .benefit-info{
-    margin-top: 20px;
-    margin-left: 137px;
+    margin-left: 140px;
   }
 
   .content-info{
-    color: whitesmoke;
-    font-size: 15px;
+    color: $white-text;
+    margin-left: 120px; //margin contenido
+    text-align: justify;
+    font-size: 13px;
     span{
-      font-size: 30px;
+      font-size: 20px;
     }
     p{
       opacity: $opacity-min;
-    }
-    h6{
-      opacity: 1;
     }
   }
 }
@@ -62,7 +61,7 @@ $opacity-min: .9;
   }
 
   .content-info{
-    color: whitesmoke;
+    color: $white-text;
     padding-left: 10px;
     font-size: 13px;
     span{
@@ -75,10 +74,10 @@ $opacity-min: .9;
 }
 
 .image{
-  min-width: 250px;   //cambiar
-  min-height: 280px;
-  max-height: 300px;
-  max-width: 220px;
+  min-width: 180px;   //cambiar
+  min-height: 200px;
+  max-height: 225px;
+  max-width: 225px;
 }
 
 .benefits{
@@ -86,7 +85,7 @@ $opacity-min: .9;
   padding-left: 10%;
   padding-right: 10%;
   mat-card{
-    min-height: 170px; //change
+    min-height: 150px; //change
     background-repeat: repeat;
     border-radius: 20px;
   }
