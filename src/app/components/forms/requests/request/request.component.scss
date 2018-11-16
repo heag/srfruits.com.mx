@@ -1,5 +1,7 @@
 
 $opacity-min: .85;
+$strong-green: #03602a;
+$verde-ok:rgba(81, 158, 45, 1);
 $white-text: white;
 
 // BIG SCREEN
@@ -14,9 +16,52 @@ $white-text: white;
     }
   }
 
+  .logo {
+    text-align: center;
+    float: left;
+    width: 50%;
+  }
+
+  .company-info {
+    float: right;
+    border-left: 2px solid $verde-ok;
+    color: $verde-ok;
+    height: 160px;
+    width: 50%;
+
+    .mat-icon {
+      font-size: 22px;
+    }
+
+    #contact-details {
+      font-size: 15px;
+      padding-left: 50px;
+      padding-top: 30px;
+      p {
+        font-size: 13px;
+        font-style: italic;
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .image {
+    height: 130px;
+    border-radius: 25px; //change
+    background-size: auto;
+    border: 3px solid $verde-ok;
+  }
+
+  .slogan {
+    padding-top: 8px;
+    font-size: 16px;
+    font-style: italic;
+    color: $verde-ok;
+  }
+
   .content-info{
     color: $white-text;
-    font-size: 14px;
+    font-size: 13px;
     span{
       font-size: 20px;
       text-align: center;
@@ -39,6 +84,46 @@ $white-text: white;
     }
   }
 
+  .logo {
+    display: none
+  }
+
+  .company-info {
+    float: right;
+    color: $verde-ok;
+    height: 160px;
+    width: 100%;
+    text-align: center;
+    .mat-icon {
+      font-size: 15px;
+    }
+
+    #contact-details {
+      font-size: 13px;
+      padding-left: 10px;
+      padding-top: 10px;
+      p {
+        font-size: 10px;
+        font-style: italic;
+        padding-top: 2px;
+      }
+    }
+  }
+
+  .image {
+    height: 70px;
+    border-radius: 15px; //change
+    background-size: auto;
+    border: 2px solid $verde-ok;
+  }
+
+  .slogan {
+    padding-top: 8px;
+    font-size: 13px;
+    font-style: italic;
+    color: $verde-ok;
+  }
+
   .content-info{
     color: $white-text;
     padding-left: 10px;
@@ -52,4 +137,15 @@ $white-text: white;
       text-align: justify;
     }
   }
+}
+
+.contact {
+  padding-top: 45px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.visual {
+  float: right;
+  padding-right: 60px;
 }
