@@ -95,15 +95,17 @@ $white-text: white;
     width: 100%;
     text-align: center;
     .mat-icon {
-      font-size: 15px;
+      font-size: 17px;
     }
 
     #contact-details {
-      font-size: 13px;
+      font-size: 16px;
       padding-left: 10px;
       padding-top: 10px;
       p {
-        font-size: 10px;
+        color: $strong-green;
+        opacity: .7;
+        font-size: 15px;
         font-style: italic;
         padding-top: 2px;
       }

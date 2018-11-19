@@ -1,3 +1,46 @@
-.content{
-  padding-top: 100px;
+$strong-green: #03602a;
+$verde-ok:rgba(81, 158, 45, 1);
+$white-text: white;
+
+// BIG SCREEN
+@media(min-width: 600px){
+.payment-info {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+    text-align: center;
+    .tittle{
+      color: $verde-ok;
+      opacity: .8;
+      font-size: 25px;
+    }
+    p {
+      font-size: 14px;
+      opacity: .8;
+    }
+}
+
+  .transfer-img {
+    img {
+      max-width: 100%;
+    }    
+  }
+
+  .payment-details {
+    mat-card {
+      width: 100%;
+      border-radius: 10px;
+      border-right: 4px solid $verde-ok;
+      border-left: 4px solid $verde-ok;
+      color: $strong-green;
+      opacity: .75;
+      height: 140px;
+    }
+  }
+
+}
+
+//SMALL SCREEN
+@media(max-width: 599px){
+
 }
