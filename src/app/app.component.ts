@@ -11,16 +11,15 @@ export class AppComponent implements OnInit {
   title = 'frutas-alvarez';
 
   constructor(@Inject(ENVIRONMENT) public environment: IEnvironment,
-              private router: Router){
-
-  }
+    private router: Router) { 
+      }
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
-          return;
+        return;
       }
       window.scrollTo(0, 0)
-  });
+    });
   }
 }

@@ -1,0 +1,53 @@
+{
+    "COMMON": {
+        "PAGE_NAME": "Señor Fruits",
+        "ABOUT_US": "ABOUT US",
+        "BENEFITS": "BENEFITS",
+        "BENEFITS_FOR_EMPLOYEE": "For Employee",
+        "BENEFITS_FOR_COMPANY": "For Company",
+        "OFFER": "PRODUCTS",
+        "REQUEST": "REQUEST",
+        "REQUEST_A_QUOTE": "Request a Quote",
+        "CALCULATE_QTY": "Calculate Quantity",
+        "PAYMENT": "Payment",
+        "CONTACT": "CONTACT",
+        "CONTACT_US": "Contact us",
+        "FAQ": "FAQ's"
+    },
+    
+    "ABOUT_US": {
+        
+    },
+
+    "BENEFITS_FOR_EMPLOYEE": {
+        
+    },
+
+    "BENEFITS_FOR_COMPANY": {
+        
+    },
+
+    "PRODUCTS": {
+        
+    },
+
+    "REQUEST_A_QUOTE": {
+        
+    },
+
+    "CALCULATE_QTY": {
+        
+    },
+
+    "PAYMENT": {
+        
+    },
+
+    "CONTACT": {
+        
+    },
+
+    "FAQ": {
+        
+    }
+}
