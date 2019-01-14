@@ -1,0 +1,57 @@
+{
+    "COMMON": {
+        "PAGE_NAME": "Señor Fruits",
+        "ABOUT_US": "ABOUT US",
+        "BENEFITS": "BENEFITS",
+        "BENEFITS_FOR_EMPLOYEE": "For Employee",
+        "BENEFITS_FOR_COMPANY": "For Company",
+        "OFFER": "PRODUCTS",
+        "REQUEST": "REQUEST",
+        "REQUEST_A_QUOTE": "Request a Quote",
+        "CALCULATE_QTY": "Calculate Quantity",
+        "PAYMENT": "Payment",
+        "CONTACT": "CONTACT",
+        "CONTACT_US": "Contact us",
+        "FAQ": "FAQ's"
+    },
+    
+    "ABOUT_US": {
+        "WHO_WE_ARE": {
+            "Tittle": "¿Who are we?",
+            "Description": "We are a family company concerned about the welfare of employees in companies, we started in 2018, we currently work in the Metropolitan Area of Guadalajara with expansion plans to other cities in the Mexican Republic. Through Señor Fruits we want to improve the daily life of many people inside and outside their workplaces by making healthy alternatives available in snacks and foods."
+        }
+        
+    },
+
+    "BENEFITS_FOR_EMPLOYEE": {
+        
+    },
+
+    "BENEFITS_FOR_COMPANY": {
+        
+    },
+
+    "PRODUCTS": {
+        
+    },
+
+    "REQUEST_A_QUOTE": {
+        
+    },
+
+    "CALCULATE_QTY": {
+        
+    },
+
+    "PAYMENT": {
+        
+    },
+
+    "CONTACT": {
+        
+    },
+
+    "FAQ": {
+        
+    }
+}
