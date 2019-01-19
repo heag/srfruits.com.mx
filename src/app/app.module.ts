@@ -2,16 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HttpClient } from '@angular/common/http'
-import { Http, HttpModule } from '@angular/http'
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { Http, HttpModule } from '@angular/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { EmailRestService } from './services/email.service'
+import { EmailRestService } from './services/email.service';
 
-import { environment } from '../environments/environment'
-import { ENVIRONMENT } from '../environments/common'
+import { environment } from '../environments/environment';
+import { ENVIRONMENT } from '../environments/common';
 
-import { RouterModule, Routes } from '@angular/router'
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppShellComponent } from './components/shell/components/app-shell/app-shell.component';
 import {
@@ -55,9 +55,9 @@ const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, So
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
   ProcessStepsComponent, ExtraAddInfoComponent, ExtraContentComponent];
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}
+// export function HttpLoaderFactory(http: HttpClient) {
+//   return new TranslateHttpLoader(http);
+// }
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -85,14 +85,14 @@ const routes: Routes = [
   ],
   imports: [...angularCoreModules,
   ...materialModules,
-  RouterModule.forRoot(routes),
-  TranslateModule.forRoot({
-    loader: {
-      provide: TranslateLoader,
-      useFactory: HttpLoaderFactory,
-      deps: [HttpClient]
-    }
-  })
+  RouterModule.forRoot(routes)
+  // TranslateModule.forRoot({
+  //   loader: {
+  //     provide: TranslateLoader,
+  //     useFactory: HttpLoaderFactory,
+  //     deps: [HttpClient]
+  //   }
+  // })
   ],
   exports: [
   ],
