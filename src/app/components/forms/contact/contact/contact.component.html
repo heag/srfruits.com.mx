@@ -6,7 +6,7 @@
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>Shiba Inu</mat-card-title>
       </mat-card-header> -->
-      <img mat-card-image src="assets/contact-us.jpg" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="assets/contactenos.jpg" alt="Photo of a Shiba Inu">
       <mat-card-content>
         <p>
           Preferimos la atención personal donde podamos atenderle de manera inmediata sin espera, 
@@ -22,8 +22,18 @@
     </mat-card>
   </div>
 
-  <!-- FORMULARIO -->
   <div id="#right-panel" class="form-container contact-form">
+      <mat-card>
+          <div class="contact-info">
+              <span class="tittle">Señor Fruits</span><br>
+              <mat-icon>telephone</mat-icon><span>336-333-33333</span>
+              <p>Avenida Siempreviva 123, Zapopan, Jalisco, Mexico, 45050</p>              
+          </div>          
+        </mat-card>
+  </div>
+
+  <!-- FORMULARIO -->
+  <!-- <div id="#right-panel" class="form-container contact-form">
 
     <mat-form-field class="left-xs" style="margin-top: 10px;">
       <input matInput placeholder="Nombre o Empresa" [formControl]="name" required>
@@ -48,15 +58,11 @@
       <mat-hint align="start"><i>No enviar información personal</i></mat-hint>
     </mat-form-field>
 
-    <!-- <div class="top-s notification-check left-xs">
-      <mat-checkbox>Recibir novedades en correo</mat-checkbox>
-    </div> -->
-
     <div class="top-s">
       <button mat-button color="primary" (click)="send()" class="submit-btn">
         <span class="text">Enviar</span>
       </button>
     </div>
 
-  </div>
+  </div> -->
 </div>

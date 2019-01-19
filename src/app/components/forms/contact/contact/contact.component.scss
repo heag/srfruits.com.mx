@@ -1,4 +1,5 @@
 $faded-green: rgba(18, 76, 84, 0.1);
+$green: #7EAF3B;
 
 // BIG SCREEN
 @media(min-width: 600px){
@@ -6,6 +7,13 @@ $faded-green: rgba(18, 76, 84, 0.1);
   float: left;
   width: 30%;
   margin-left: 10%;
+}
+
+.tittle{
+  font-size: 24px;
+  color: $green;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .contact-form{
@@ -19,10 +27,10 @@ $faded-green: rgba(18, 76, 84, 0.1);
     font-size: 25px;
     text-align: right;
     font-family: Roboto,"Helvetica Neue",sans-serif;
-    color: #7EAF3B;
+    color: $green;
     opacity: .8;
     a{
-      color: #7EAF3B;
+      color: $green;
     }
     
   }
@@ -49,7 +57,7 @@ $faded-green: rgba(18, 76, 84, 0.1);
 }
 
 .submit-btn{
-  background-color: #7EAF3B;
+  background-color: $green;
   width: 55px !important;  
   text-align: center;
   position: relative;
@@ -96,8 +104,4 @@ $faded-green: rgba(18, 76, 84, 0.1);
       opacity: .9;
     }
   }
-}
-
-.back{
-  
 }
