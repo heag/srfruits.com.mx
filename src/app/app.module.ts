@@ -85,7 +85,7 @@ const routes: Routes = [
   ],
   imports: [...angularCoreModules,
   ...materialModules,
-  RouterModule.forRoot(routes)
+  RouterModule.forRoot(routes, {useHash: true})
   // TranslateModule.forRoot({
   //   loader: {
   //     provide: TranslateLoader,
