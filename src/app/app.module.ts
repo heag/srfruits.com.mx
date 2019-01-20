@@ -41,14 +41,14 @@ import { ProcessStepsComponent } from './components/forms/home/process-steps/pro
 import { ExtraContentComponent } from './components/forms/home/extra-content/extra-content.component';
 import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
 import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
-import { WhyUsComponent } from './components/forms/about-us/why-us/why-us.component'
+import { WhyUsComponent } from './components/forms/about-us/why-us/why-us.component';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
   MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule,
   MatInputModule, MatCheckboxModule, MatDialogModule, MatTreeModule, MatExpansionModule, MatGridListModule];
 
-const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientModule, HttpModule]
+const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientModule, HttpModule];
 
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
@@ -85,7 +85,7 @@ const routes: Routes = [
   ],
   imports: [...angularCoreModules,
   ...materialModules,
-  RouterModule.forRoot(routes, {useHash: true})
+  RouterModule.forRoot(routes)
   // TranslateModule.forRoot({
   //   loader: {
   //     provide: TranslateLoader,

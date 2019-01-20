@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppShellComponent implements OnInit {
 
-  // constructor(private translate: TranslateService) { 
+  // constructor(private translate: TranslateService) {
   //   translate.setDefaultLang('es');
   // }
 
