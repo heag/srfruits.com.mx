@@ -55,9 +55,9 @@ const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, So
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
   ProcessStepsComponent, ExtraAddInfoComponent, ExtraContentComponent];
 
-// export function HttpLoaderFactory(http: HttpClient) {
-//   return new TranslateHttpLoader(http);
-// }
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -85,14 +85,14 @@ const routes: Routes = [
   ],
   imports: [...angularCoreModules,
   ...materialModules,
-  RouterModule.forRoot(routes, {useHash: false})
-  // TranslateModule.forRoot({
-  //   loader: {
-  //     provide: TranslateLoader,
-  //     useFactory: HttpLoaderFactory,
-  //     deps: [HttpClient]
-  //   }
-  // })
+  RouterModule.forRoot(routes, {useHash: false}),
+  TranslateModule.forRoot({
+    loader: {
+      provide: TranslateLoader,
+      useFactory: HttpLoaderFactory,
+      deps: [HttpClient]
+    }
+  })
   ],
   exports: [
   ],

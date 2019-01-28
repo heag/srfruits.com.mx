@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { TranslateService } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-shell',
@@ -8,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppShellComponent implements OnInit {
 
-  // constructor(private translate: TranslateService) {
-  //   translate.setDefaultLang('es');
-  // }
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('es');
+  }
 
   ngOnInit() {
   }
 
-  // switchLanguage(language: string) {
-  //   this.translate.use(language);
-  // }
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
 
 }
