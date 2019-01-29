@@ -41,7 +41,7 @@ import { ProcessStepsComponent } from './components/forms/home/process-steps/pro
 import { ExtraContentComponent } from './components/forms/home/extra-content/extra-content.component';
 import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
 import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
-import { WhyUsComponent } from './components/forms/about-us/why-us/why-us.component';
+import { WhyUsComponent } from './components/forms/about-us/our-company/why-us/why-us.component';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,

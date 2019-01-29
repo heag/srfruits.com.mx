@@ -26,23 +26,19 @@ $opacity-min: .9;
     color: whitesmoke;
     text-align: justify;
     font-size: 16px;
-    span{
-      font-size: 30px;
-    }
     p{
       opacity: $opacity-min;
     }
     h6{
       opacity: 1;
     }
-  }
 
-  .about-us-description{
-    color: whitesmoke;
-    text-align: justify;
-    font-size: 16px;
+    .tittle{
+      font-size: 30px;
+    }
   }
 }
+
 
 //SMALL SCREEN
 @media(max-width: 601px){

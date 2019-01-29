@@ -1,16 +1,6 @@
-<!-- <mat-toolbar id="header" class="header" [ngClass]="{ 
-    'redirection-bar-visible': isClassicViewBarVisible,
-    'banner-announcement-visible': isBannerAnnouncementVisible
-  }">
-    <a routerLink="/">
-      <img src="assets/icons/fruit-box.png" class="header-logo">
-    </a>
-  </mat-toolbar> -->
-
-
 <nav class="navbar navbar-expand-lg navbar-light fixed-top  navigation">
     <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
-        <img src="assets/icons/fruit-box.png" class="header-logo">
+        <img src="assets/sr-fruits-main.jpg" class="header-logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -27,49 +17,48 @@
             <li class="nav-item dropdown white-color">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    <span>BENEFICIOS</span>
-                    <!-- <span translate>COMMON.BENEFITS</span> -->
+                    <span translate>COMMON.BENEFITS</span>
                 </a>
                 <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" routerLink="/beneficios-empleado" routerLinkActive="active">BENEFICIOS EMPLEADO</a>
-                    <a class="dropdown-item" routerLink="/beneficios-empresa" routerLinkActive="active">BENEFICIOS EMPRESA</a>
+                    <a class="dropdown-item" routerLink="/beneficios-empleado" routerLinkActive="active" translate>COMMON.BENEFITS_FOR_EMPLOYEE</a>
+                    <a class="dropdown-item" routerLink="/beneficios-empresa" routerLinkActive="active" translate>COMMON.BENEFITS_FOR_COMPANY</a>
                 </div>
             </li>
 
             <li class="nav-item white-color">
-                <a class="nav-link" routerLink="/oferta" routerLinkActive="active">OFERTA</a>
+                <a class="nav-link" routerLink="/oferta" routerLinkActive="active" translate>COMMON.OFFER</a>
             </li>
 
             <li class="nav-item dropdown white-color">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"><span>PEDIDO</span>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span translate>COMMON.REQUEST</span>
                 </a>
                 <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" routerLink="/pedido" routerLinkActive="active">SOLICITAR PEDIDO</a>
-                    <a class="dropdown-item" routerLink="/calculo" routerLinkActive="active">CALCULAR CANTIDAD</a>
-                    <a class="dropdown-item" routerLink="/pago" routerLinkActive="active">PAGO</a>
+                    <a class="dropdown-item" routerLink="/pedido" routerLinkActive="active" translate>COMMON.REQUEST_A_QUOTE </a>
+                    <a class="dropdown-item" routerLink="/calculo" routerLinkActive="active" translate>COMMON.CALCULATE_QTY</a>
+                    <a class="dropdown-item" routerLink="/pago" routerLinkActive="active" translate>COMMON.PAYMENT</a>
                 </div>
             </li>
 
             <li class="nav-item dropdown white-color">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"><span>CONTACTO</span>
+                    aria-haspopup="true" aria-expanded="false"><span translate>COMMON.CONTACT</span>
                 </a>
                 <div class="dropdown-menu white-background" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" routerLink="/contact" routerLinkActive="active">CONTACTANOS</a>
-                    <a class="dropdown-item" routerLink="/preguntas" routerLinkActive="active">PREGUNTAS FRECUENTES</a>
+                    <a class="dropdown-item" routerLink="/contact" routerLinkActive="active" translate>COMMON.CONTACT_US</a>
+                    <a class="dropdown-item" routerLink="/preguntas" routerLinkActive="active" translate>COMMON.FAQ</a>
                 </div>
             </li>
 
         </ul>
     </div>
 
-    <!-- <div class="collapse navbar-collapse social-network white-color">
+    <div class="collapse navbar-collapse social-network white-color">
         <mat-icon>phone</mat-icon><span class="telephone">332-275-6887</span>
-        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
+        <!-- <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
         <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram icon"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter icon"></i></a>
-    </div> -->
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter icon"></i></a> -->
+    </div>
 
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav color-white">

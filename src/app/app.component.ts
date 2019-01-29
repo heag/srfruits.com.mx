@@ -8,10 +8,10 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'frutas-alvarez';
+  title = 'sr-fruits';
 
   constructor(@Inject(ENVIRONMENT) public environment: IEnvironment,
-    private router: Router) { 
+    private router: Router) {
       }
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     });
   }
 }
