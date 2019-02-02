@@ -7,6 +7,7 @@ import { Http, HttpModule } from '@angular/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { EmailRestService } from './services/email.service';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { environment } from '../environments/environment';
 import { ENVIRONMENT } from '../environments/common';
@@ -84,6 +85,7 @@ const routes: Routes = [
     WhyUsComponent
   ],
   imports: [...angularCoreModules,
+    NgbModule,
   ...materialModules,
   RouterModule.forRoot(routes, {useHash: false}),
   TranslateModule.forRoot({

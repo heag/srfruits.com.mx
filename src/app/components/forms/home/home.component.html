@@ -1,5 +1,47 @@
 <div class="content center">
 
+  <!-- SECCION  CARRUSEL -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-12">
+        <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+            <img [src]="images[0]" alt="Random first slide">
+            <div class="carousel-caption">
+              <h3>Titulo Sr Fruits Imagen 1</h3>
+              <p>Informacion imagen Sr Fruits 1, detalles cada imagen 5 segndos</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img [src]="images[1]" alt="Random second slide">
+            <div class="carousel-caption">
+                <h3>Titulo Sr Fruits Imagen 2</h3>
+                <p>Informacion imagen Sr Fruits 2, detalles</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img [src]="images[2]" alt="Random third slide">
+            <div class="carousel-caption">
+                <h3>Titulo Sr Fruits Imagen 3</h3>
+                <p>Informacion imagen Sr Fruits 3, detalles</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img [src]="images[3]" alt="Random fourth slide">
+            <div class="carousel-caption">
+                <h3>Titulo Sr Fruits Imagen 4</h3>
+                <p>Informacion imagen Sr Fruits 4, detalles</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+      <div class="col-md-1">
+      </div>
+    </div>
+  </div>
+
   <!-- SECCION TARJETAS -->
   <div class="center" id="offer">
     <div class="card offer-card" id="card1" style="width: 18rem;">
@@ -12,7 +54,7 @@
         </p>
       </div>
       <div class="btn-link">
-          <a routerLink="/oferta" routerLinkActive="active"><button mat-button>Visitar</button></a>
+        <a routerLink="/oferta" routerLinkActive="active"><button mat-button>Visitar</button></a>
       </div>
     </div>
 
@@ -20,13 +62,13 @@
       <img class="card-img-top" src="assets/fruits-1.jpg" alt="Frutas">
       <div class="card-body">
         <h5 class="card-title">Educación nutricional</h5>
-        <p class="card-text">Si desea cambiar los hábitos alimenticios de los empleados de su empresa, 
-          tenemos la solución perfecta para usted. En cooperación con dietistas, hemos preparado una 
+        <p class="card-text">Si desea cambiar los hábitos alimenticios de los empleados de su empresa,
+          tenemos la solución perfecta para usted. En cooperación con dietistas, hemos preparado una
           serie de materiales educativos que están a su disposición. Cuando pides fruta, la obtienes gratis.
         </p>
       </div>
       <div class="btn-link">
-          <a routerLink="/oferta" routerLinkActive="active"><button mat-button>Visitar</button></a>
+        <a routerLink="/oferta" routerLinkActive="active"><button mat-button>Visitar</button></a>
       </div>
     </div>
 
@@ -34,8 +76,8 @@
       <img class="card-img-top" src="assets/field-2.jpg" alt="Campo mexicano">
       <div class="card-body">
         <h5 class="card-title">Botanas para conferencias</h5>
-        <p class="card-text">¿Organiza formación, conferencias o reuniones de negocios? 
-          Consulte nuestra oferta preparada especialmente para tales ocasiones. 
+        <p class="card-text">¿Organiza formación, conferencias o reuniones de negocios?
+          Consulte nuestra oferta preparada especialmente para tales ocasiones.
           Bocadillos frescos y saludables para conferencias garantizan el bienestar de los participantes.
         </p>
       </div>

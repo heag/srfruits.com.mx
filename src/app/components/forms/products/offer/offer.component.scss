@@ -19,6 +19,7 @@ $orange-faded: rgba(255, 191, 0, .9);
      opacity: .9;
      font-size: 15px;
      text-align: center;
+     padding: 0.25rem;
      span{
        font-size: 25px;
        color: rgb(0, 71, 0);
@@ -46,7 +47,10 @@ $orange-faded: rgba(255, 191, 0, .9);
 }
 
 .pkg-description{
-  height: 160px;
+  height: 180px;
+  .price{
+    font-size: 14px !important;
+  }
 }
 
 .capacity{
