@@ -1,10 +1,8 @@
 <div class="content center">
 
   <!-- SECCION  CARRUSEL -->
-  <div class="container">
+  <div class="">
     <div class="row">
-      <div class="col-md-1">
-      </div>
       <div class="col-md-12">
         <ngb-carousel *ngIf="images">
           <ng-template ngbSlide>
@@ -17,27 +15,32 @@
           <ng-template ngbSlide>
             <img [src]="images[1]" alt="Random second slide">
             <div class="carousel-caption">
-                <h3>Titulo Sr Fruits Imagen 2</h3>
-                <p>Informacion imagen Sr Fruits 2, detalles</p>
+              <h3>Titulo Sr Fruits Imagen 2</h3>
+              <p>Informacion imagen Sr Fruits 2, detalles</p>
             </div>
           </ng-template>
           <ng-template ngbSlide>
             <img [src]="images[2]" alt="Random third slide">
             <div class="carousel-caption">
-                <h3>Titulo Sr Fruits Imagen 3</h3>
-                <p>Informacion imagen Sr Fruits 3, detalles</p>
+              <h3>Titulo Sr Fruits Imagen 3</h3>
+              <p>Informacion imagen Sr Fruits 3, detalles</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img [src]="images[0]" alt="Random first slide">
+            <div class="carousel-caption">
+              <h3>Titulo Sr Fruits Imagen 4</h3>
+              <p>Informacion imagen Sr Fruits 4, detalles cada imagen 5 segndos</p>
             </div>
           </ng-template>
           <ng-template ngbSlide>
             <img [src]="images[3]" alt="Random fourth slide">
             <div class="carousel-caption">
-                <h3>Titulo Sr Fruits Imagen 4</h3>
-                <p>Informacion imagen Sr Fruits 4, detalles</p>
+              <h3>Titulo Sr Fruits Imagen 5</h3>
+              <p>Informacion imagen Sr Fruits 5, detalles</p>
             </div>
           </ng-template>
         </ngb-carousel>
-      </div>
-      <div class="col-md-1">
       </div>
     </div>
   </div>
@@ -45,7 +48,7 @@
   <!-- SECCION TARJETAS -->
   <div class="center" id="offer">
     <div class="card offer-card" id="card1" style="width: 18rem;">
-      <img class="card-img-top" src="assets/fruit-box.jpg" alt="Campesinos">
+      <img class="card-img-top" src="assets/field-2.jpg" alt="Campesinos">
       <div class="card-body">
         <h5 class="card-title">Nuestra oferta</h5>
         <p class="card-text">El contrato de suscripción garantiza: precio fijo más bajo para todo el año,
@@ -59,7 +62,7 @@
     </div>
 
     <div class="card offer-card" id="card2" style="width: 18rem;">
-      <img class="card-img-top" src="assets/fruits-1.jpg" alt="Frutas">
+      <img class="card-img-top" src="assets/field-2.jpg" alt="Frutas">
       <div class="card-body">
         <h5 class="card-title">Educación nutricional</h5>
         <p class="card-text">Si desea cambiar los hábitos alimenticios de los empleados de su empresa,
