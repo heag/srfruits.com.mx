@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+$back-color: rgb(245, 244, 226);
+$text-color: rgba(0,0,0,.5);
+
 .footer-distributed{
-	background-color: #7EAF3B;
+	background-color: $back-color;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -14,7 +17,7 @@
 }
 
 .footer-distributed .footer-left p{
-	color:  white;
+	color:  $text-color;
 	font-size: 12px;
 	margin: 0;
 }
@@ -24,7 +27,6 @@
 .footer-distributed p.footer-links{
 	font-size:16px;
 	font-weight: bold;
-	color:  #ffffff;
 	margin: 0 0 10px;
 	padding: 0;
 }
@@ -33,7 +35,7 @@
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
-	color:  inherit;
+	color:  $text-color;
 }
 
 .footer-distributed .footer-right{

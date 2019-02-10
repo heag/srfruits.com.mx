@@ -1,3 +1,5 @@
+$back-color: rgb(245, 244, 226);
+$text-color: rgba(0,0,0,.5);
 
 .header-logo{
   display: block;
@@ -6,7 +8,7 @@
 }
 
 .navigation{
-  background-color: #7EAF3B;
+  background-color: $back-color;
   top: 0;
 }
 
@@ -15,13 +17,15 @@
 }
 
 .telephone{
-  color: antiquewhite;
   padding-left: 5px;
   font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .social-network{
   padding-left: 100px;
+  opacity: .9;
+  color: $text-color;
 }
 
 .icon{
@@ -30,9 +34,10 @@
   color: white;
 }
 
-.white-color > *{
-  color: white;
+.link-item > *{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   opacity: .9;
+  font-size: 18px;
 }
 
 .white-background{

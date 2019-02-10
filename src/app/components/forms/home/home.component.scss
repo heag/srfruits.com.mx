@@ -44,6 +44,8 @@ mat-grid-tile {
     }
   }
 
+
+//   BIG SCREEN
 @media(min-width: 600px){
     #process{
         padding-top: 10px;
@@ -55,8 +57,16 @@ mat-grid-tile {
             margin-top: 10px;
         }
     }
+
+    .carousel-top{
+        padding-top: 86px;
+        img{
+            width: 100%;
+        }
+    }
 }
-    
+
+// SMALL SCREEN
 @media(max-width: 600px){
     #process{
         padding-top: 20px;
@@ -71,6 +81,10 @@ mat-grid-tile {
         mat-icon{
             font-size: 25px;
         }
+    }
+
+    .carousel-top{
+        padding-top: 100px;
     }
 }
 
