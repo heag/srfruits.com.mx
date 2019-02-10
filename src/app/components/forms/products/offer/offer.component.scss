@@ -66,10 +66,22 @@ $orange-faded: rgba(255, 191, 0, .9);
  .margin-top{
   margin-top: 25px;
  }
+
+ #advantages {
+  padding-top: 25px;
+  width: 55%;
+  margin: auto;
+}
 }
   
 @media(max-width: 600px){
   .margin-top{
     margin-top: 0px;
+  }
+
+  #advantages {
+    padding-top: 25px;
+    width: 98%;
+    margin: auto;
   }
 }
