@@ -28,6 +28,7 @@
     "core-js": "^2.5.4",
     "os-tmpdir": "^1.0.2",
     "rxjs": "^6.0.0",
+    "standardize": "^1.2.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

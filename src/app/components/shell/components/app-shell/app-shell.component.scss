@@ -1,5 +1,7 @@
-$back-color: rgb(245, 244, 226);
+$back-color: rgb(190, 217, 50);
+$back-color-faded: rgba(190, 217, 50, 1);
 $text-color: rgba(0,0,0,.5);
+$fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .header-logo{
   display: block;
@@ -18,13 +20,12 @@ $text-color: rgba(0,0,0,.5);
 
 .telephone{
   padding-left: 5px;
-  font-size: 22px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  font-family: $fuente;
 }
 
 .social-network{
   padding-left: 100px;
-  opacity: .9;
   color: $text-color;
 }
 
@@ -36,10 +37,10 @@ $text-color: rgba(0,0,0,.5);
 
 .link-item > *{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  opacity: .9;
   font-size: 18px;
+  opacity: .9;
 }
 
-.white-background{
-  background-color: white;
+.drop-background{
+  background-color: $back-color-faded;
 }

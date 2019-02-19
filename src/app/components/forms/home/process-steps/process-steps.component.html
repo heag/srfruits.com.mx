@@ -1,53 +1,36 @@
 <div class="main-process">
-
-    <div class="title">
-        <span>¿Como funciona?</span>
+    <div class="step-card" id="order">
+        <div class="image-card" style="background-image: url('assets/step-order.png')"></div>
+        <div class="btn-action">
+            <button>ORDENA</button>
+        </div>
+        <div class="card-text">
+            Selecciona el paquete, fecha de entrega y cantidad de porciones.<br />
+            Inmediatamente nos ponemos en contacto contigo para concluir el proceso de compra.
+        </div>
     </div>
 
-    <div id="process">
-        <mat-grid-list cols="4" rowHeight="180px">
+    <div class="step-card" id="receive">
+        <div class="image-card" style="background-image: url('assets/step-receive.png')"></div>
+        <div class="btn-action">
+            <button>RECIBE TU PEDIDO</button>
+        </div>
+        <div class="card-text">
+            Las entregas de pedidos de realizan dentro de las primeras horas laborales, 
+            los lunes y miercoles, ya que aseguramos que la fruta este disponible en la oficina
+            todos los dias de la semana. Tenemos servicio disponible dentro de la ZMG.
+        </div>
+    </div>
 
-            <mat-grid-tile>
-                <div class="process-step">
-                    <mat-icon>add_shopping_cart</mat-icon>
-                    <h6>Ordenar</h6>
-                    <p>
-                        Se comunica con nososotros enviando sus datos de contacto y pedido.
-                    </p>
-                </div>
-            </mat-grid-tile>
-
-            <mat-grid-tile>
-                <div class="process-step">
-                    <mat-icon>contact_phone</mat-icon>
-                    <h6>Contacto</h6>
-                    <p>
-                        En breve nos comunicamos con usted para asesorarlo en cualquier duda y confirmar el pedido.
-                    </p>
-                </div>
-            </mat-grid-tile>
-
-            <mat-grid-tile>
-                <div class="process-step">
-                    <mat-icon>local_shipping</mat-icon>
-                    <h6>Entrega</h6>
-                    <p>
-                        Las entregas se realizan de Lunes a Viernes de 6:00 a 12:00 directamente en su oficina.
-                    </p>
-                </div>
-            </mat-grid-tile>
-
-            <mat-grid-tile>
-                <div class="process-step">
-                    <mat-icon>payment</mat-icon>
-                    <h6>Pago</h6>
-                    <p>
-                        Se enviará una factura por el producto entregado en un periodo menor a 14 días.
-                    </p>
-                </div>
-            </mat-grid-tile>
-
-        </mat-grid-list>
+    <div class="step-card" id="payment">
+        <div class="image-card" style="background-image: url('assets/step-pay.png')"></div>
+        <div class="btn-action">
+            <button>PAGOS FLEXIBLES</button>
+        </div>
+        <div class="card-text">
+            Una vez entregado tu pedido, te enviaremos la factura correspondiente para 
+            que realices el pago dentro de los primeros 7 días hábiles.
+        </div>
     </div>
 
 </div>

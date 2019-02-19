@@ -1,80 +1,73 @@
-// $background: rgba(126, 175, 59, 1);
 $background: transparent;
 
-// BIG SCREEN
-@media(min-width: 600px){
-    #process{
-        padding-top: 10px;
-        padding-bottom: 45px;
-        margin: 1%;
-        span{
-            padding-top: 20px;
-        }
-        mat-icon{
-            margin-top: 12px;
-        }
-        h6{
-            //opacity: .9;
-        }
-        mat-grid-tile{
-            border-radius: 10px;
-        }
-    }
-}
-    
-// SMALL SCREEN
-@media(max-width: 600px){
-    #process{
-        padding-top: 20px;
-        padding-bottom: 45px;
-        margin: 1%;
-        p{
-            font-size: 11px;
-            opacity: .8;
-        }
-        h6{
-            display: none;
-        }
+$verde: #6A9B31;
+$amarillo: rgb(255, 206, 12);
+$naranja: rgb(255, 142, 4);
+$rojo: rgb(230, 0, 47);
 
-        mat-icon{
-            margin-top: 10px;
-            font-size: 25px;
-            opacity: .9;
-        }
-        mat-grid-tile{
-            border-radius: 15px;
-        }
-    }
-}
 
-.title{
-    span{
-        font-size: 25px;
-        opacity: .7;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-}
-
-mat-grid-tile {
+.step-card {
+    height: 550px;
+    width: 260px;
+    display: inline-block;
     text-align: center;
-    border: 1px dotted black;
-    opacity: .8;
-    p{
-        font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
-        opacity: .9;
-    }
+    border-radius: 25px;
+    margin: 15px;
+}
 
-    mat-icon{
-        font-size: 33px;
-        text-align: center !important;
-    }
-  }
+.image-card {
+    background-size: cover;
+    height: 250px;
+    width: 245px;
+}
 
-  .main-process{
-      padding-top: 10px;
-      margin-top: 40px;
-      background-color: $background;
-      border-top: 3px solid rgbA(126, 175, 59, .5);
-      border-bottom: 3px solid rgbA(126, 175, 59, .5);
-  }
+.btn-action {
+    padding-top: 30px;
+    text-align: center;
+    button {
+        
+        border: none;
+        width: 190px;
+        height: 35px;
+        color: white;
+        border-radius: 15px;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
+.card-text {
+    padding-top: 30px;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.main-process{
+    padding-top: 10px;
+    margin-top: 40px;
+    background-color: $background;
+    display: block;
+    #order {
+        color: $rojo;
+        border: 1px solid $rojo;
+        button {
+            background-color: $rojo;
+        }
+    }    
+    #receive {
+        color: $verde;
+        border: 1px solid $verde;
+        button {
+            background-color: $verde;
+        }
+    }    
+    #payment {
+        color: $naranja;
+        border: 1px solid $naranja;
+        button {
+            background-color: $naranja;
+        }
+    }      
+}
+
+
