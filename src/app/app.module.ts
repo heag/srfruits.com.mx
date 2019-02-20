@@ -43,6 +43,7 @@ import { ExtraContentComponent } from './components/forms/home/extra-content/ext
 import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
 import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
 import { WhyUsComponent } from './components/forms/about-us/our-company/why-us/why-us.component';
+import { TittleHeaderComponent } from './components/shell/components/tittle-header/tittle-header.component';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
@@ -54,7 +55,7 @@ const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientMo
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
-  ProcessStepsComponent, ExtraAddInfoComponent, ExtraContentComponent];
+  ProcessStepsComponent, ExtraAddInfoComponent, ExtraContentComponent, OurCompanyComponent, WhyUsComponent, TittleHeaderComponent];
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -81,8 +82,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     ...appComponents,
-    OurCompanyComponent,
-    WhyUsComponent
   ],
   imports: [...angularCoreModules,
     NgbModule,

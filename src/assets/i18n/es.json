@@ -14,6 +14,12 @@
         "CONTACT_US": "Contactanos",
         "FAQ": "Preguntas Frecuentes"
     },
+
+    "HOME": {
+        "PROCESS": {
+            "Tittle": "¿Como funciona?"
+        }
+    },
     
     "ABOUT_US": {
         "WHO_WE_ARE": {
@@ -22,11 +28,7 @@
         }        
     },
 
-    "BENEFITS_FOR_EMPLOYEE": {
-        
-    },
-
-    "BENEFITS_FOR_COMPANY": {
+    "BENEFITS": {
         
     },
 
