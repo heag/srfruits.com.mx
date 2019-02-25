@@ -1,7 +1,7 @@
 $opacity-min: .9;
 
 #questions mat-expansion-panel{
-  border-left: 3px solid rgb(51, 122, 204);
+  border-left: 5px solid rgb(51, 122, 204);
   margin: 10px;
 }
 
@@ -27,6 +27,16 @@ $opacity-min: .9;
       mat-card{
         border-radius: 50px;
       }
+    }
+
+    .tittle {
+      font-size: 25px;
+      color: green;
+    }
+
+    .answer {
+      font-size: 16px;
+      
     }
 
     .content-info{

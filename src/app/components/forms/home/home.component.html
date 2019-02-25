@@ -3,37 +3,37 @@
   <!-- SECCION  CARRUSEL -->
   <div class="row">
     <div class="col-md-12">
-      <ngb-carousel *ngIf="images">
+      <ngb-carousel>
         <ng-template ngbSlide>
-          <img src='assets/carousel-1.jpg' alt="fruta 1">
+          <img src='assets/carousel-1.jpg' style="width: 100%" alt="fruta 1">
           <div class="carousel-caption">
             <h3>Paquetes frescos</h3>
-            <p><a class="carrusel-link" routerLink="/oferta" routerLinkActive="active" translate>Leer mas ...</a></p>
+            <p><a class="carrusel-link" routerLink="/oferta" routerLinkActive="active">Leer mas ...</a></p>
           </div>
         </ng-template>
         <ng-template ngbSlide>
-          <img src='assets/carousel-3.jpg' alt="fruta 2">
+          <img src='assets/carousel-3.jpg' style="width: 100%" alt="fruta 2">
           <div class="carousel-caption">
             <h3>Titulo Sr Fruits Imagen 2</h3>
             <p>Informacion imagen Sr Fruits 2, detalles</p>
           </div>
         </ng-template>
         <ng-template ngbSlide>
-          <img src='assets/carousel-2.jpg' alt="fruta 3">
+          <img src='assets/carousel-2.jpg' style="width: 100%" alt="fruta 3">
           <div class="carousel-caption">
             <h3>Titulo Sr Fruits Imagen 3</h3>
             <p>Informacion imagen Sr Fruits 3, detalles</p>
           </div>
         </ng-template>
         <ng-template ngbSlide>
-          <img src='assets/carousel-4.jpg' alt="fruta 4">
+          <img src='assets/carousel-4.jpg' style="width: 100%" alt="fruta 4">
           <div class="carousel-caption">
             <h3>Titulo Sr Fruits Imagen 4</h3>
             <p>Informacion imagen Sr Fruits 4, detalles cada imagen 5 segndos</p>
           </div>
         </ng-template>
         <ng-template ngbSlide>
-          <img src='assets/carousel-7.jpg' alt="fruta 5">
+          <img src='assets/carousel-7.jpg' style="width: 100%" alt="fruta 5">
           <div class="carousel-caption">
             <h3>Titulo Sr Fruits Imagen 5</h3>
             <p>Informacion imagen Sr Fruits 5, detalles</p>
@@ -49,9 +49,11 @@
       <img class="card-img-top" src="assets/field-2.jpg" alt="Campesinos">
       <div class="card-body">
         <h5 class="card-title">Nuestra oferta</h5>
-        <p class="card-text">El contrato de suscripción garantiza: precio fijo más bajo para todo el año,
-          empaques reemplazables y entregas en un tiempo específico. Las entregas se pueden realizar
-          diariamente o en los días que selecciones por semana.
+        <p class="card-text">
+            Garantizamos un precio fijo y accesible durante todo el año; empaques sustentables y 
+            entregas puntuales en el tiempo acordado.
+            Además, tienes la opción de recibir tu pedido 1 o 2 veces a la semana para garantizar 
+            frescura y disponibilidad de nuestros productos.            
         </p>
       </div>
       <div class="btn-link">
@@ -63,9 +65,9 @@
       <img class="card-img-top" src="assets/field-2.jpg" alt="Frutas">
       <div class="card-body">
         <h5 class="card-title">Educación nutricional</h5>
-        <p class="card-text">Si desea cambiar los hábitos alimenticios de los empleados de su empresa,
-          tenemos la solución perfecta para usted. En cooperación con dietistas, hemos preparado una
-          serie de materiales educativos que están a su disposición. Cuando pides fruta, la obtienes gratis.
+        <p class="card-text">
+            Si deseas promover una alimentación saludable para tu personal, tenemos la solución perfecta para ti.
+            Un hábito alimenticio saludable y balanceado comienza con pequeñas acciones cotidianas que logran grandes cambios.            
         </p>
       </div>
       <div class="btn-link">
@@ -77,9 +79,11 @@
       <img class="card-img-top" src="assets/field-2.jpg" alt="Campo mexicano">
       <div class="card-body">
         <h5 class="card-title">Botanas para conferencias</h5>
-        <p class="card-text">¿Organiza formación, conferencias o reuniones de negocios?
-          Consulte nuestra oferta preparada especialmente para tales ocasiones.
-          Bocadillos frescos y saludables para conferencias garantizan el bienestar de los participantes.
+        <p class="card-text">
+            <br/>¿Tienes capacitaciones, conferencias o reuniones de negocios en puerta? 
+            Consulta nuestra oferta preparada especialmente para tales ocasiones. 
+            Aperitivos frescos y saludables para este tipo de eventos garantizan el bienestar 
+            de los participantes.
         </p>
       </div>
       <div class="btn-link">
@@ -92,8 +96,8 @@
 
   <process-steps></process-steps>
 
-  <extra-add-info></extra-add-info>
+  <app-advantages></app-advantages>
 
-  <extra-content></extra-content>
+  <extra-add-info></extra-add-info>
 
 </div>

@@ -3,6 +3,68 @@ $orange: #fc7a00;
 $red: rgb(206, 12, 12);
 $opacity-min: .9;
 $background-green: rgba(81, 158, 45, .3);
+$blanco: rgba(255, 255, 255, .92);
+
+
+.main {
+  height: 800px;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+}
+
+.inside-div {
+  background-color: $blanco;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 50px;
+  display: inline-block;
+  height: 650px;
+  min-width: 1100px;
+  margin: 75px;
+}
+
+.cards {
+  display: block;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.card{
+  display: inline-block;
+  width: 300px;
+  height: 280px;
+  margin: 5px;
+  background-color: transparent;
+  text-align: center;
+  border: transparent;
+}
+
+.card-img {
+  height: 60%;
+}
+
+.card-info {
+  border-radius: 10px;
+  width: 100%;
+  margin: 5px auto;
+  margin-top: 5px;
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    color: $orange;
+  }
+
+  p{
+    margin: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin: 1px;
+  }
+}
 
 .benefits{
     padding-top: 3px;

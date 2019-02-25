@@ -3,21 +3,25 @@ $orange: #fc7a00;
 $opacity-min: .85;
 $white-text: white;
 
+.benefits-div {
+  padding-top: 86px;
+}
+
 // BIG SCREEN
-@media(min-width: 600px){
+@media(min-width: 846px){
   .main-card{
-    padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: -16px;
     overflow: hidden;
     mat-card{
       border-radius: 50px;
+      margin-top: 50px;
     }
   }
 
-  .image-div{
+  .image-container{
     float: left;
     padding: 10px 0 0 0px;
-    max-width: 21%;
   }
 
   .benefit-info{
@@ -28,7 +32,10 @@ $white-text: white;
     color: $white-text;
     margin-left: 120px; //margin contenido
     text-align: justify;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 135px;
+    padding-top: 15px;
     span{
       font-size: 20px;
     }
@@ -39,9 +46,10 @@ $white-text: white;
 }
 
 //SMALL SCREEN
-@media(max-width: 600px){
+@media(max-width: 845px){
   .main-card{
     padding-left: 3%;
+    padding-top: 50px;
     padding-right: 3%;
     overflow: hidden;
     mat-card{
@@ -49,7 +57,7 @@ $white-text: white;
     }
   }
 
-  .image-div{
+  .image-container{
     display: none;
   }
 
@@ -63,21 +71,17 @@ $white-text: white;
   .content-info{
     color: $white-text;
     padding-left: 10px;
-    font-size: 13px;
+    padding-top:5px;
     span{
       font-size: 20px;      
     }
     p{
       opacity: $opacity-min;
+      font-size: 16px;
+      color: white;
+      font-weight: 500;
     }
   }
-}
-
-.image{
-  min-width: 180px;   //cambiar
-  min-height: 200px;
-  max-height: 225px;
-  max-width: 225px;
 }
 
 .benefits{

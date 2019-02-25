@@ -1,21 +1,30 @@
-$verde: rgb(190, 217, 50);
-$amarillo: rgb(255, 206, 12);
-$naranja: rgb(255, 142, 4);
-$rojo: rgb(230, 0, 47);
+
+$verde: rgb(121, 191, 40);
+$amarillo: rgb(255, 191, 0);
+$naranja: rgba(255, 142, 4, 1);
+$rojo: rgb(244, 0, 0);
 $gris: rgb(65, 68, 77);
 $crema: rgb(245, 244, 226);
 
 .header-container {
     width: 100%;
-    height: 70px;
-    margin-top: 50px;
+    min-height: 70px;
     vertical-align: middle;
+    display: inline-block;
+}
+
+.logo {
+    float: left;
+    img {
+        height: 60px;
+    }    
 }
 
 .tittle-text {
     font-size: 35px;
     color: white;
     padding-top: 5px;
+    text-align: center;
 }
 
 .verde {

@@ -39,7 +39,6 @@ import { PaymentComponent } from './components/forms/requests/payment/payment.co
 import { QuestionsComponent } from './components/forms/contact/questions/questions.component';
 import { CalculatorResultComponent } from './components/forms/requests/calculator/calculator-result/calculator-result.component';
 import { ProcessStepsComponent } from './components/forms/home/process-steps/process-steps.component';
-import { ExtraContentComponent } from './components/forms/home/extra-content/extra-content.component';
 import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
 import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
 import { WhyUsComponent } from './components/forms/about-us/our-company/why-us/why-us.component';
@@ -55,7 +54,7 @@ const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientMo
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
-  ProcessStepsComponent, ExtraAddInfoComponent, ExtraContentComponent, OurCompanyComponent, WhyUsComponent, TittleHeaderComponent];
+  ProcessStepsComponent, ExtraAddInfoComponent, OurCompanyComponent, WhyUsComponent, TittleHeaderComponent];
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);

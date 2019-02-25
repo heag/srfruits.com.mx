@@ -15,10 +15,11 @@ $orange-faded: rgba(255, 191, 0, .9);
 
 .center{
     text-align: center;
+    margin-bottom: 65px;
    .card-body{
        background-color: $orange-faded;
        opacity: .9;
-       height: 252px;
+       height: 265px;
        font-size: 15px;
    }
    .btn-link{
@@ -59,10 +60,7 @@ mat-grid-tile {
     }
 
     .carousel-top{
-        padding-top: 86px;
-        img{
-            width: 100%;
-        }
+        padding-top: 96px;
     }
 }
 
@@ -82,9 +80,17 @@ mat-grid-tile {
             font-size: 25px;
         }
     }
+    .center {
+        padding-top: 96px;
+    }
 
-    .carousel-top{
-        padding-top: 100px;
+    .row {
+        h3 {
+            display: none;
+        }
+        p {
+            font-size: 15px;
+        }
     }
 }
 

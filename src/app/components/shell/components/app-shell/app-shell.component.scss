@@ -1,16 +1,30 @@
-$back-color: rgb(190, 217, 50);
+$back-color: #ffbf00;
 $back-color-faded: rgba(190, 217, 50, 1);
 $text-color: rgba(0,0,0,.5);
+$verde: rgb(121, 191, 40);
 $fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .header-logo{
-  display: block;
-  height: 60px;
-  padding-left: 8px;
+  text-align: center;
+  img{
+    display: block;
+    height: 60px;
+    padding-left: 8px;
+    margin: 0 auto;
+  }
+}
+
+.name {
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 10px;
+  color: green;
 }
 
 .navigation{
   background-color: $back-color;
+  height: 96px;
   top: 0;
 }
 
@@ -20,13 +34,20 @@ $fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .telephone{
   padding-left: 5px;
-  font-size: 24px;
+  font-size: 30px;
   font-family: $fuente;
+}
+
+.navbar-items {
+  padding-top: 10px;  
 }
 
 .social-network{
   padding-left: 100px;
   color: $text-color;
+  mat-icon{
+    font-size: 28px;
+  }
 }
 
 .icon{
