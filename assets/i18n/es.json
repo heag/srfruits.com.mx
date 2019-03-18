@@ -3,8 +3,8 @@
         "PAGE_NAME": "Señor Fruits",
         "ABOUT_US": "NOSOTROS",
         "BENEFITS": "BENEFICIOS",
-        "BENEFITS_FOR_EMPLOYEE": "Para Colabordores",
-        "BENEFITS_FOR_COMPANY": "Para Empresa",
+        "BENEFITS_FOR_EMPLOYEE": "Trabajadores",
+        "BENEFITS_FOR_COMPANY": "Empresa",
         "OFFER": "PRODUCTOS",
         "REQUEST": "PEDIDO",
         "REQUEST_A_QUOTE": "Realizar Pedido",
@@ -14,20 +14,21 @@
         "CONTACT_US": "Contactanos",
         "FAQ": "Preguntas Frecuentes"
     },
+
+    "HOME": {
+        "PROCESS": {
+            "Tittle": "¿Como funciona?"
+        }
+    },
     
     "ABOUT_US": {
         "WHO_WE_ARE": {
             "Tittle": "¿Quienes somos?",
-            "Description": "Somos una empresa familiar preocupada por el bienestar de los colaboradores en las empresas, iniciamos en el año 2018, actualmente laboramos en la Zona Metropolitana de Guadalajara con planes de expansión a otras ciudades de la República Mexicana. A través de [Frutas Álvarez] queremos mejorar la vida diaria de muchas personas dentro y fuera de sus centros de trabajo al poner a su alcance alternativas saludables en snacks y alimentos."
-        }
-        
+            "Description": "Somos una empresa familiar preocupada por el bienestar de los colaboradores en las empresas, iniciamos en el año 2018, actualmente laboramos en la Zona Metropolitana de Guadalajara con planes de expansión a otras ciudades de la República Mexicana. A través de Señor Fruits queremos mejorar la vida diaria de sus empleados"
+        }        
     },
 
-    "BENEFITS_FOR_EMPLOYEE": {
-        
-    },
-
-    "BENEFITS_FOR_COMPANY": {
+    "BENEFITS": {
         
     },
 
