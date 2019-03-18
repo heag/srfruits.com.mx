@@ -8,7 +8,7 @@ $opacity-min: .9;
 @media(min-width: 820px){
   .main-card{
     padding-right: 15%;
-    padding-top: 96px;
+    padding-top: 87px;
     overflow: hidden;
     padding-bottom: 25px;   
     mat-card{
@@ -46,17 +46,30 @@ $opacity-min: .9;
   }
 
   .header {
-    padding-top: 86px;
+    // padding-top: 86px;
     margin-bottom: -25px;
   }
 }
 
+.bar-header {
+  height: 65px;
+  background-color: $orange;
+  // text-align: center;
+}
+
+.bar-text {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  padding-top: 8px;
+}
 
 //SMALL SCREEN
 @media(max-width: 819px){
   .main-card{
     padding-left: 3%;
     padding-right: 3%;
+    padding-top: 15px;
     overflow: hidden;
     padding-bottom: 25px;
     mat-card{

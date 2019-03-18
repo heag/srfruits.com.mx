@@ -8,18 +8,10 @@ $fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   img{
     display: block;
-    height: 60px;
+    height: 80px;
     padding-left: 8px;
     margin: 0 auto;
   }
-}
-
-.name {
-  font-size: 13px;
-  text-align: center;
-  font-weight: bold;
-  padding-left: 10px;
-  color: green;
 }
 
 .navigation{
@@ -60,6 +52,7 @@ $fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
   opacity: .9;
+  background-color: $back-color;
 }
 
 .drop-background{

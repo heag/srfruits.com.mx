@@ -21,7 +21,7 @@
     <div id="right">
       <mat-accordion id="questions">
 
-        <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title class="tittle">
               ¿De donde proviene la fruta?
@@ -37,7 +37,7 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title class="tittle">
               ¿Como puedo ponerme en contacto?
@@ -45,121 +45,108 @@
           </mat-expansion-panel-header>
           <div class="answer">Puedes llamarnos al teléfono: 01 (33) 33 12 34 56.<br />
             Si lo prefieres, puedes escribirnos al correo electrónico: srfruits@srfruits.com.mx.<br />
-            Además, estamos atentos a tus dudas y comentarios en nuestras redes sociales, en <a href="https://www.facebook.com/srfruitsmx"
-              target="_blank">Facebook</a>,
-            <a href="https://twitter.com/srfruitsmx" target="_blank">Twitter</a> e Instagram.</div>
+            Además, estamos atentos a tus dudas y comentarios en nuestras redes sociales, en 
+            <a href="https://www.facebook.com/srfruitsmx" target="_blank">Facebook</a>,
+            <a href="https://twitter.com/srfruitsmx" target="_blank">Twitter</a> e 
+            <a href="http://www.instagram.com/srfruits_mx" target="_blank">Instagram</a>.</div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header class="panel-head">
             <mat-panel-title class="tittle">
               ¿Cómo puedo calcular la cantidad de porciones que requiere mi empresa?
             </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
           </mat-expansion-panel-header>
-          <div class="answer">Es muy sencillo: usa nuestra <a routerLink="/calculo" routerLinkActive="active">Calculadora de Cantidades</a></div>
+          <div class="answer">Es muy sencillo: usa nuestra <a routerLink="/calculo" routerLinkActive="active">Calculadora
+              de Cantidades</a></div>
         </mat-expansion-panel>
 
 
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title class="tittle">
-              Pregunta 4?
+              ¿Cuál es la cantidad mínima y máxima de paquetes que puedo solicitar?
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="answer">Con gusto te podemos entregar desde un paquete, hasta la cantidad de fruta que necesites.</div>
+        </mat-expansion-panel>
+
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title class="tittle">
+              ¿Con qué frecuencia y en qué horario se entregan los pedidos?
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="answer">Las entregas se realizan los días lunes y/o miércoles
+            (dependiendo del número de entregas solicitadas), en un horario de 7:00 a 12:00 horas.</div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title class="tittle">
+              ¿En qué lugares realizan entregas?
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="answer">Nuestro servicio está disponible dentro de la Zona Metropolitana de
+            Guadalajara: Guadalajara, Zapopan, Tlaquepaque, Tlajomulco y Tonalá.</div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title class="tittle">
+              ¿Es posible cambiar la frecuencia o cantidad de mi pedido?
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="answer">¡Por supuesto! Conforme tu empresa crezca, nos dará mucho gusto
+            visitarte con más frecuencia para entregarte más fruta fresca para tu nuevo personal.
+            Si deseas una nueva cotización, por favor ponte en contacto con nosotros y te ayudaremos en
+            el proceso.</div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title class="tittle">
+              ¿Cuáles son las formas de pago?
             </mat-panel-title>
             <mat-panel-description>
               {{panelOpenState ? '' : ''}}
             </mat-panel-description>
           </mat-expansion-panel-header>
-          <div class="answer">Respuesta bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </div>
+          <div class="answer">Puedes realizar tus pagos mediante una transferencia electrónica
+            o un depósito bancario.</div>
         </mat-expansion-panel>
 
-
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title class="tittle">
-              Pregunta 5?
+              ¿Realizan facturas?
             </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
           </mat-expansion-panel-header>
-          <div class="answer">Respuesta bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </div>
+          <div class="answer">Sí. Te enviaremos la factura a tu correo electrónico.
+            Además, tus compras son deducibles de impuestos.</div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title class="tittle">
-              Pregunta 6?
+              ¿Cual es la duación del contrato?
             </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
           </mat-expansion-panel-header>
-          <div class="answer">Respuesta bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </div>
+          <div class="answer">Confiamos en la calidad de nuestro servicio por lo tanto 
+            no manejamos contratos para nuestros clientes
+          </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title class="tittle">
-              Pregunta 7?
+              ¿No encontraste la respuesta que necesitas?
             </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
           </mat-expansion-panel-header>
-          <div class="answer">Respuesta bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              Pregunta 8?
-            </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <div class="answer">Respuesta bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              Pregunta 9?
-            </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <div class="answer">Respuesta bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              Pregunta 10?
-            </mat-panel-title>
-            <mat-panel-description class="">
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <div class="answer">Respuesta bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </div>
+          <div class="answer">Ponte en <a routerLink="/contacto" routerLinkActive="active">contacto</a> con nosotros y
+            con gusto te
+            atenderemos rápidamente.</div>
         </mat-expansion-panel>
 
       </mat-accordion>

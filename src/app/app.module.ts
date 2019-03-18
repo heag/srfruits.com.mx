@@ -41,7 +41,6 @@ import { CalculatorResultComponent } from './components/forms/requests/calculato
 import { ProcessStepsComponent } from './components/forms/home/process-steps/process-steps.component';
 import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
 import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
-import { WhyUsComponent } from './components/forms/about-us/our-company/why-us/why-us.component';
 import { TittleHeaderComponent } from './components/shell/components/tittle-header/tittle-header.component';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
@@ -54,7 +53,7 @@ const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientMo
 const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
-  ProcessStepsComponent, ExtraAddInfoComponent, OurCompanyComponent, WhyUsComponent, TittleHeaderComponent];
+  ProcessStepsComponent, ExtraAddInfoComponent, OurCompanyComponent, TittleHeaderComponent];
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
