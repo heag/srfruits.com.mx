@@ -32,14 +32,14 @@ $white-text: white;
     color: $white-text;
     margin-left: 120px; //margin contenido
     text-align: justify;
-    font-size: 16px;
     font-weight: 500;
     height: 135px;
     padding-top: 15px;
     span{
-      font-size: 20px;
+      font-size: 28px;
     }
     p{
+      font-size: 16px;
       opacity: $opacity-min;
     }
   }

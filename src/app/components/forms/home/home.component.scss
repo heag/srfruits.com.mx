@@ -1,4 +1,5 @@
 $orange-faded: rgba(255, 191, 0, .9);
+@import "~src/sass/_colors.scss";
 
 #offer{
     overflow: auto;
@@ -19,8 +20,11 @@ $orange-faded: rgba(255, 191, 0, .9);
    .card-body{
        background-color: $orange-faded;
        opacity: .9;
-       height: 265px;
+       height: 150px;
        font-size: 15px;
+   }
+   .card-title {
+       color: black;
    }
    .btn-link{
        background-color: rgba(126, 175, 59, 1);

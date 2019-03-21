@@ -1,11 +1,9 @@
 $background: transparent;
 
 $verde-strong: rgb(98, 145, 43);
-$verde: rgb(121, 191, 40);
-$amarillo: rgb(255, 191, 0);
-$naranja: rgb(255, 142, 4);
 $naranja-strong: rgb(255, 116, 4);
-$rojo: rgb(244, 0, 0);
+
+@import "~src/sass/_colors.scss";
 
 
 .step-card {
