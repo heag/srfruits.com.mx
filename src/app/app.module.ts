@@ -42,11 +42,12 @@ import { ProcessStepsComponent } from './components/forms/home/process-steps/pro
 import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
 import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
 import { TittleHeaderComponent } from './components/shell/components/tittle-header/tittle-header.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
   MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule,
-  MatInputModule, MatCheckboxModule, MatDialogModule, MatTreeModule, MatExpansionModule, MatGridListModule];
+  MatInputModule, MatCheckboxModule, MatDialogModule, MatTreeModule, MatExpansionModule, MatGridListModule, FlexLayoutModule];
 
 const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientModule, HttpModule];
 

@@ -1,68 +1,25 @@
-<div class="content">
+<div class="contact-form" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="center center">
 
-  <div id="#left-panel" class="left-div">
-    <mat-card class="example-card">
-      <!-- <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-      </mat-card-header> -->
-      <img mat-card-image src="assets/contactenos.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          Preferimos la atención personal donde podamos atenderle de manera inmediata sin espera, 
-          por eso lo invitamos a comunicarse con nosotros a través de nuestros diversos canales.
-        </p>
-        <span class="icons">
-            <a href="http://www.instagram.com/srfruits_mx" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp; &nbsp; &nbsp;
-            <a href="https://www.facebook.com/srfruitsmx" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp;  &nbsp; &nbsp;
-            <a href="https://twitter.com/srfruitsmx" target="_blank"><i class="fa fa-twitter"></i></a>  
-        </span>
-        <p> </p>
-      </mat-card-content>
-    </mat-card>
+  <div class="left-panel" fxFlex="25" fxLayoutAlign="center center">
+    test
   </div>
 
-  <div id="#right-panel" class="form-container contact-form">
-      <mat-card>
-          <div class="contact-info">
-              <span class="tittle">Señor Fruits</span><br><br>
-              <p>Avenida Siempreviva 123, Zapopan, Jalisco, Mexico, 45050</p>
-              <p>333-333-3333</p>            
-          </div>          
-        </mat-card>
+  <div class="right-panel" fxLayout="column" fxFlex="65" fxLayoutAlign="start center">
+    
+    <span class="title">CONTACTO</span>
+
+    <div fxFill>
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <div fxFlex="30" class="logo" style="background-image: url('assets/logo-full.png');">
+                first
+              </div>
+          
+              <div fxFlex="60">
+                second
+              </div>
+        </div>
+    </div>
+
   </div>
 
-  <!-- FORMULARIO -->
-  <!-- <div id="#right-panel" class="form-container contact-form">
-
-    <mat-form-field class="left-xs" style="margin-top: 10px;">
-      <input matInput placeholder="Nombre o Empresa" [formControl]="name" required>
-      <mat-error *ngIf="name.invalid">{{getErrorMessages('name')}}</mat-error>
-    </mat-form-field>
-
-    <mat-form-field class="left-xs">
-      <input matInput placeholder="Correo electrónico" [formControl]="email" required>
-      <mat-error *ngIf="email.invalid">{{getErrorMessages('email')}}</mat-error>
-    </mat-form-field>
-
-    <div class="left-xs">
-      <mat-form-field>
-        <input matInput type="tel" placeholder="Teléfono" #tel maxlength="20" [formControl]="telephone">
-        <mat-hint align="end">{{tel.value.length}} / 20</mat-hint>
-      </mat-form-field>
-    </div>
-
-    <mat-form-field class="left-xs">
-      <textarea matInput placeholder="Comentario" rows="10" [formControl]="comment" required></textarea>
-      <mat-error *ngIf="comment.invalid">{{getErrorMessages('comment')}}</mat-error>
-      <mat-hint align="start"><i>No enviar información personal</i></mat-hint>
-    </mat-form-field>
-
-    <div class="top-s">
-      <button mat-button color="primary" (click)="send()" class="submit-btn">
-        <span class="text">Enviar</span>
-      </button>
-    </div>
-
-  </div> -->
 </div>

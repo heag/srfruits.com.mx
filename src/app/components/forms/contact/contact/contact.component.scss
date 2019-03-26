@@ -1,107 +1,30 @@
-$faded-green: rgba(18, 76, 84, 0.1);
-$green: #7EAF3B;
+@import "~src/sass/_colors.scss";
 
-// BIG SCREEN
-@media(min-width: 600px){
-.left-div{
-  float: left;
-  width: 30%;
-  margin-left: 10%;
-}
 
-.tittle{
-  font-size: 24px;
-  color: $green;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.contact-form{
-  margin-right: 25px;
-  width: 50%;
-  float: right;
-  margin-right: 5%;  //change
-  }
-
-  .icons {
-    font-size: 25px;
-    text-align: right;
-    font-family: Roboto,"Helvetica Neue",sans-serif;
-    color: $green;
-    opacity: .8;
-    a{
-      color: $green;
-    }
-    
-  }
-
-}
-
-// SMALL SCREEN
-@media(max-width: 600px){
-  .left-div{
-    display: none;
-  }
-
-  .contact-form{
-    margin-left: 2%;
-    width: 93%;
-    float: none;
-    margin-right: 2%; //change
-  }
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.submit-btn{
-  background-color: $green;
-  width: 55px !important;  
-  text-align: center;
-  position: relative;
-  right: 5px;
-  bottom: 0;
-  float: right;
-  .text{
-    font-size: 18px;
-    color: whitesmoke !important;
-  }
-}
-
-.example-card {
-  max-width: 400px;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-.notification-check{
-  margin-left: 5px;
-  font-size: 13px;
-  font-style: italic;
-  opacity: 0.8;
-}
-
-#right-panel{
-  padding-left: 10px;
-}
-
-.contact-form{
-  //background-color: $faded-green;
+.left-panel {
+  border: 2px solid $verde;
   border-radius: 15px;
-  //border: 2px solid lightgray;
+  height: 500px;
+}
 
-  min-height: 500px;
-  mat-form-field{
-    margin-left: 10px;
-    margin-right: 15px;
-    input{
-      color: black;
-      opacity: .9;
-    }
-  }
+.right-panel {
+  border: 3px solid $naranja;
+  border-radius: 25px;
+  height: 400px;
+}
+
+.logo {
+}
+
+.contact-form {
+  padding-top: 156px;
+}
+
+.title {
+  margin: -22px 0 10px 0;
+  background: white;
+  text-align: center;
+  width: 160px;
+  color: $naranja; 
+  font-size: 25px;
 }
