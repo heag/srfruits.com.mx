@@ -16,38 +16,6 @@
   </mat-card>
 </div>
 
-
-<!-- TARJETA DE SOLICITUD -->
-<!-- <div class="card-buttom">
-  <mat-card class="background green-color">
-    <h5 class="send-title"><b>Solicitar pedido:</b></h5>
-    <p>Nos contactaremos con usted en un periodo máximo de una hora</p>
-    <mat-card-content>
-      <div>
-        <mat-form-field>
-          <input matInput placeholder="Nombre o Empresa" [formControl]="name" required>
-          <mat-error *ngIf="name.invalid">{{getErrorMessages('name')}}</mat-error>
-        </mat-form-field>
-      </div>
-
-      <div>
-        <mat-form-field>
-          <input matInput placeholder="Correo electrónico" [formControl]="email" required>
-          <mat-error *ngIf="email.invalid">{{getErrorMessages('email')}}</mat-error>
-        </mat-form-field>
-      </div>
-
-      <div>
-        <mat-form-field>
-          <input matInput type="tel" placeholder="Teléfono" #tel maxlength="20" [formControl]="telephone" required>
-          <mat-hint align="end">{{tel.value.length}} / 20</mat-hint>
-        </mat-form-field>
-      </div>
-
-    </mat-card-content>
-  </mat-card>
-</div> -->
-
 <div class="top-s" id="buttons">
   <div id="left-btn">
     <button mat-button color="" [mat-dialog-close]="true" class="">

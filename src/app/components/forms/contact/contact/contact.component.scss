@@ -13,18 +13,40 @@
   height: 400px;
 }
 
-.logo {
-}
-
 .contact-form {
-  padding-top: 156px;
+  padding-top: 135px;
+
 }
 
-.title {
-  margin: -22px 0 10px 0;
-  background: white;
-  text-align: center;
-  width: 160px;
-  color: $naranja; 
-  font-size: 25px;
+.contact {
+  background-color: $amarillo-suave;
+  border-radius: 100px;
+  border: 2px solid $amarillo;
+  .titulo {
+    margin-top: 25px;
+  }
+}
+
+.logo {
+  width: 90px;
+  margin-top: 35px;
+}
+
+.jot-form {
+  margin-top: 45px;
+}
+
+.social-network {
+  font-size: 35px;
+  i {
+    color: $grey-700;
+  }
+}
+
+.contact-details{
+  background-color: $verde;
+  height: 450px;
+  margin-top: -110px;
+  color: $grey-700;
+  font-size: 22px;
 }

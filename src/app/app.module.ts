@@ -22,7 +22,6 @@ import {
   MatTreeModule, MatExpansionModule, MatGridListModule
 } from '@angular/material';
 
-import { ProfileInfoComponent } from './components/shell/components/profile-info/profile-info.component';
 import { SocialNetworkComponent } from './components/shell/components/social-network/social-network.component';
 import { ContactComponent } from './components/forms/contact/contact/contact.component';
 import { OfferComponent } from './components/forms/products/offer/offer.component';
@@ -51,7 +50,7 @@ const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, Mat
 
 const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientModule, HttpModule];
 
-const appComponents = [AppComponent, AppShellComponent, ProfileInfoComponent, SocialNetworkComponent, BenefitsCompanyComponent,
+const appComponents = [AppComponent, AppShellComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
   ProcessStepsComponent, ExtraAddInfoComponent, OurCompanyComponent, TittleHeaderComponent];

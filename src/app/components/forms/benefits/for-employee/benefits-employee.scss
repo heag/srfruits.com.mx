@@ -1,22 +1,21 @@
-$strong-green: #03602a;
-$orange: #fc7a00;
-$opacity-min: .85;
-$white-text: white;
+@import "~src/sass/_colors.scss";
+
+.benefits-div {
+  padding-top: 50px;
+  width: 100% !important;
+}
 
 // BIG SCREEN
 @media(min-width: 846px){
   .main-card{
+    padding-right: 5%;
     margin-bottom: -16px;
     overflow: hidden;
     mat-card{
       border-radius: 50px;
       margin-top: 50px;
+      background-color: $verde;
     }
-  }
-
-  .benefits-div {
-    padding-top: 86px;
-    margin-left: -117px;
   }
 
   .image-container{
@@ -29,18 +28,18 @@ $white-text: white;
   }
 
   .content-info{
-    color: $white-text;
+    color: $grey-700;
     margin-left: 120px; //margin contenido
     text-align: justify;
     font-weight: 500;
     height: 135px;
-    padding-top: 15px;
+    padding-top: 32px;
     span{
-      font-size: 28px;
+      font-size: 22px;
     }
     p{
-      font-size: 16px;
-      opacity: $opacity-min;
+      font-size: 18px;      
+      opacity: .9;
     }
   }
 }
@@ -57,10 +56,6 @@ $white-text: white;
     }
   }
 
-  .benefits-div {
-    padding-top: 86px;
-  }
-
   .image-container{
     display: none;
   }
@@ -73,16 +68,16 @@ $white-text: white;
   }
 
   .content-info{
-    color: $white-text;
+    color: $white;
     padding-left: 10px;
     padding-top:5px;
     span{
       font-size: 20px;      
     }
     p{
-      opacity: $opacity-min;
+      opacity: .9;
       font-size: 16px;
-      color: white;
+      color: $white;
       font-weight: 500;
     }
   }
@@ -116,33 +111,32 @@ $white-text: white;
   span{
     font-weight: bold; 
   }
-  
+  text-align: justify;
 }
 
 .green{
   margin-top: 25px;
+  color: $naranja;
   .benefit-photo{
-    border: 4px solid $strong-green;
+    border: 4px solid $verde;
   }
   .benefit-info{
-    color: $strong-green;
+    color: $green-800;
   }
   mat-card{
-    border-left: 8px solid $strong-green;
-    background-color: rgba(3, 96, 42, 0.2);    
+    border: 2px solid $verde;  
   }  
 }
 
 .orange{
   margin-top: 25px;
   .benefit-photo{
-    border: 4px solid $orange;
+    border: 4px solid $naranja;
   }
   .benefit-info{
-    color: #962f03;
+    color: $green-800;
   }
   mat-card{
-    border-right: 8px solid $orange;
-    background-color: rgba(255, 98, 7, 0.1);
+    border: 2px solid $naranja;
   }
 }

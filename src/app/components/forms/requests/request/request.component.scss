@@ -1,8 +1,5 @@
-
+@import "~src/sass/_colors.scss";
 $opacity-min: .85;
-$strong-green: #03602a;
-$verde-ok:rgba(81, 158, 45, 1);
-$white-text: white;
 
 // BIG SCREEN
 @media(min-width: 600px){
@@ -13,6 +10,7 @@ $white-text: white;
     text-align: center;
     mat-card{
       border-radius: 50px;
+      background-color: $verde;
     }
   }
 
@@ -24,8 +22,8 @@ $white-text: white;
 
   .company-info {
     float: right;
-    border-left: 2px solid $verde-ok;
-    color: $verde-ok;
+    border-left: 2px solid $verde;
+    color: $verde;
     height: 160px;
     width: 50%;
 
@@ -49,18 +47,18 @@ $white-text: white;
     height: 130px;
     border-radius: 25px; //change
     background-size: auto;
-    border: 3px solid $verde-ok;
+    border: 3px solid $verde;
   }
 
   .slogan {
     padding-top: 8px;
     font-size: 18px;
     font-style: italic;
-    color: $verde-ok;
+    color: $verde;
   }
 
   .content-info{
-    color: $white-text;
+    color: $white;
     font-size: 16px;
     text-align: justify;
     span{
@@ -68,6 +66,7 @@ $white-text: white;
     }
     p{
       opacity: $opacity-min;
+      color: $grey-800;
     }
   }
 }
@@ -80,6 +79,7 @@ $white-text: white;
     overflow: hidden;
     mat-card{
       border-radius: 20px;
+      background-color: $verde;
     }
   }
 
@@ -89,7 +89,7 @@ $white-text: white;
 
   .company-info {
     float: right;
-    color: $verde-ok;
+    color: $verde;
     height: 160px;
     width: 100%;
     text-align: center;
@@ -102,7 +102,7 @@ $white-text: white;
       padding-left: 10px;
       padding-top: 10px;
       p {
-        color: $strong-green;
+        color: $green-700;
         opacity: .7;
         font-size: 15px;
         font-style: italic;
@@ -115,18 +115,18 @@ $white-text: white;
     height: 70px;
     border-radius: 15px; //change
     background-size: auto;
-    border: 2px solid $verde-ok;
+    border: 2px solid $verde;
   }
 
   .slogan {
     padding-top: 8px;
     font-size: 13px;
     font-style: italic;
-    color: $verde-ok;
+    color: $verde;
   }
 
   .content-info{
-    color: $white-text;
+    color: $white;
     padding-left: 10px;
     text-align: center;
     font-size: 13px;
@@ -136,6 +136,7 @@ $white-text: white;
     p{
       opacity: $opacity-min;
       text-align: justify;
+      color: $grey-800;
     }
   }
 }

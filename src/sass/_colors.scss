@@ -32,7 +32,6 @@ $green-light: $green-200;//#C0C9A7;
 
 $red-dark: #CC3333;
 $red-light: #ff5252;
-$orange: #FF9B52;
 $beige: #F4F5F6;
 $white: #FFFFFF;
 $black: #000000;
@@ -40,10 +39,23 @@ $black: #000000;
 
 // paleta
 
-$verde: rgb(121, 191, 40);
-$amarillo: rgb(255, 191, 0);
-$naranja: rgb(255, 142, 4);
+
+// VERSION 1
+// $verde: rgb(121, 191, 40);
+// $amarillo: rgb(255, 191, 0);
+// $naranja: rgb(255, 142, 4);
+// $rojo: rgb(244, 0, 0);
+// $gris: rgb(65, 68, 77);
+// $crema: rgb(245, 244, 226);
+// $azul: rgb(51, 122, 204);
+
+
+$verde: rgb(161, 206, 28);
+$amarillo: rgb(255, 206, 12);
+$naranja: rgb(255, 177, 0);
 $rojo: rgb(244, 0, 0);
 $gris: rgb(65, 68, 77);
 $crema: rgb(245, 244, 226);
 $azul: rgb(51, 122, 204);
+
+$amarillo-suave: rgb(255, 251, 48);

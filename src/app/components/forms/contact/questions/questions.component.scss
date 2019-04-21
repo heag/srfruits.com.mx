@@ -1,8 +1,13 @@
+@import "~src/sass/_colors.scss";
+
+
 $opacity-min: .9;
 
-#questions mat-expansion-panel{
-  border-left: 5px solid rgb(51, 122, 204);
-  margin: 10px;
+#questions {
+  mat-expansion-panel {
+    border-left: 5px solid $naranja;
+    margin: 10px;
+  }
 }
 
 #left{
@@ -30,6 +35,7 @@ $opacity-min: .9;
       overflow: hidden;    
       mat-card{
         border-radius: 50px;
+        background-color: $verde;
       }
     }
 
@@ -43,7 +49,7 @@ $opacity-min: .9;
     }
 
     .content-info{
-      color: whitesmoke;
+      color: $grey-800;
       font-size: 15px;
       margin-left: 235px;
       span{

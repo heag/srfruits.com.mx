@@ -1,4 +1,5 @@
-$back-color: #ffbf00;
+@import "~src/sass/_colors.scss";
+
 $back-color-faded: rgba(190, 217, 50, 1);
 $text-color: rgba(0,0,0,.5);
 $verde: rgb(121, 191, 40);
@@ -15,7 +16,7 @@ $fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navigation{
-  background-color: $back-color;
+  background-color: $amarillo;
   height: 96px;
   top: 0;
 }
@@ -52,7 +53,7 @@ $fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
   opacity: .9;
-  background-color: $back-color;
+  background-color: $amarillo;
 }
 
 .drop-background{
