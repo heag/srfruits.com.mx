@@ -1,156 +1,148 @@
-<div class="content">
+<div class="content fuente" fxLayout="row" fxLayoutAlign="center center">
 
-  <div class="main-card">
-    <mat-card>
-      <div class="content-info">
-        <span>Preguntas frecuentes</span>
-        <div class="answer">
-          Aqui se leen preguntas utiles, en caso de tener alguna otra pregunta
-          favor de contactarnos y con gusto le atenderemos
-        </div>
-      </div>
-    </mat-card>
-  </div>
-
-  <div class="questions-content">
-
-
-    <div id="right">
-      <mat-accordion id="questions">
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿De donde proviene la fruta?
-            </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <div class="answer">
-            Nuestra fruta tiene su origen en el campo mexicano.
-            Confiamos en la calidad del producto nacional, y así nos aseguramos de
-            garantizar su frescura, con precios competitivos y justos.
-          </div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿Como puedo ponerme en contacto?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">Puedes llamarnos al teléfono: 01 (33) 33 12 34 56.<br />
-            Si lo prefieres, puedes escribirnos al correo electrónico: srfruits@srfruits.com.mx.<br />
-            Además, estamos atentos a tus dudas y comentarios en nuestras redes sociales, en 
-            <a href="https://www.facebook.com/srfruitsmx" target="_blank">Facebook</a>,
-            <a href="https://twitter.com/srfruitsmx" target="_blank">Twitter</a> e 
-            <a href="http://www.instagram.com/srfruits_mx" target="_blank">Instagram</a>.</div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header class="panel-head">
-            <mat-panel-title class="tittle">
-              ¿Cómo puedo calcular la cantidad de porciones que requiere mi empresa?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">Es muy sencillo: usa nuestra <a routerLink="/calculo" routerLinkActive="active">Calculadora
-              de Cantidades</a></div>
-        </mat-expansion-panel>
-
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿Cuál es el límite de paquetes que puedo solicitar?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">Con gusto te podemos entregar desde un paquete, hasta la cantidad de fruta que necesites.</div>
-        </mat-expansion-panel>
-
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿Con qué frecuencia y en qué horario se entregan los pedidos?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">Las entregas se realizan los días lunes y/o miércoles
-            (dependiendo del número de entregas solicitadas), en un horario de 7:00 a 12:00 horas.</div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿En qué lugares realizan entregas?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">Nuestro servicio está disponible dentro de la Zona Metropolitana de
-            Guadalajara: Guadalajara, Zapopan, Tlaquepaque, Tlajomulco y Tonalá.</div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿Es posible cambiar la frecuencia o cantidad de mi pedido?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">¡Por supuesto! Conforme tu empresa crezca, nos dará mucho gusto
-            visitarte con más frecuencia para entregarte más fruta fresca para tu nuevo personal.
-            Si deseas una nueva cotización, por favor ponte en contacto con nosotros y te ayudaremos en
-            el proceso.</div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿Cuáles son las formas de pago?
-            </mat-panel-title>
-            <mat-panel-description>
-              {{panelOpenState ? '' : ''}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <div class="answer">Puedes realizar tus pagos mediante una transferencia electrónica
-            o un depósito bancario.</div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿Realizan facturas?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">Sí. Te enviaremos la factura a tu correo electrónico.
-            Además, tus compras son deducibles de impuestos.</div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿Cual es la duación del contrato?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">Confiamos en la calidad de nuestro servicio por lo tanto 
-            no manejamos contratos para nuestros clientes
-          </div>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title class="tittle">
-              ¿No encontraste la respuesta que necesitas?
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div class="answer">Ponte en <a routerLink="/contacto" routerLinkActive="active">contacto</a> con nosotros y
-            con gusto te
-            atenderemos rápidamente.</div>
-        </mat-expansion-panel>
-
-      </mat-accordion>
-
+  <div fxFlex="80" fxLayout="column" fxLayoutAlign="start">
+    <div class="titulo fuente">
+      Preguntas frecuentes
     </div>
 
+    <div>
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <div fxFlex="80">
+          <mat-accordion id="questions">
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿De donde proviene la fruta?
+                </mat-panel-title>
+                <mat-panel-description>
+                  {{panelOpenState ? '' : ''}}
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">
+                Nuestra fruta tiene su origen en el campo mexicano.
+                Confiamos en la calidad del producto nacional, y así nos aseguramos de
+                garantizar su frescura, con precios competitivos y justos.
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿Como puedo ponerme en contacto?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Puedes llamarnos al teléfono: 01 (33) 33 12 34 56.<br />
+                Si lo prefieres, puedes escribirnos al correo electrónico: srfruits@srfruits.com.mx.<br />
+                Además, estamos atentos a tus dudas y comentarios en nuestras redes sociales, en
+                <a href="https://www.facebook.com/srfruitsmx" target="_blank">Facebook</a>,
+                <a href="https://twitter.com/srfruitsmx" target="_blank">Twitter</a> e
+                <a href="http://www.instagram.com/srfruits_mx" target="_blank">Instagram</a>.</div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header class="panel-head">
+                <mat-panel-title class="pregunta">
+                  ¿Cómo puedo calcular la cantidad de porciones que requiere mi empresa?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Es muy sencillo: usa nuestra <a routerLink="/calculo" routerLinkActive="active">Calculadora
+                  de Cantidades</a></div>
+            </mat-expansion-panel>
+
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿Cuál es el límite de paquetes que puedo solicitar?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Con gusto te podemos entregar desde un paquete, hasta la cantidad de fruta que
+                necesites.</div>
+            </mat-expansion-panel>
+
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿Con qué frecuencia y en qué horario se entregan los pedidos?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Las entregas se realizan los días lunes y/o miércoles
+                (dependiendo del número de entregas solicitadas), en un horario de 7:00 a 12:00 horas.</div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿En qué lugares realizan entregas?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Nuestro servicio está disponible dentro de la Zona Metropolitana de
+                Guadalajara: Guadalajara, Zapopan, Tlaquepaque, Tlajomulco y Tonalá.</div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿Es posible cambiar la frecuencia o cantidad de mi pedido?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">¡Por supuesto! Conforme tu empresa crezca, nos dará mucho gusto
+                visitarte con más frecuencia para entregarte más fruta fresca para tu nuevo personal.
+                Si deseas una nueva cotización, por favor ponte en contacto con nosotros y te ayudaremos en
+                el proceso.</div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿Cuáles son las formas de pago?
+                </mat-panel-title>
+                <mat-panel-description>
+                  {{panelOpenState ? '' : ''}}
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Puedes realizar tus pagos mediante una transferencia electrónica
+                o un depósito bancario.</div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿Realizan facturas?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Sí. Te enviaremos la factura a tu correo electrónico.
+                Además, tus compras son deducibles de impuestos.</div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿Cual es la duación del contrato?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Confiamos en la calidad de nuestro servicio por lo tanto
+                no manejamos contratos para nuestros clientes
+              </div>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="pregunta">
+                  ¿No encontraste la respuesta que necesitas?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="answer fuente">Ponte en <a routerLink="/contacto" routerLinkActive="active">contacto</a> con
+                nosotros y
+                con gusto te
+                atenderemos rápidamente.</div>
+            </mat-expansion-panel>
+
+          </mat-accordion>
+        </div>
+      </div>
+    </div>
   </div>
-
-
 </div>

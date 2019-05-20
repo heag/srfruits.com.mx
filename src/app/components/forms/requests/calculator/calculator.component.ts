@@ -11,10 +11,9 @@ import { ContactComponent } from './../../contact/contact/contact.component'
 })
 export class CalculatorComponent implements OnInit {
 
-  deliveries = new FormControl("1", [Validators.maxLength(5), Validators.required])
-  employees = new FormControl("", [Validators.max(1000), Validators.min(20), Validators.required])
-
-  areFieldsValid: boolean = false;
+  deliveries: number;
+  employees: number;
+  areFieldsValid: boolean;
 
   constructor(private dialog: MatDialog) { }
 
@@ -22,17 +21,29 @@ export class CalculatorComponent implements OnInit {
   }
 
   public calculate() {
-    if (this.employees.valid && this.deliveries.valid) {
-      this.dialog.open(CalculatorResultComponent, {
-        data: {
-          employees: this.employees.value,
-          deliveries: this.deliveries.value
-        }
-      });
-    }
-    else {
-      alert("Verificar que los datos sean correctos \n Cantidad de colaboradores entre 20 y 1000");
-    }
+
+    alert('Implementar este calculo');
+
+    // if (this.employees.valid && this.deliveries.valid) {
+    //   this.dialog.open(CalculatorResultComponent, {
+    //     data: {
+    //       employees: this.employees.value,
+    //       deliveries: this.deliveries.value
+    //     }
+    //   });
+    // }
+    // else {
+    //   alert("Verificar que los datos sean correctos \n Cantidad de colaboradores entre 20 y 1000");
+    // }
   }
+
+  public setColaborators(value: any) {
+    this.employees = value;
+  }
+
+  public setDeliveries(value: any) {
+    this.deliveries = value;
+  }
+
 
 }

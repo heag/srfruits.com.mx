@@ -1,115 +1,28 @@
 @import "~src/sass/_colors.scss";
 
 
-$opacity-min: .9;
+.pregunta {
+  font-size: 20px;
+  color: $green-800;
+}
+
+.answer {
+  font-size: 16px;
+  color: $grey-700;
+}
 
 #questions {
   mat-expansion-panel {
-    border-left: 5px solid $naranja;
+    border-left: 5px solid $green-700;
     margin: 10px;
   }
 }
 
-#left{
-  float: left;
-  margin-left: 15px;
-}
-
-.panel-head {
-  min-height: 48px;
-}
-
-//BIG SCREEN
-@media(min-width: 600px){
-    #right{
-      margin: 0 2% 0 0;
-    }
-    .image-div{
-      float: left;
-      max-width: 32%;
-    }
-    .main-card{
-      padding-left: 5%;
-      padding-right: 5%;
-      min-height: 250px;
-      overflow: hidden;    
-      mat-card{
-        border-radius: 50px;
-        background-color: $verde;
-      }
-    }
-
-    .tittle {
-      font-size: 20px;
-      color: green;
-    }
-
-    .answer {
-      font-size: 16px;
-    }
-
-    .content-info{
-      color: $grey-800;
-      font-size: 15px;
-      margin-left: 235px;
-      span{
-        font-size: 30px;
-      }
-      p{
-        opacity: $opacity-min;
-      }
-      h6{
-        opacity: 1;
-      }
-    }
-}
-  
-// SMALL SCREEN
-@media(max-width: 600px){
-  .main-card{
-    padding-left: 3%;
-    padding-right: 3%;
-    overflow: hidden;
-    mat-card{
-      border-radius: 20px;
-    }
-  }
-  #right{
-    width: 100%
-  }
-
-  .tittle {
-    font-size: 18px;
-    color: green;
-  }
-
-  .answer {
-    font-size: 15px;
-  }
-
-  .image-div{
-    display: none;
-  }
-  
-  .content-info{
-    color: whitesmoke;
-    padding-left: 10px;
-    font-size: 13px;
-    span{
-      font-size: 20px;      
-    }
-    p{
-      opacity: $opacity-min;
-    }
-  }
-}
-
-.image{
-  min-width: 250px;   //cambiar
-  min-height: 180px;
-  max-height: 200px;
-  max-width: 220px;
-}
-
-.questions-content{
+.titulo {
+  background-color: $verde;
+  border-radius: 15px;
+  margin: 30px 0 35px 0;
+  font-size: 65px;
+  color: $green-900;
+  text-align: center;
 }

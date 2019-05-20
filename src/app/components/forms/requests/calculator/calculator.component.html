@@ -1,3 +1,39 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex="580px" class="calculador">
+    <div fxLayout="column" fxLayoutGap="15px">
+
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <div class="titulo fuente" fxLayoutAlign="center">
+          ¿Cuanta fruta necesita mi empresa?
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="center">
+        <div fxFlex="80" class="descripcion fuente">
+            La dosis recomendada segun la OMS es de 5 porciones al dia. Inserta la cantidad 
+            de colaboradores de tu empresa y la cantidad de entregas semanales y calcula 
+            cuanta fruta necesitas semanalmente
+        </div>
+      </div>
+
+      <div fxLayoutAlign="center">
+        Cantidad de colaboradores &nbsp;&nbsp; <input #employees (keyup)="setColaborators(employees.value)" type="number" min="35" max="2500" minlength="1" />
+      </div>
+
+      <div fxLayoutAlign="center">
+        Entregas semanales <span class="entregas"><input #deliveries (keyup)="setDeliveries(deliveries.value)" type="number" min="1" max="5" /></span>
+      </div>
+
+      <div fxLayoutAlign="center" class="btn-calcular">
+        <button (click)="calculate()">Calcular</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- 
 <div class="content">
   <div id="#left-panel" class="left-div">
 
@@ -48,4 +84,4 @@
       </mat-card-content>
     </mat-card>
   </div>
-</div>
+</div> -->

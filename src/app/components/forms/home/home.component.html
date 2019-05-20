@@ -5,33 +5,23 @@
     <div class="col-md-12">
       <ngb-carousel>
         <ng-template ngbSlide>
-          <img src='assets/carousel-1.jpg' style="width: 100%" alt="fruta 1">
-          <div class="carousel-caption">
-            <h3>Paquetes frescos</h3>
-            <p><a class="carrusel-link" routerLink="/oferta" routerLinkActive="active">Leer mas ...</a></p>
+          <img src='assets/carrusel-beneficios.jpg' routerLink="/beneficios-empresa" routerLinkActive="active" style="width: 100%" alt="fruta 1" class="imagen">
+          <div class="carousel-caption mensaje">
+            <span>Conoce los beneficios de Señor Fruits</span>
           </div>
         </ng-template>
         <ng-template ngbSlide>
-          <img src='assets/carousel-2.jpg' style="width: 100%" alt="fruta 2">
-          <div class="carousel-caption">
-            <h3>Titulo Sr Fruits Imagen 2</h3>
-            <p>Informacion imagen Sr Fruits 2, detalles</p>
+          <img src='assets/carrusel-seleccion.jpg' class="imagen" routerLink="/oferta" routerLinkActive="active" style="width: 100%" alt="fruta 3">
+          <div class="carousel-caption mensaje">
+            <span>Visita nuestro catálogo de productos.</span>
           </div>
-        </ng-template>
+        </ng-template>        
         <ng-template ngbSlide>
-          <img src='assets/carousel-1.jpg' style="width: 100%" alt="fruta 3">
-          <div class="carousel-caption">
-            <h3>Titulo Sr Fruits Imagen 3</h3>
-            <p>Informacion imagen Sr Fruits 3, detalles</p>
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src='assets/carousel-2.jpg' style="width: 100%" alt="fruta 4">
-          <div class="carousel-caption">
-            <h3>Titulo Sr Fruits Imagen 4</h3>
-            <p>Informacion imagen Sr Fruits 4, detalles cada imagen 5 segndos</p>
-          </div>
-        </ng-template>
+            <img src='assets/carrusel-pedido.jpg' routerLink="/pedido" routerLinkActive="active" style="width: 100%" alt="fruta 2" class="imagen">
+            <div class="carousel-caption mensaje">
+              <span>Realizar tu pedido.</span>
+            </div>
+          </ng-template>
       </ngb-carousel>
     </div>
   </div>
