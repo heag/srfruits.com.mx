@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material';
-import { Router, NavigationExtras } from '@angular/router'
+import { Router, NavigationExtras } from '@angular/router';
 import { FormControl, Validators } from '@angular/forms';
 
 export interface DialogData {
-  employees: any
-  deliveries: any
+  employees: number;
+  deliveries: number;
 }
 
 @Component({
@@ -20,26 +20,31 @@ export class CalculatorResultComponent implements OnInit {
   name = new FormControl('', [Validators.required]);
   telephone = new FormControl('', [Validators.required]);
 
-  employees: number
-  deliveries: number
-  boxes: number
-  peoplePerBox: number = 35;
+  employees: number;
+  deliveries: number;
+  boxes: number;
+  peoplePerBox = 14;
+
+  // 14 empleados/1 caja/1 entrega
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData,
-              private router: Router) { 
-    this.employees = parseInt(data.employees)
-    this.deliveries = parseInt(data.deliveries)
-    this.boxes = Math.round((this.employees * this.deliveries)/this.peoplePerBox)
+              private router: Router) {
+    this.employees = data.employees;
+    this.deliveries = data.deliveries;
+    this.boxes = Math.round((data.employees / this.peoplePerBox) * data.deliveries); // TODO
+    if (this.boxes === 0) {
+      this.boxes = 1;
+    }
   }
 
   ngOnInit() {
   }
 
-  redirectToRequest(){
-    let navigationParams: NavigationExtras = {
-      queryParams:{
-        "employees": this.employees,
-        "deliveries": this.deliveries
+  redirectToRequest() {
+    const navigationParams: NavigationExtras = {
+      queryParams: {
+        'employees': this.employees,
+        'deliveries': this.deliveries
       }
     };
 
