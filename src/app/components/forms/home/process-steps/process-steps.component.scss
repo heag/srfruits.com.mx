@@ -37,7 +37,7 @@ $naranja-strong: rgb(255, 116, 4);
 
 .card-text {
     padding-top: 15px;
-    font-size: 16px;
+    font-size: 15px;
     margin: 5px;
     font-weight: 500;
 }
@@ -68,7 +68,15 @@ $naranja-strong: rgb(255, 116, 4);
         .description {
             background-color: $naranja;
         }
-    }      
+    }
+
+    #calculate {
+        color: rgb(66, 164, 245);
+        border: 2px solid rgb(66, 164, 245);
+        .description {
+            background-color: rgb(66, 164, 245);
+        }
+    }
 }
 
 
