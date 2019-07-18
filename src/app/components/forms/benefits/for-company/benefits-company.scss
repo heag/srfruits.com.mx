@@ -24,6 +24,7 @@
 
   .benefit-info{
     margin-left: 140px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .content-info{
@@ -115,7 +116,6 @@
 
 .green{
   margin-top: 25px;
-  color: $naranja;
   .benefit-photo{
     border: 4px solid $verde;
   }
@@ -130,12 +130,12 @@
 .orange{
   margin-top: 25px;
   .benefit-photo{
-    border: 4px solid $naranja;
+    border: 4px solid $naranja-fuerte;
   }
   .benefit-info{
-    color: $green-800;
+    color: $naranja-fuerte;
   }
   mat-card{
-    border: 2px solid $naranja;
+    border: 2px solid $naranja-fuerte;
   }
 }
