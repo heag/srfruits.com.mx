@@ -1,25 +1,77 @@
-<div class="content">
+<div class="pago">
 
-  <div class="payment-info">
+  <div fxLayout="row" class="datos-banco" fxLayoutGap="8px" fxLayoutAlign="center center">
     <div>
-      <span class="tittle">¿Como realizar el pago?</span>
-      <p>
-        Para comodidad y seguridad de nuestros clientes, todos los pagos se
-        realizan mediante transferencias bancarias.<br>
-        Al final de cada mes le enviaremos el comprobante de pago con los
-        detalles de su pedido y la factura de su compra.
-      </p>
+      <img src="assets/payment.png">
+    </div>
+    <div fxFlex="500px">
+      <mat-card>
+        <div fxLayout="row" id="card">
+          <div fxFlex="30" fxLayoutAlign="start center">
+            <img id="logo" src="assets/logo.png">
+          </div>
+          <div fxLayout="column">
+            <div id="titulo">
+              Sr. Fruits
+            </div>
+            <div id="cuenta">
+              5555 5555 5555 5555
+            </div>
+            <div id="nombre">
+              Bancomer
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
 
-      <div class="payment-details">
-        <mat-card>
-          <div>
-              [Frutas Alvarez]<br>
-              Cuenta: 4545 1212 2323 5656<br>
-              Avenida Siempreviva 123, Zapopan, Jalisco, Mexico, 45050
-          </div>          
-        </mat-card>
+  <div fxLayout="column" class="detalles" fxLayoutGap="40px" fxLayoutAlign="start center">
+    <div fxLayout="row" fxLayoutAlign="start start">
+      <div fxFlex="700px">
+        <p id="texto">
+          Le enviaremos una factura a su correo en el último día laboral del mes
+          y podrá realizar el pago en los siguientes 14 días naturales de recibir su factura.
+        </p>
       </div>
-      
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="120px" fxLayoutAlign="start start">
+      <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="column" fxFlex="350px" fxLayoutAlign="start start">
+          <div id="metodo-pago">
+            Pago semanal
+          </div>
+          <div id="descripcion">
+            Las entregas individuales se cobran al momento de la entrega, 
+            se acepta tarjeta de crédito/débito o transferencia bancaria.
+          </div>
+          <div id="ventaja">
+            Mayor control de gasto
+          </div>
+        </div>
+        <div fxFlex="80px">
+          <mat-icon>calendar_today</mat-icon>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="start center">
+        <div fxLayout="column" fxFlex="350px" fxLayoutAlign="start start">
+          <div id="metodo-pago">
+            Pago mensual
+          </div>
+          <div id="descripcion">
+            Al tener entrgas de manera regular no se cobra nada al momento de la entrega, 
+            se reliza el pago mediante transferencia bancaria.
+          </div>
+          <div id="ventaja">
+            Mayor control con menos documentos
+          </div>
+        </div>
+        <div fxFlex="80px">
+          <mat-icon>forward_30</mat-icon>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -1,46 +1,68 @@
+@import "~src/sass/_colors.scss";
+
 $strong-green: #03602a;
 $verde-ok:rgba(81, 158, 45, 1);
 $white-text: white;
 
-// BIG SCREEN
-@media(min-width: 600px){
-.payment-info {
-  padding-left: 10%;
-  padding-right: 10%;
+.detalles {
+  background: $grey-100;
+  padding: 25px 25px 0 25px;
+  margin-top: 50px;
   text-align: center;
-    text-align: center;
-    .tittle{
-      color: $verde-ok;
-      opacity: .8;
-      font-size: 22px;
-    }
-    p {
-      font-size: 16px;
-      opacity: .8;
-    }
+  height: 300px;
+  mat-icon {
+    font-size: 85px;
+    color: $green-700;
+  }
+  #texto {   
+    font-size: 20px;
+    color: $green-800;
+    font-style: italic;
+  }
+  #metodo-pago {
+    color: $green-800;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #ventaja {
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 14px;
+    color: $green-900;
+  }
+  #descripcion {
+    font-size: 14px;
+    text-align: justify;
+    font-style: italic;
+  }
 }
 
-  .transfer-img {
-    img {
-      max-width: 100%;
-    }    
+.datos-banco {
+  padding-top: 50px;
+  mat-card {
+    border-radius: 20px;
+    height: 186px;
+    background: $grey-100;
   }
-
-  .payment-details {
-    mat-card {
-      width: 100%;
-      border-radius: 10px;
-      border-right: 4px solid $verde-ok;
-      border-left: 4px solid $verde-ok;
-      color: $strong-green;
-      opacity: .75;
-      height: 140px;
-    }
+  #titulo {
+    color: $green-800;
+    font-size: 25px;
   }
-
+  #cuenta {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #nombre {
+    font-size: 18px;
+  }
+  #logo {
+    height: 80px;
+  }
+  #card{
+    padding-top: 20px;
+  }
 }
 
-//SMALL SCREEN
-@media(max-width: 599px){
-
+.pago {
+  padding-top: 96px;
 }
