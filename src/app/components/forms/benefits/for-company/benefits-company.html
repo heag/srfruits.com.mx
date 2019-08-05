@@ -1,7 +1,106 @@
 <div class="benefits-div">
 
-  <!-- TOP -->
-  <div class="main-card">
+  <div fxLayout="column">
+
+    <!-- TOP -->
+    <div class="header" fxLayout="row" fxFlex fxLayoutAlign="center center">
+      <div class="imagen" fxFlex="25">
+        <img src='assets/empresa.png'>
+      </div>
+
+      <div fxFlex="52">
+        <div class="titulo" fxLayoutAlign="center center">
+          Beneficios para tu empresa
+        </div>
+      </div>
+    </div>
+
+    <!-- BENEFICIOS -->
+    <div class="benefits">
+
+      <div class="green">
+        <mat-card>
+          <div class="benefit-card">
+            <div class="benefit-photo" style="background-image: url('https://www.lumens.com/on/demandware.static/-/Sites/default/dw8d6c6ae6/images/overlay/keep-in-touch-pop-up.jpg')">
+            </div>
+
+            <div class="benefit-info">
+              <span>Una imagen moderna a la empresa</span>
+              <p>Las empresas están tratando de distinguirse en el mercado laboral
+                para que los mejores candidatos las encuentren. Lo hacen de diferentes
+                maneras. Creemos que crear un lugar de trabajo saludable y amigable y,
+                al mismo tiempo, cuidar la salud de los empleados es un elemento muy importante
+                que afecta la imagen del empleador.
+              </p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <div class="orange">
+        <mat-card>
+          <div class="benefit-card">
+            <div class="benefit-photo" style="background-image: url('assets/mayor-disposicion.jpg')">
+            </div>
+
+            <div class="benefit-info">
+              <span>Satisfacción y mayor disposición al trabajo.</span>
+              <p>Al preparar un bocadillo saludable, demuestra que la salud y
+                el bienestar de su equipo son importantes para usted y que desea cuidarlo con él.
+                Los empleados satisfechos están más dispuestos a realizar sus tareas, obtener una
+                mayor satisfacción en el trabajo y, por lo tanto, son más eficaces en la realización
+                de diversas tareas.
+              </p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <div class="green">
+        <mat-card>
+          <div class="benefit-card">
+            <div class="benefit-photo" style="background-image: url('assets/ambiente-amigable.jpg')">
+            </div>
+
+            <div class="benefit-info">
+              <span>Un ambiente de trabajo amigable y saludable.</span>
+              <p>
+                Una merienda saludable para los empleados es una muy buena distinción para el empleador
+                en el mercado laboral. Para las personas empleadas, es una razón para sentirse orgulloso
+                del lugar donde trabajan y de los talentos potenciales, un activo adicional que pone a su
+                empresa a la luz de un lugar de trabajo moderno, apreciando el capital de las personas que
+                trabajan en ella.
+              </p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <div class="orange">
+        <mat-card>
+          <div class="benefit-card">
+            <div class="benefit-photo" style="background-image: url('assets/menor-ausentismo.jpg')">
+            </div>
+
+            <div class="benefit-info">
+              <span>Menos ausentismo de los empleados</span>
+              <p>
+                La fruta para el trabajo es para muchas personas la única fuente de
+                vitaminas durante todo el día. Entregarlos a sus empleados y mejorar
+                su resistencia a muchas enfermedades. Cuide la salud de su equipo y
+                reduzca el ausentismo debido a resfriados / gripe y otras enfermedades en su empresa.
+              </p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- <div class="main-card">
     <mat-card>
       <div class="image-container" style="margin-top: -74px;">
         <img class="image" mat-card-image alt="employee" src='assets/beneficios-empresa.png'>
@@ -13,88 +112,7 @@
         </p>
       </div>
     </mat-card>
-  </div>
-
-  <!-- BENEFICIOS -->
-  <div class="benefits">
-
-    <div class="green">
-      <mat-card>
-        <div class="benefit-card">
-          <div class="benefit-photo" style="background-image: url('https://www.lumens.com/on/demandware.static/-/Sites/default/dw8d6c6ae6/images/overlay/keep-in-touch-pop-up.jpg')">
-          </div>
-
-          <div class="benefit-info">
-            <span>Una imagen moderna a la empresa</span>
-            <p>Las empresas están tratando de distinguirse en el mercado laboral
-              para que los mejores candidatos las encuentren. Lo hacen de diferentes
-              maneras. Creemos que crear un lugar de trabajo saludable y amigable y,
-              al mismo tiempo, cuidar la salud de los empleados es un elemento muy importante
-              que afecta la imagen del empleador.
-            </p>
-          </div>
-        </div>
-      </mat-card>
-    </div>
-
-    <div class="orange">
-      <mat-card>
-        <div class="benefit-card">
-          <div class="benefit-photo" style="background-image: url('assets/mayor-disposicion.jpg')">
-          </div>
-
-          <div class="benefit-info">
-            <span>Satisfacción y mayor disposición al trabajo.</span>
-            <p>Al preparar un bocadillo saludable, demuestra que la salud y
-              el bienestar de su equipo son importantes para usted y que desea cuidarlo con él.
-              Los empleados satisfechos están más dispuestos a realizar sus tareas, obtener una
-              mayor satisfacción en el trabajo y, por lo tanto, son más eficaces en la realización
-              de diversas tareas.
-            </p>
-          </div>
-        </div>
-      </mat-card>
-    </div>
-
-    <div class="green">
-      <mat-card>
-        <div class="benefit-card">
-          <div class="benefit-photo" style="background-image: url('assets/ambiente-amigable.jpg')">
-          </div>
-
-          <div class="benefit-info">
-            <span>Un ambiente de trabajo amigable y saludable.</span>
-            <p>
-              Una merienda saludable para los empleados es una muy buena distinción para el empleador
-              en el mercado laboral. Para las personas empleadas, es una razón para sentirse orgulloso
-              del lugar donde trabajan y de los talentos potenciales, un activo adicional que pone a su
-              empresa a la luz de un lugar de trabajo moderno, apreciando el capital de las personas que
-              trabajan en ella.
-            </p>
-          </div>
-        </div>
-      </mat-card>
-    </div>
-
-    <div class="orange">
-      <mat-card>
-        <div class="benefit-card">
-          <div class="benefit-photo" style="background-image: url('assets/menor-ausentismo.jpg')">
-          </div>
-
-          <div class="benefit-info">
-            <span>Menos ausentismo de los empleados</span>
-            <p>
-              La fruta para el trabajo es para muchas personas la única fuente de
-              vitaminas durante todo el día. Entregarlos a sus empleados y mejorar
-              su resistencia a muchas enfermedades. Cuide la salud de su equipo y
-              reduzca el ausentismo debido a resfriados / gripe y otras enfermedades en su empresa.
-            </p>
-          </div>
-        </div>
-      </mat-card>
-    </div>
-  </div>
+  </div> -->
 </div>
 
 <benefits-employee></benefits-employee>

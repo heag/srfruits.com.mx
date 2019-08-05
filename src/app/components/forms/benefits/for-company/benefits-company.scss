@@ -1,86 +1,25 @@
 @import "~src/sass/_colors.scss";
 
 .benefits-div {
-  padding-top: 86px;
+  padding-top: 96px;
 }
 
-// BIG SCREEN
-@media(min-width: 846px){
-  .main-card{
-    padding-right: 5%;
-    margin-bottom: -16px;
-    overflow: hidden;
-    mat-card{
-      border-radius: 50px;
-      margin-top: 50px;
-      background-color: $verde;
-    }
-  }
-
-  .image-container{
-    float: left;
-    padding: 10px 0 0 0px;
-  }
-
-  .benefit-info{
-    margin-left: 140px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .content-info{
-    color: $grey-700;
-    margin-left: 120px; //margin contenido
-    text-align: justify;
-    font-weight: 500;
-    height: 135px;
-    padding-top: 32px;
-    span{
-      font-size: 28px;
-    }
-    p{
-      font-size: 18px;      
-      opacity: .9;
-    }
+.imagen {
+  img {
+    height: 300px;
   }
 }
 
-//SMALL SCREEN
-@media(max-width: 845px){
-  .main-card{
-    padding-left: 3%;
-    padding-top: 50px;
-    padding-right: 3%;
-    overflow: hidden;
-    mat-card{
-      border-radius: 20px;
-    }
-  }
+.header {
+  background-color: $green-600;
+}
 
-  .image-container{
-    display: none;
-  }
-
-  .benefit-photo{
-    display: none;
-  }
-  .benefit-info{
-    margin-left: 10px;
-  }
-
-  .content-info{
-    color: $white;
-    padding-left: 10px;
-    padding-top:5px;
-    span{
-      font-size: 20px;      
-    }
-    p{
-      opacity: .9;
-      font-size: 16px;
-      color: $white;
-      font-weight: 500;
-    }
-  }
+.titulo{
+  background-color: $azul;
+  border-radius: 25px;
+  color: white;
+  height: 100px;
+  font-size: 40px;
 }
 
 .benefits{
