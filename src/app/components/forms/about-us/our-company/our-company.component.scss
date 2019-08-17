@@ -1,50 +1,26 @@
 @import "~src/sass/_colors.scss";
-$opacity-min: .9;
 
-// BIG SCREEN
-@media(min-width: 820px){
-  .main-card{
-    padding-right: 15%;
-    padding-top: 87px;
-    overflow: hidden;
-    padding-bottom: 25px;   
-    mat-card{
-      border-radius: 50px;
-      max-height: 300px;
-    }
+.main {
+  padding-top: 60px;
+}
+
+.encabezado {
+  height: 250px;
+}
+
+.imagen {
+  img {
+    height: 180px;
   }
+}
 
-  .image-div{
-    float: left;
-    padding: 0px 35px 0 0px; //padding de imagen con info
-    margin-left: -25px;
-  }
-
-  .image-content{
-    margin-top: -111px;
-    min-width: 270px;
-  }
-
-  .content-info{
-    color: $green-900;
-    text-align: justify;
-    font-size: 17px;
-    font-weight: 500;
-    p{
-      opacity: $opacity-min;
-    }
-    h6{
-      opacity: 1;
-    }
-
-    .tittle{
-      font-size: 30px;
-    }
-  }
-
-  .header {
-    margin-bottom: -25px;
-  }
+.titulo{
+  background-color: $naranja;
+  border-radius: 35px;
+  color: $grey-600;
+  height: 150px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .bar-header {
@@ -62,38 +38,3 @@ $opacity-min: .9;
 .content-card {
   background-color: $verde;
 }
-
-//SMALL SCREEN
-@media(max-width: 819px){
-  .main-card{
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 15px;
-    overflow: hidden;
-    padding-bottom: 25px;
-    mat-card{
-      border-radius: 20px;
-    }
-  }
-
-  .image-div{
-    display: none;
-  }
-
-  .content-info{
-    color: $grey-700;
-    padding-left: 10px;
-    font-size: 13px;
-    text-align: justify;
-    span{
-      font-size: 20px;      
-    }
-    p{
-      opacity: $opacity-min;
-    }
-  }
-
-  .header {
-    padding-top: 120px;
-  }
-} 
