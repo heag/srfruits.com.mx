@@ -6,6 +6,7 @@
 
 .encabezado {
   height: 250px;
+  margin: 15px 0 10px 0;
 }
 
 .imagen {
@@ -18,8 +19,9 @@
   background-color: $naranja;
   border-radius: 35px;
   color: $grey-600;
-  height: 150px;
-  font-weight: bold;
+  height: 100px;
+  font-weight: 500;
+  font-size: 20px;
   font-style: italic;
 }
 

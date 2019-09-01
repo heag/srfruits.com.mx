@@ -23,7 +23,7 @@ export class CalculatorResultComponent implements OnInit {
   employees: number;
   deliveries: number;
   boxes: number;
-  peoplePerBox = 14;
+  peoplePerBox = 35;
 
   // 14 empleados/1 caja/1 entrega
 

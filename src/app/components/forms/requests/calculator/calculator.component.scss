@@ -18,18 +18,20 @@
 }
 
 .calculador {
-  background-color: $verde;
+  background-color: $naranja;
   border-radius: 15px;
 }
 
 .btn-calcular {
   padding-bottom: 20px;
   button {
-    background-color: $naranja;
+    background-color: $green-700;
     border: none;
     border-radius: 5px;
-    color: $grey-800;
+    color: $white;
     width: 120px;
+    height: 45px;
+    font-size: 20px;
     margin: 6px;
   }
 }

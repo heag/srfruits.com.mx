@@ -14,19 +14,21 @@
         float: left;
         width: 65%;
         padding-top: 20px;
-        color: $grey-700;
         span{
             opacity: .9;
             font-size: 25px;
+            color: $grey-50;
         }
         p{
             font-size: 17px;
             font-style: italic;
             font-weight: 500;
+            color: $grey-50;
         }
         button{
-            background-color: #ffce0c;
+            background-color: $naranja;
             border-radius: 15px;
+            color: $grey-800;
         }
     }
     
@@ -63,7 +65,7 @@
 
 .main{
     overflow: hidden;
-    background-color: $verde;
+    background-color: $green-600;
     height: 160px;
     margin-bottom: 30px;
     margin-top: 65px;
