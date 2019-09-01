@@ -1,43 +1,71 @@
 <div class="content">
-  <div class="main-card">
-    <mat-card>
-      <div class="content-info">
-        <p>
-          La cantidad de fruta necesaria para su empresa depende de distintos factores como cantidad de empleados,
-          numero de oficinas, pisos o cocinas de su empresa, frecuencias de entrega, etc. Es por eso que
-          para proveer un mejor servicio y buscando su completa satisfacción usted puede contactarnos
-          mediante nuestro número telefónico o email y nos comunicamos con usted en un periodo menor a 1 hora
-          donde le brindaremos toda la información necesaria.
-        </p>
-      </div>
-    </mat-card>
-  </div>
+  <div fxFlex fxLayout="column">
 
-  <!-- CONTANCT CARD -->
-  <div class="contact">
-    <!-- logo -->
-    <div class="logo">
-      <div class="visual">
+    <div fxFlex id="result" fxLayout="row" *ngIf="employees && deliveries" fxLayoutAlign="center center">
+      <div fxLayout="column" fxFlex="600px">
+
+        <div fxLayout="row" fxFlex="75px">
+          <div fxFlex="100" fxLayoutAlign="center center" class="titulo-img">
+            Tu pedido
+          </div>
+        </div>
+
+        <div fxLayout="row" fxFlex="150px" class="resumen">
+          <div fxLayout="column" class="datos borde" fxLayoutAlign="start center" fxFlex="33">
+            <div>
+              <mat-icon class="icono">face</mat-icon>
+            </div>
+            <div>Colaboradores: <b>{{employees}}</b></div>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="start center" fxFlex="34" class="datos borde">
+            <div>
+              <mat-icon class="icono">local_shipping</mat-icon>
+            </div>
+            <div>Entregas: <b>{{deliveries}}</b></div>
+          </div>
+
+          <div fxLayout="column" class="datos" fxLayoutAlign="start center" fxFlex="33">
+            <div>
+              <mat-icon class="icono">inbox</mat-icon>
+            </div>
+            <div matTooltip="El promedio de rendimiento por caja es de 35 personas">Cajas por entrega: <b>{{boxes}}</b></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center center" class="seccion">
+      <div fxFlex="1000px" fxLayoutAlign="center center" id="instrucciones">
+        Contactate con nosotros para poder realizar tu pedido y no tengas que esperar, te atenderemos de inmediato
+      </div>
+    </div>
+
+    <!-- CONTANCT CARD -->
+    <div fxLayout="row" fxLayoutAlign="center center" class="seccion">
+      <div fxLayout="row" fxFlex="750px" id="tarjeta">
+        <div fxFlex="30" fxLayout="column" class="izquierda" fxLayoutAlign="center center">
           <div>
-              <img class="image"  src="assets/logo.png" alt="calidad">
+            <img class="image" src="assets/logo.png" alt="calidad">
           </div>
-          <div class="slogan">
-            Salud en la oficina.
+          <div id="slogan">"Provechito colega"</div>
+        </div>
+        <div fxFlex="70" fxLayout="column" fxLayoutAlign="center start" class="derecha">
+          <div>
+            <mat-icon>phone</mat-icon><span> 336 059 8886</span>
           </div>
+          <div>
+            <mat-icon>mail</mat-icon><span> srfruits@srfruits.com.mx</span>
+          </div>
+          <div>
+            <br>
+            <p>Avenida Siempreviva 742,<br>Zapopan, Jalisco México.</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- company info -->
-    <div class="company-info">
-      <div id="contact-details">
-        <mat-icon>phone</mat-icon><span>   336 059 8886</span><br>
-        <mat-icon>mail</mat-icon><span>   srfruits@srfruits.com.mx</span><br>
-        <p>
-            Avenida Siempreviva 742,<br>
-            Zapopan, Jalisco México.
-        </p>
-      </div>
-    </div>
   </div>
 
 </div>

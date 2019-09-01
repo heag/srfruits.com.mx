@@ -15,7 +15,7 @@ $verde: rgb(121, 191, 40);
 }
 
 .navigation{
-  background-color: $amarillo;
+  background-color: $naranja;
   height: 96px;
   top: 0;
 }
@@ -48,10 +48,11 @@ $verde: rgb(121, 191, 40);
 }
 
 .link-item > *{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
-  opacity: .9;
-  background-color: $amarillo;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 21px;
+  color: $green-800;
+  background-color: $naranja;
+  font-weight: 500;
 }
 
 .drop-background{

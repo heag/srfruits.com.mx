@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import "~src/sass/_colors.scss";
 
 $back-color: #ffbf00;
 $text-color: rgba(0,0,0,.5);
 
 .footer-distributed{
-	background-color: $back-color;
+	background-color: $naranja;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;

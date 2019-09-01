@@ -22,7 +22,7 @@
         <div fxLayoutAlign="center">
           <mat-form-field>
             <input matInput #employees type="number" value="1" max="1500" placeholder="Empleados"
-              (keyup)="setColaborators(employees.value)">
+            (input)="setColaborators(employees.value)">
             <mat-hint align="start"><strong>De 1 a 1500</strong></mat-hint>
           </mat-form-field>
         </div>

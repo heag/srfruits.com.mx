@@ -57,7 +57,13 @@ $verde-ok:rgba(81, 158, 45, 1);
 .green-btn{
     background-color: $verde;
     margin-top: $space-m;
-    color: whitesmoke !important;
+    color: whitesmoke;
+}
+
+.cancel-btn {
+    background-color: lightgray;
+    margin-top: $space-m;
+    color: grey;
 }
 
 .green-color{

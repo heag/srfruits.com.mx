@@ -1,3 +1,6 @@
+@import "~src/sass/_colors.scss";
+@import "~src/sass/_dimensions.scss";
+
 #right-btn{
     float: right;
 }
@@ -8,6 +11,16 @@
 
 .boxes{
     padding-left: 28px;
+}
+
+.green-btn{
+    background-color: $green-600;
+    color: $grey-50;
+}
+
+.cancel-btn {
+    background-color: $grey-400;
+    color: $grey-50;
 }
 
 #info{

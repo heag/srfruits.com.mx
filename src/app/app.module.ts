@@ -19,7 +19,7 @@ import {
   MatToolbarModule, MatSelectModule, MatInputModule, MatIconModule, MatFormFieldModule,
   MatCardModule, MatButtonModule, MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule,
   MatButtonToggleModule, MatProgressBarModule, MatSlideToggleModule, MatCheckboxModule, MatDialogModule,
-  MatTreeModule, MatExpansionModule, MatGridListModule
+  MatTreeModule, MatExpansionModule, MatGridListModule, MatTooltipModule
 } from '@angular/material';
 
 import { SocialNetworkComponent } from './components/shell/components/social-network/social-network.component';
@@ -44,7 +44,7 @@ import { TittleHeaderComponent } from './components/shell/components/tittle-head
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
-  MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule,
+  MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule, MatTooltipModule,
   MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule, MatButtonToggleModule, MatProgressBarModule,
   MatInputModule, MatCheckboxModule, MatDialogModule, MatTreeModule, MatExpansionModule, MatGridListModule, FlexLayoutModule];
 

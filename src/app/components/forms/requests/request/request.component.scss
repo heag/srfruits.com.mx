@@ -1,153 +1,80 @@
 @import "~src/sass/_colors.scss";
 $opacity-min: .85;
+$radio: 20px;
 
-// BIG SCREEN
-@media(min-width: 600px){
-  .main-card{
-    padding-left: 5%;
-    padding-right: 5%;
-    overflow: hidden;
-    text-align: center;
-    mat-card{
-      border-radius: 50px;
-      background-color: $verde;
-    }
+#tarjeta {
+  border-radius: 25px;
+  background-color: $naranja;
+  .izquierda {
+    margin: 60px;
+    border-right: 2px solid $green-900;
   }
-
-  .logo {
-    text-align: center;
-    float: left;
-    width: 50%;
+  .derecha{
+    color: $green-900;
+    font-size: 20px;
   }
-
-  .company-info {
-    float: right;
-    border-left: 2px solid $verde;
-    color: $verde;
-    height: 160px;
-    width: 50%;
-
-    .mat-icon {
-      font-size: 22px;
-    }
-
-    #contact-details {
-      font-size: 20px;
-      padding-left: 50px;
-      padding-top: 30px;
-      p {
-        font-size: 14px;
-        font-style: italic;
-        padding-top: 5px;
-      }
-    }
-  }
-
-  .image {
-    height: 130px;
-    border-radius: 25px; //change
-    background-size: auto;
-    border: 3px solid $verde;
-  }
-
-  .slogan {
-    padding-top: 8px;
-    font-size: 18px;
+  #slogan{
+    color: $green-900;
     font-style: italic;
-    color: $verde;
-  }
-
-  .content-info{
-    color: $white;
-    font-size: 16px;
-    text-align: justify;
-    span{
-      font-size: 20px;
-    }
-    p{
-      opacity: $opacity-min;
-      color: $grey-800;
-    }
   }
 }
 
-//SMALL SCREEN
-@media(max-width: 600px){
-  .main-card{
-    padding-left: 3%;
-    padding-right: 3%;
-    overflow: hidden;
-    mat-card{
-      border-radius: 20px;
-      background-color: $verde;
-    }
-  }
-
-  .logo {
-    display: none
-  }
-
-  .company-info {
-    float: right;
-    color: $verde;
-    height: 160px;
-    width: 100%;
-    text-align: center;
-    .mat-icon {
-      font-size: 17px;
-    }
-
-    #contact-details {
-      font-size: 16px;
-      padding-left: 10px;
-      padding-top: 10px;
-      p {
-        color: $green-700;
-        opacity: .7;
-        font-size: 15px;
-        font-style: italic;
-        padding-top: 2px;
-      }
-    }
-  }
-
-  .image {
-    height: 70px;
-    border-radius: 15px; //change
-    background-size: auto;
-    border: 2px solid $verde;
-  }
-
-  .slogan {
-    padding-top: 8px;
-    font-size: 13px;
-    font-style: italic;
-    color: $verde;
-  }
-
-  .content-info{
-    color: $white;
-    padding-left: 10px;
-    text-align: center;
-    font-size: 13px;
-    span{
-      font-size: 20px;      
-    }
-    p{
-      opacity: $opacity-min;
-      text-align: justify;
-      color: $grey-800;
-    }
+.titulo-img {
+  border-right: solid 2px $green-800;
+  border-top: solid 2px $green-800;
+  border-left: solid 2px $green-800;
+  background-color: $naranja;
+  color: $green-900;
+  font-size: 25px;
+  border-top-left-radius: $radio;
+  border-top-right-radius: $radio;
+  mat-icon{
+    font-size: 40px;
   }
 }
 
-.contact {
-  padding-top: 45px;
-  padding-left: 10%;
-  padding-right: 10%;
+.resumen {
+  border: solid 2px $green-800;
+  border-bottom-left-radius: $radio;
+  border-bottom-right-radius: $radio;
 }
 
-.visual {
-  float: right;
-  padding-right: 60px;
+.datos {
+  color: $green-800;
+  font-size: 16px;
+  .icono{
+    font-size: 45px;
+    padding-top: 25px;
+    color: $green-800;
+  }
+}
+
+.borde {
+  border-right: solid 2px $green-800;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+.info {
+  font-size: 15px;
+}
+
+#instrucciones {
+  height: 80px;
+  font-size: 18px;
+  background-color: $green-700;
+  color: $grey-50;
+  font-style: italic;
+  border-radius: $radio;
+}
+
+
+.image {
+  height: 150px;
+}
+
+.seccion {
+  margin-top: 60px;
 }

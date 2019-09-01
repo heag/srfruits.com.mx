@@ -32,12 +32,10 @@ export class CalculatorComponent {
 
   public setColaborators(value: any) {
     this.employees = value;
-    console.log('Empleados', this.employees);
   }
 
   public setDeliveries(value: any) {
     this.deliveries = value;
-    console.log('Veces por semama', this.deliveries);
   }
 
 

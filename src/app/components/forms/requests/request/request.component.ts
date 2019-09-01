@@ -11,6 +11,8 @@ export class RequestComponent implements OnInit {
 
   public employees: number;
   public deliveries: number;
+  boxes: number;
+  peoplePerBox = 35;
 
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {
@@ -21,6 +23,10 @@ export class RequestComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.boxes = Math.round((this.employees / this.peoplePerBox) * this.deliveries);
+    if (!this.boxes && this.boxes === 0) {
+      this.boxes = 1;
+    }
   }
 
 }
