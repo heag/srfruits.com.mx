@@ -1,12 +1,29 @@
 <div class="content">
   <div fxFlex fxLayout="column">
 
+    <div fxFlex fxLayout="row" *ngIf="!employees && !deliveries" fxLayoutAlign="center center">
+      <div fxFlex="550px" id="sugerencia">
+        <div fxFlex="14" fxLayoutAlign="center center">
+          <mat-icon>add_circle_outlet</mat-icon>
+        </div>
+        <div fxFlex="61" fxLayoutAlign="start center">
+          Utiliza nuestra calculadora para saber cuanta fruta necesitas en tu empresa
+        </div>
+        <div fxFlex="25" fxLayoutAlign="center center">
+          <button routerLink="/calculo" routerLinkActive="active">Calcular</button>
+        </div>
+      </div>
+    </div>
+
     <div fxFlex id="result" fxLayout="row" *ngIf="employees && deliveries" fxLayoutAlign="center center">
       <div fxLayout="column" fxFlex="600px">
 
-        <div fxLayout="row" fxFlex="75px">
-          <div fxFlex="100" fxLayoutAlign="center center" class="titulo-img">
+        <div fxLayout="row" fxFlex="75px" class="titulo-img">
+          <div fxFlex="50" fxLayoutAlign="end center">
             Tu pedido
+          </div>
+          <div fxFlex="50" fxLayoutAlign="center center">
+            <button mat-button (click)="showProducts()">Ver productos</button>
           </div>
         </div>
 
@@ -49,7 +66,7 @@
           <div>
             <img class="image" src="assets/logo.png" alt="calidad">
           </div>
-          <div id="slogan">"Provechito colega"</div>
+          <div id="slogan">"Por un trabajo fructífero"</div>
         </div>
         <div fxFlex="70" fxLayout="column" fxLayoutAlign="center start" class="derecha">
           <div>

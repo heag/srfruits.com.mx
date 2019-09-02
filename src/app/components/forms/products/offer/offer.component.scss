@@ -23,12 +23,10 @@
      padding: 0.25rem;
      span{
        font-size: 22px;
-       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       color: rgb(0, 71, 0);
+       color: $green-900;
      }
      p{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: rgba(0, 71, 0, .9);
+      color: $green-900;
      }
  }
  .btn-link{

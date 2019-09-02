@@ -19,6 +19,26 @@ $radio: 20px;
   }
 }
 
+#sugerencia {
+  background-color: $melon;
+  color: $grey-50;
+  font-size: 18px;
+  border-radius: 15px;
+  height: 100px;
+  mat-icon {
+    font-size: 35px;
+  }
+  button {
+    border-radius: 4px;
+    background-color: $grey-50;
+    color: $melon;
+    border: none;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+  }
+}
+
 .titulo-img {
   border-right: solid 2px $green-800;
   border-top: solid 2px $green-800;
@@ -30,6 +50,11 @@ $radio: 20px;
   border-top-right-radius: $radio;
   mat-icon{
     font-size: 40px;
+  }
+  button {
+    background-color: $green-700;
+    border-radius: 15px;
+    color: $grey-50;
   }
 }
 
@@ -64,9 +89,8 @@ $radio: 20px;
 #instrucciones {
   height: 80px;
   font-size: 18px;
-  background-color: $green-700;
-  color: $grey-50;
-  font-style: italic;
+  background-color: $amarillo;
+  color: $green-900;
   border-radius: $radio;
 }
 
@@ -76,5 +100,5 @@ $radio: 20px;
 }
 
 .seccion {
-  margin-top: 60px;
+  margin-top: 30px;
 }

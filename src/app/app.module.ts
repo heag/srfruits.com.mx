@@ -21,7 +21,6 @@ import {
   MatButtonToggleModule, MatProgressBarModule, MatSlideToggleModule, MatCheckboxModule, MatDialogModule,
   MatTreeModule, MatExpansionModule, MatGridListModule, MatTooltipModule
 } from '@angular/material';
-
 import { SocialNetworkComponent } from './components/shell/components/social-network/social-network.component';
 import { ContactComponent } from './components/forms/contact/contact/contact.component';
 import { OfferComponent } from './components/forms/products/offer/offer.component';
@@ -42,6 +41,7 @@ import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/ex
 import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
 import { TittleHeaderComponent } from './components/shell/components/tittle-header/tittle-header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ProductsComponent } from './components/forms/products/products.component';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule, MatTooltipModule,
@@ -53,7 +53,7 @@ const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientMo
 const appComponents = [AppComponent, AppShellComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
-  ProcessStepsComponent, ExtraAddInfoComponent, OurCompanyComponent, TittleHeaderComponent];
+  ProcessStepsComponent, ExtraAddInfoComponent, OurCompanyComponent, TittleHeaderComponent, ProductsComponent];
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -67,7 +67,7 @@ const routes: Routes = [
   { path: 'logros', component: AchievementsComponent },
   { path: 'beneficios-empleado', component: BenefitsEmployeeComponent },
   { path: 'beneficios-empresa', component: BenefitsCompanyComponent },
-  { path: 'oferta', component: OfferComponent },
+  { path: 'oferta', component: ProductsComponent },
   { path: 'pedido', component: RequestComponent },
   { path: 'calculo', component: CalculatorComponent },
   { path: 'pago', component: PaymentComponent },
@@ -95,6 +95,7 @@ const routes: Routes = [
   ],
   exports: [
   ],
+  entryComponents: [OfferComponent],
   providers: [
     {
       provide: EmailRestService,
