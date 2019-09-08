@@ -1,16 +1,14 @@
-<div>
-  <mat-card class="background green-color">
-    <h5 class="send-title"><b>Calculo de fruta necesaria:</b></h5>
+<div class="result">
+  <mat-card class="send-title">
+    <h5><b>Cálculo de fruta necesaria:</b></h5>
     <mat-card-content>
-      <p #info>Una caja puede proveer a <b>{{peoplePerBox}}</b> colaboradores <br>durante un periodo de <strong>3 dias</strong> aproximadamente</p>
+      <p #info>Una caja puede proveer a <b>{{peoplePerBox}}</b> personas <br>durante un periodo de <strong>3 dias</strong> aproximadamente</p>
       <br>
       <p>
-        <mat-icon>group</mat-icon><b> Colaboradores:</b> <b> {{employees}}</b>&nbsp;
+        <mat-icon>group</mat-icon><b> Personas:</b> <b> {{employees}}</b>&nbsp;
         &nbsp;<mat-icon>local_shipping</mat-icon><b> Entregas semanales: {{deliveries}}</b>
       </p>
       <p>
-        <!-- <mat-icon>shopping_basket</mat-icon><b> Porciones: {{employees * deliveries}}</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
         <mat-icon>inbox</mat-icon><b> Cajas por entrega:  {{boxes}}</b> 
       </p>
     </mat-card-content>
@@ -18,13 +16,13 @@
 </div>
 
 <div class="top-s" id="buttons">
-  <div id="left-btn">
-    <button mat-button color="" [mat-dialog-close]="true" class="cancel-btn">
+  <div id="close-btn">
+    <button mat-button color="" [mat-dialog-close]="true">
       <span class="text">Cerrar</span>
     </button>
   </div>
 
-  <div id="right-btn">
+  <div id="redirect-btn">
     <button mat-button color="primary" (click)="redirectToRequest()" [mat-dialog-close]="true" class="green-btn">
       <span class="text">Realizar pedido</span>
     </button>

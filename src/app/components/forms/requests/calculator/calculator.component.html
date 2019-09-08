@@ -19,26 +19,36 @@
           </div>
         </div>
 
-        <div fxLayoutAlign="center">
-          <mat-form-field>
-            <input matInput #employees type="number" value="1" max="1500" placeholder="Empleados"
-            (input)="setColaborators(employees.value)">
-            <mat-hint align="start"><strong>De 1 a 1500</strong></mat-hint>
-          </mat-form-field>
-        </div>
+        <div [formGroup]="calculatorForm">
+          <div fxLayoutAlign="center" class="field">
+            <mat-form-field>
+              <input formControlName="employeesControl" matInput #employees type="number" placeholder="Personas">
+              <mat-hint align="start"><strong>De {{minEmployees}} a {{maxEmployees}}</strong></mat-hint>
+              <mat-error *ngIf="employeesControl.hasError('required')">
+                Ingresar número de personas
+              </mat-error>
+              <mat-error *ngIf="employeesControl.hasError('min') || employeesControl.hasError('max')">
+                Cantidad entre {{minEmployees}} a {{maxEmployees}}
+              </mat-error>
+            </mat-form-field>
+          </div>
 
-        <div fxLayoutAlign="center">
-          <mat-form-field>
-            <mat-label>Entregas semanales</mat-label>
-            <mat-select #deliveries value="1" (selectionChange)="setDeliveries(deliveries.value)">
-              <mat-option value="1">1 vez</mat-option>
-              <mat-option value="2">2 veces</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
+          <div fxLayoutAlign="center" class="field">
+            <mat-form-field>
+              <mat-label>Entregas semanales</mat-label>
+              <mat-select formControlName="deliveriesControl" #deliveries value="1">
+                <mat-option value="1">1 vez</mat-option>
+                <mat-option value="2">2 veces</mat-option>
+              </mat-select>
+              <mat-error *ngIf="deliveriesControl.hasError('required')">
+                Selecciona un valor
+              </mat-error>
+            </mat-form-field>
+          </div>
 
-        <div fxLayoutAlign="center" class="btn-calcular">
-          <button (click)="calculate()">Calcular</button>
+          <div fxLayoutAlign="center" class="btn-calcular">
+            <button [disabled]="calculatorForm.invalid" (click)="calculate()">Calcular</button>
+          </div>
         </div>
 
       </div>

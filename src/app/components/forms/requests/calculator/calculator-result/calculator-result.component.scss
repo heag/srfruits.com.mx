@@ -1,26 +1,27 @@
 @import "~src/sass/_colors.scss";
 @import "~src/sass/_dimensions.scss";
 
-#right-btn{
+
+#redirect-btn{
     float: right;
+    button {
+        border-radius: 4px;
+        background-color: $green-600;
+        color: $grey-50;
+    }
 }
 
-#left-btn{
+#close-btn{
     float: left;
+    button{
+        border-radius: 4px;
+        background-color: $grey-500;
+        color: $grey-50;
+    }
 }
 
 .boxes{
     padding-left: 28px;
-}
-
-.green-btn{
-    background-color: $green-600;
-    color: $grey-50;
-}
-
-.cancel-btn {
-    background-color: $grey-400;
-    color: $grey-50;
 }
 
 #info{
@@ -36,5 +37,13 @@
 }
 
 .send-title{
-    color: green;
+    color: $grey-700;
+    background-color: $amarillo;
+    border-radius: 8px;
 }
+
+.result {
+    border-radius: 15px;
+}
+
+button:focus {outline:0;}

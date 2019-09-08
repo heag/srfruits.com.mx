@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CalculatorResultComponent } from './../calculator/calculator-result/calculator-result.component';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-calculator',
@@ -9,34 +10,36 @@ import { CalculatorResultComponent } from './../calculator/calculator-result/cal
 })
 export class CalculatorComponent {
 
-  deliveries = 1;
-  employees = 1;
-  areFieldsValid: boolean;
+  minEmployees = 5;
+  maxEmployees = 2000;
+
+  calculatorForm: FormGroup = new FormGroup({
+    employeesControl: new FormControl(null,
+                        [Validators.min(this.minEmployees),
+                        Validators.max(this.maxEmployees),
+                        Validators.required]),
+     deliveriesControl:
+      new FormControl('1', [Validators.required,
+                          Validators.min(1),
+                          Validators.max(5)])
+  });
+
+  get employeesControl(): FormControl {
+    return this.calculatorForm.get('employeesControl') as FormControl;
+  }
+
+  get deliveriesControl(): FormControl {
+    return this.calculatorForm.get('deliveriesControl') as FormControl;
+  }
 
   constructor(private dialog: MatDialog) { }
 
   public calculate() {
-
-    if (this.employees > 0 && this.employees < 1501) {
-        this.dialog.open(CalculatorResultComponent, {
-          data: {
-            employees: this.employees,
-            deliveries: this.deliveries
-          }
-        });
-
-    } else {
-      alert('Cantidad de empleados permitidos: entre 1 y 1500');
-    }
+    this.dialog.open(CalculatorResultComponent, {
+      data: {
+        employees: this.employeesControl.value,
+        deliveries: this.deliveriesControl.value
+      }
+    });
   }
-
-  public setColaborators(value: any) {
-    this.employees = value;
-  }
-
-  public setDeliveries(value: any) {
-    this.deliveries = value;
-  }
-
-
 }

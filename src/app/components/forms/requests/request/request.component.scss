@@ -36,6 +36,7 @@ $radio: 20px;
     height: 50px;
     width: 100px;
     cursor: pointer;
+    font-weight: 500;
   }
 }
 
@@ -53,8 +54,12 @@ $radio: 20px;
   }
   button {
     background-color: $green-700;
-    border-radius: 15px;
+    border-radius: 6px;
+    cursor: pointer;
     color: $grey-50;
+    font-size: 15px;
+    font-weight: 500;
+    height: 36px;
   }
 }
 
@@ -92,6 +97,9 @@ $radio: 20px;
   background-color: $amarillo;
   color: $green-900;
   border-radius: $radio;
+  mat-icon{
+    font-size: 35px;
+  }
 }
 
 

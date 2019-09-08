@@ -7,7 +7,7 @@
           <mat-icon>add_circle_outlet</mat-icon>
         </div>
         <div fxFlex="61" fxLayoutAlign="start center">
-          Utiliza nuestra calculadora para saber cuanta fruta necesitas en tu empresa
+          Utiliza nuestra Calculadora para saber cuanta fruta necesitas en tu empresa
         </div>
         <div fxFlex="25" fxLayoutAlign="center center">
           <button routerLink="/calculo" routerLinkActive="active">Calcular</button>
@@ -17,12 +17,12 @@
 
     <div fxFlex id="result" fxLayout="row" *ngIf="employees && deliveries" fxLayoutAlign="center center">
       <div fxLayout="column" fxFlex="600px">
-
         <div fxLayout="row" fxFlex="75px" class="titulo-img">
-          <div fxFlex="50" fxLayoutAlign="end center">
+          <div fxFlex="60" fxLayoutAlign="end center">
             Tu pedido
           </div>
-          <div fxFlex="50" fxLayoutAlign="center center">
+          <div fxFlex="7"></div>
+          <div fxFlex="33" fxLayoutAlign="center center">
             <button mat-button (click)="showProducts()">Ver productos</button>
           </div>
         </div>
@@ -54,8 +54,13 @@
     </div>
 
     <div fxLayout="row" fxLayoutAlign="center center" class="seccion">
-      <div fxFlex="1000px" fxLayoutAlign="center center" id="instrucciones">
-        Contactate con nosotros para poder realizar tu pedido y no tengas que esperar, te atenderemos de inmediato
+      <div fxLayout="row" fxFlex="1000px" id="instrucciones">
+        <div fxFlex="7" fxLayoutAlign="center center">
+          <mat-icon>headset_mic</mat-icon>
+        </div>
+        <div fxFlex="93" fxLayoutAlign="start center">
+          Contactate con nosotros para poder realizar tu pedido y no tengas que esperar, te atenderemos de inmediato
+        </div>
       </div>
     </div>
 

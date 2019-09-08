@@ -33,9 +33,18 @@
     height: 45px;
     font-size: 20px;
     margin: 6px;
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+    background-color: $grey-500;
   }
 }
 
 input {
   width: 110px;
+}
+
+.field {
+  padding-bottom: 15px;
 }
