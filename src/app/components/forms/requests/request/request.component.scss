@@ -53,13 +53,18 @@ $radio: 20px;
     font-size: 40px;
   }
   button {
-    background-color: $green-700;
     border-radius: 6px;
     cursor: pointer;
+    border: 1px solid $green-800;
+    background-color: $green-800;
     color: $grey-50;
     font-size: 15px;
     font-weight: 500;
     height: 36px;
+  }
+  mat-icon {
+    font-size: 24px;
+    margin-right: 3px;
   }
 }
 
@@ -94,7 +99,8 @@ $radio: 20px;
 #instrucciones {
   height: 80px;
   font-size: 18px;
-  background-color: $amarillo;
+  background-color: $naranja;
+  border: 2px solid $green-800;
   color: $green-900;
   border-radius: $radio;
   mat-icon{

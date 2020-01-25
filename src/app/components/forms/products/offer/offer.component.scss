@@ -1,11 +1,9 @@
 @import "~src/sass/_colors.scss";
 @import "~src/sass/_dimensions.scss";
 
-
 .verde {
   border: 2px solid $green-500;
   .contenido{
-    width: 100%;
     background-color: $green-500;
     color: $grey-800;
   }
@@ -14,16 +12,21 @@
 .amarillo{
   border: 2px solid $amarillo;
   .contenido{
-    width: 100%;
     background-color: $amarillo;
     color: $grey-700;
+  }
+}
+
+.contenido {
+  width: 100%;
+  h3 {
+    padding-top: $space-xs;
   }
 }
 
 .naranja{
   border: 2px solid $naranja-fuerte;
   .contenido{
-    width: 100%;
     background-color: $naranja-fuerte;
     color: $grey-700;
   }
@@ -40,12 +43,5 @@
 .temporada {
   mat-icon {
     font-size: 16px;
-  }
-}
-
-.capacidad {
-  padding-top: 40px;
-  mat-icon {
-    font-size: 25px;
   }
 }

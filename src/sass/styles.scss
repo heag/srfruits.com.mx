@@ -41,6 +41,70 @@ $verde-ok:rgba(81, 158, 45, 1);
     width: 100% !important;
 }
 
+// DESDE AQUI
+.fuente {
+    font-family: 'Poppins', sans-serif;
+}
+
+.verde {
+    color: #7EAF3B;
+}
+
+.boton {
+    border-radius: 40px;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo-home {
+    color: #7EAF3B;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subtitulo {
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #4F4F4F;
+}
+
+.titulo {
+    font-size: 42px;
+    color: $gris;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo-movil {
+    font-size: 40px;
+    color: $gris;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subtitulo-movil {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #4F4F4F;
+}
+
+.parrafo {
+    color: #4F4F4F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20;
+}
+
+.parrafo-movil {
+    color: #4F4F4F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15;
+}
+
 .middle-align{
     text-align: center !important;
 }

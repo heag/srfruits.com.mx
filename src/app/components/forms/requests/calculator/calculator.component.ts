@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { CalculatorResultComponent } from './../calculator/calculator-result/calculator-result.component';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -10,36 +8,37 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class CalculatorComponent {
 
-  minEmployees = 5;
-  maxEmployees = 2000;
+  boxes = 1;
+  numeroDeTelefono = '3360598886';
 
-  calculatorForm: FormGroup = new FormGroup({
-    employeesControl: new FormControl(null,
-                        [Validators.min(this.minEmployees),
-                        Validators.max(this.maxEmployees),
-                        Validators.required]),
-     deliveriesControl:
-      new FormControl('1', [Validators.required,
-                          Validators.min(1),
-                          Validators.max(5)])
+  tarjetaForm: FormGroup = new FormGroup({
+    personasControl: new FormControl(5,
+      [Validators.min(5),
+      Validators.max(2000),
+      Validators.required]),
+    entregasControl:
+      new FormControl(1, [Validators.required,
+      Validators.min(1),
+      Validators.max(5)])
   });
 
-  get employeesControl(): FormControl {
-    return this.calculatorForm.get('employeesControl') as FormControl;
+  get personasControl(): FormControl {
+    return this.tarjetaForm.get('personasControl') as FormControl;
   }
 
-  get deliveriesControl(): FormControl {
-    return this.calculatorForm.get('deliveriesControl') as FormControl;
+  get entregasControl(): FormControl {
+    return this.tarjetaForm.get('entregasControl') as FormControl;
   }
 
-  constructor(private dialog: MatDialog) { }
-
-  public calculate() {
-    this.dialog.open(CalculatorResultComponent, {
-      data: {
-        employees: this.employeesControl.value,
-        deliveries: this.deliveriesControl.value
-      }
-    });
+  calcularCajas() {
+    if ((this.personasControl.value > 2000 || this.personasControl.value < 5) ||
+    (this.entregasControl.value > 5 || this.entregasControl.value < 1)) {
+      return;
+    }
+    const cajas = Math.ceil((this.personasControl.value / 35) * this.entregasControl.value);
+    this.boxes = cajas;
   }
+
+  constructor() { }
+
 }

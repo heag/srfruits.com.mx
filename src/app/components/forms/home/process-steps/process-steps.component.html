@@ -1,52 +1,47 @@
-<div class="main-process">
-    <tittle-header color='verde' text='¿Como funciona?'></tittle-header>
-
-    <div class="step-card" id="calculate">
-        <div class="image-card" style="background-image: url('assets/step-calculate.png')"></div>
-        <div class="description">
-            <p>CALCULA TU PEDIDO</p>
-        </div>
-        <div class="card-text">
-            Con la calculadora de cantidad puedes realizar un mejor presupuesto de la cantidad 
-            de fruta necesaria para tus colaboradores.<br /><br /><br />
-        </div>
-    </div>
-    
-    <div class="step-card" id="order">
-        <div class="image-card" style="background-image: url('assets/step-order.png')"></div>
-        <div class="description">
-            <p>ORDENA</p>
-        </div>
-        <div class="card-text">
-            Elige el paquete que deseas, la cantidad de porciones y días de entrega: lunes y/o miércoles. 
-            Inmediatamente nos pondremos en contacto contigo para concluir el proceso de compra.
-        </div>
-    </div>
-
-    <div class="step-card" id="receive">
-        <div class="image-card" style="background-image: url('assets/step-receive.png')"></div>
-        <div class="description">
-            <div class="description">
-                <p>RECIBE TU PEDIDO</p>
+<div id="container" fxLayout="column" fxLayoutGap="15px" fxFlex fxLayoutAlign="start center">
+    <div class="titulo">¿Como funciona?</div>
+    <div id="outer-flex-container">
+        <div id="inner-flex-container">
+            <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="25px" class="tarjeta fuente">
+                <div>
+                    <img src="assets/step1.png" alt="step1">
+                </div>
+                <div class="subtitulo">Calcula tu pedido</div>
+                <div class="paso-texto">Con la calculadora de cantidad puedes realizar
+                    un mejor presupuesto de la cantidad de fruta necesaria para tus
+                    colaboradores.
+                </div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="25px" class="tarjeta fuente">
+                <div>
+                    <img src="assets/step2.png" alt="step2">
+                </div>
+                <div class="subtitulo">Ordena</div>
+                <div class="paso-texto">Elige el paquete que deseas, la cantidad de 
+                    porciones y días de entrega: lunes y/o miércoles. Inmediatamente nos 
+                    pondremos en contacto contigo para concluir el proceso de compra.
+                </div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="25px" class="tarjeta fuente">
+                <div>
+                    <img src="assets/step3.png" alt="step3">
+                </div>
+                <div class="subtitulo">Recibe tu pedido</div>
+                <div class="paso-texto">Las entregas se realizan en las primeras horas 
+                    laborales de los días lunes y miércoles. Así garantizamos que la fruta que 
+                    recibas sea la más fresca. Nuestro servicio está disponible dentro de la ZMG.
+                </div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="25px" class="tarjeta fuente">
+                <div>
+                    <img src="assets/step4.png" alt="step4">
+                </div>
+                <div class="subtitulo">Pagos flexibles</div>
+                <div class="paso-texto">Una vez entregado tu pedido, te enviaremos la factura 
+                    correspondiente para que realices el pago dentro de los siguientes 7 días 
+                    hábiles, mediante una transferencia electrónica o un depósito bancario.
+                </div>
             </div>
         </div>
-        <div class="card-text">
-            Las entregas se realizan en las primeras horas laborales de los días lunes y miércoles. 
-            Así garantizamos que la fruta que recibas sea la más fresca. Nuestro servicio está disponible 
-            dentro de la ZMG.
-        </div>
     </div>
-
-    <div class="step-card" id="payment">
-        <div class="image-card" style="background-image: url('assets/step-pay.png')"></div>
-        <div class="description">
-            <p>PAGOS FLEXIBLES</p>
-        </div>
-        <div class="card-text">
-            Una vez entregado tu pedido, te enviaremos la factura correspondiente para que 
-            realices el pago dentro de los siguientes 7 días hábiles, mediante una  transferencia 
-            electrónica o un depósito bancario.
-        </div>
-    </div>
-
 </div>

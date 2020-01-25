@@ -21,14 +21,14 @@
         }
         p{
             font-size: 17px;
-            font-style: italic;
-            font-weight: 500;
+            font-weight: 400;
             color: $grey-50;
         }
         button{
             background-color: $naranja;
             border-radius: 15px;
-            color: $grey-800;
+            color: $grey-700;
+            font-size: 17px;
         }
     }
     
@@ -59,13 +59,15 @@
         button{
             background-color: #ffce0c;
             border-radius: 15px;
+            color: $grey-800;
+            font-weight: bold;
         }
     }
 }
 
 .main{
     overflow: hidden;
-    background-color: $green-600;
+    background-color: $naranja-fuerte;
     height: 160px;
     margin-bottom: 30px;
     margin-top: 65px;

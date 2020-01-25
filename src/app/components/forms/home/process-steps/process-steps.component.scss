@@ -1,82 +1,64 @@
 @import "~src/sass/_colors.scss";
+@import "~src/sass/_colors.scss";
 
-$verde-strong: rgb(98, 145, 43);
-$naranja-strong: rgb(255, 116, 4);
 
-.step-card {
-    height: 445px;
-    width: 260px;
+@media (min-width: 375px) and (max-width: 480px) {
+    #inner-flex-container {
+        flex-direction: column;
+    }
+    .tarjeta {
+        width: 230px;
+        margin: 0 0 0 0;
+    }
+    .titulo-gris {
+        width: 250px;
+    }
+    #container{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+    .titulo{
+        padding-top: 65px;
+    }
+    #outer-flex-container {
+        display: inline-block;
+        flex-direction: column;
+        height: 100%;
+    }    
+    #inner-flex-container {
+        display: flex;
+        height: calc(100% - 40px);
+    }
+    #container{
+        height: 730px;
+    }
+    .tarjeta {
+        width: 230px;
+        margin: 0 25px 0 25px;
+    }
+}
+
+#outer-flex-container {
     display: inline-block;
-    text-align: center;
-    border-radius: 25px;
-    margin: 15px;
+    flex-direction: column;
+    height: 100%;
 }
 
-.image-card {
-    background-size: cover;
-    height: 190px;
-    width: 185px;
-    margin: 0 auto;
-}
-
-.description {
-    text-align: center;
-    width: 190px;
-    height: 35px;
-    color: white;
-    border-radius: 15px;
-    font-weight: 500;
-    font-size: 18px;
-    margin: 0 auto;
-    margin-top: 15px;
-    vertical-align: middle;
-    p{
-        padding-top: 4px;
-    }
-}
-
-.card-text {
-    padding-top: 15px;
+.paso-texto {
     font-size: 15px;
-    margin: 5px;
-    font-weight: 500;
+    width: 100%;
 }
 
-.main-process{
-    padding-top: 10px;
-    margin-top: 40px;
-    background-color: transparent;
-    display: block;
-    #order {
-        color: $rojo;
-        opacity: .9;
-        border: 2px solid $rojo;
-        .description {
-            background-color: $rojo;
-        }
-    }    
-    #receive {
-        color: $verde-strong;
-        border: 2px solid $verde;
-        .description {
-            background-color: $verde;
-        }
-    }    
-    #payment {
-        color: $naranja-strong;
-        border: 2px solid $naranja;
-        .description {
-            background-color: $naranja;
-        }
-    }
-
-    #calculate {
-        color: rgb(66, 164, 245);
-        border: 2px solid rgb(66, 164, 245);
-        .description {
-            background-color: rgb(66, 164, 245);
-        }
-    }
+#inner-flex-container {
+    display: flex;
+    height: calc(100% - 40px);
 }
 
-
+#container {
+    div {
+        background-color: $gris-claro;
+    }
+    background-color: $gris-claro;
+}

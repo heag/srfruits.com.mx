@@ -1,0 +1,12 @@
+@import "~src/sass/_colors.scss";
+@import "~src/sass/_dimensions.scss";
+
+.tarjetas {
+    padding-top: $space-lg;
+}
+
+.tarjeta {
+    mat-icon {
+        margin-right: 10px;
+    }
+}

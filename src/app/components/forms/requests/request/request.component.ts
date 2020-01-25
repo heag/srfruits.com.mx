@@ -33,6 +33,7 @@ export class RequestComponent implements OnInit {
 
   public showProducts() {
     this.dialog.open(OfferComponent, {
+      maxHeight: '450px',
       data: {
         employees: this.employees,
         deliveries: this.deliveries

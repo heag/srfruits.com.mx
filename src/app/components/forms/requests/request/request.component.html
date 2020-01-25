@@ -18,12 +18,19 @@
     <div fxFlex id="result" fxLayout="row" *ngIf="employees && deliveries" fxLayoutAlign="center center">
       <div fxLayout="column" fxFlex="600px">
         <div fxLayout="row" fxFlex="75px" class="titulo-img">
-          <div fxFlex="60" fxLayoutAlign="end center">
-            Tu pedido
+          <div fxFlex="40" fxLayoutAlign="center center">
+            Tu pedido:
           </div>
-          <div fxFlex="7"></div>
-          <div fxFlex="33" fxLayoutAlign="center center">
-            <button mat-button (click)="showProducts()">Ver productos</button>
+          <div fxFlex="17"></div>
+          <div fxFlex="20" fxLayoutAlign="center center">
+              <button mat-button routerLink="/calculo" routerLinkActive="active">
+                <mat-icon>edit</mat-icon><span>Editar</span>
+              </button>
+          </div>
+          <div fxFlex="25" fxLayoutAlign="center center">
+            <button mat-button (click)="showProducts()">
+              <mat-icon>shopping_cart</mat-icon><span>Productos</span>
+            </button>
           </div>
         </div>
 
@@ -59,7 +66,7 @@
           <mat-icon>headset_mic</mat-icon>
         </div>
         <div fxFlex="93" fxLayoutAlign="start center">
-          Contactate con nosotros para poder realizar tu pedido y no tengas que esperar, te atenderemos de inmediato
+          Contáctate con nosotros para poder realizar tu pedido y no tengas que esperar, te atenderemos de inmediato
         </div>
       </div>
     </div>

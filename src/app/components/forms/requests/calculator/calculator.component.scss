@@ -1,50 +1,167 @@
 @import "~src/sass/_colors.scss";
+@import "~src/sass/_colors.scss";
 
-.titulo {
-  font-size: 28px;
-  color: $grey-800;
-  margin-top: 10px;
-  font-weight: 500;
+@media (min-width: 375px) and (max-width: 480px) {
+  #grande {
+    display: none;
+  }
+  .telefono {
+    width: 100%;
+    img {
+      padding-right: 10px;
+    }
+  }
+  #movil {
+    width: 100%;
+    mat-card {
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+      width: 316px;
+      .subtitulo-movil {
+        padding-top: 20px;
+      }
+    }
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  .parrafo-movil {
+    margin: 0 20px 0 20px;
+  }
+  .items-titulo {
+    padding: 22px 0 10px 0;
+    font-weight: bolder;
+    font-size: 21px;
+    font-family: 'Poppins';
+    color: $gris;
+  }
+  .titulo-movil {
+    padding: 50px 0 30px 0;
+    width: 250px;
+    text-align: center;
+  }
+  .telefono {
+    padding-bottom: 20px;
+  }
+  .boton-verde {
+    padding: 40px 0 33px 0px;
+    button {      
+      background-color: $verde;
+      width: 183px;
+      border-radius: 40px;
+      height: 53px;
+      border: none;
+    }
+    a {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
 }
 
-.descripcion {
+#movil {
+  max-width: 480px
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+  #movil {
+    display: none !important;
+  }
+  .parrafo {
+    width: 320px;
+  }
+  .titulo {
+    padding-top: 50px;
+  }
+  .valores {
+    padding-top: 25px;
+    label {
+      color: $verde;
+    }
+  }
+  .second-row {
+    padding-bottom: 40px;
+  }
+  #tarjeta {
+    mat-card {
+      width: 600px;
+      height: 330px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+    }
+  }
+  .subtitulo {
+    padding-bottom: 10px;
+    color: $gris;
+  }
+  .item {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: $gris;
+  }
+  .valor {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: $verde;
+  }
+  .cajas {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: $gris;
+  }
+  .boton-verde {
+    padding: 50px 0 0 20px;
+    button {
+      color: white;
+      background-color: $verde;
+      width: 183px;
+      border-radius: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      height: 53px;
+      border: none;
+    }
+  }
+}
+
+.telefono {
+  color: $verde;
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.item {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  color: $gris;
+}
+.valor {
   font-size: 16px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  color: $verde;
+}
+.cajas-resultado {
+  font-size: 19px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  color: $verde;
+}
+
+#grande {
+  background-color: $amarillo;
+}
+#movil{
+  background-color: $amarillo;
+}
+
+.fuente {
+  font-size: 18px;
   text-align: justify;
-  color: $grey-800;
-}
-
-.entregas {
-  padding-left: 65px;
-}
-
-.calculador {
-  background-color: $naranja;
-  border-radius: 15px;
-}
-
-.btn-calcular {
-  padding-bottom: 20px;
-  button {
-    background-color: $green-700;
-    border: none;
-    border-radius: 5px;
-    color: $white;
-    width: 120px;
-    height: 45px;
-    font-size: 20px;
-    margin: 6px;
-    cursor: pointer;
-  }
-  button:disabled {
-    cursor: not-allowed;
-    background-color: $grey-500;
-  }
-}
-
-input {
-  width: 110px;
-}
-
-.field {
-  padding-bottom: 15px;
 }

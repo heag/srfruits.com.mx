@@ -35,10 +35,8 @@ import { RequestComponent } from './components/forms/requests/request/request.co
 import { CalculatorComponent } from './components/forms/requests/calculator/calculator.component';
 import { PaymentComponent } from './components/forms/requests/payment/payment.component';
 import { QuestionsComponent } from './components/forms/contact/questions/questions.component';
-import { CalculatorResultComponent } from './components/forms/requests/calculator/calculator-result/calculator-result.component';
 import { ProcessStepsComponent } from './components/forms/home/process-steps/process-steps.component';
 import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
-import { OurCompanyComponent } from './components/forms/about-us/our-company/our-company.component';
 import { TittleHeaderComponent } from './components/shell/components/tittle-header/tittle-header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductsComponent } from './components/forms/products/products.component';
@@ -52,8 +50,8 @@ const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientMo
 
 const appComponents = [AppComponent, AppShellComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
-  AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, CalculatorResultComponent,
-  ProcessStepsComponent, ExtraAddInfoComponent, OurCompanyComponent, TittleHeaderComponent, ProductsComponent];
+  AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, ProcessStepsComponent, 
+  ExtraAddInfoComponent, TittleHeaderComponent, ProductsComponent];
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -62,7 +60,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'porque-nosotros', component: OurCompanyComponent },
   { path: 'mision-vision', component: MisionVisionComponent },
   { path: 'logros', component: AchievementsComponent },
   { path: 'beneficios-empleado', component: BenefitsEmployeeComponent },
@@ -73,7 +70,6 @@ const routes: Routes = [
   { path: 'pago', component: PaymentComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'preguntas', component: QuestionsComponent },
-  { path: 'resultado', component: CalculatorResultComponent },
   { path: '**', component: HomeComponent } // siempre al final
 ];
 

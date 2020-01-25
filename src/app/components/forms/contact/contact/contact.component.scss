@@ -7,18 +7,18 @@
 .contact {
   background-color: $verde;
   border-radius: 30px;
-  .titulo {
-    margin-top: 25px;
+  min-height: 650px;
+}
+
+.imagen {
+  img {
+    width: 625px;
   }
 }
 
 .logo {
   width: 100px;
   margin-top: 35px;
-}
-
-.jot-form {
-  margin-top: 45px;
 }
 
 .social-network {
@@ -30,10 +30,9 @@
 
 .contact-details{
   background-color: $amarillo;
-  height: 450px;
+  height: 375px;
   margin-top: -65px;
   color: $grey-700;
   font-size: 22px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-radius: 25px;
 }
