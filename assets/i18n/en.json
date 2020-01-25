@@ -14,6 +14,13 @@
         "CONTACT_US": "Contact us",
         "FAQ": "FAQ's"
     },
+
+    "Home": {
+        "ProcessSteps": {
+            "HowItWorks": "¿Como funciona?",
+            ""
+        }
+    },
     
     "ABOUT_US": {
         "WHO_WE_ARE": {

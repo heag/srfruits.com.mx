@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{piIa:function(e,i,n){"use strict";n.r(i),n.d(i,"config",function(){return p});var p={api:{emailSenderUrl:"https://fruit-webapi-prod.azurewebsites.net/email/send"},type:n("59DX").a.PRODUCTION}}}]);
