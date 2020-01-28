@@ -1,7 +1,7 @@
 @import "~src/sass/_colors.scss";
 @import "~src/sass/_colors.scss";
 
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 360px) and (max-width: 480px) {
   #grande {
     display: none;
   }
@@ -24,9 +24,6 @@
     mat-form-field {
       width: 100%;
     }
-  }
-  .parrafo-movil {
-    margin: 0 20px 0 20px;
   }
   .items-titulo {
     padding: 22px 0 10px 0;
@@ -64,7 +61,7 @@
   max-width: 480px
 }
 
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1180px) and (max-width: 1920px) {
   #movil {
     display: none !important;
   }

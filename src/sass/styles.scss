@@ -84,6 +84,7 @@ $verde-ok:rgba(81, 158, 45, 1);
     color: $gris;
     font-weight: bolder;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 .subtitulo-movil {
@@ -103,6 +104,8 @@ $verde-ok:rgba(81, 158, 45, 1);
     color: #4F4F4F;
     font-family: 'Poppins', sans-serif;
     font-size: 15;
+    text-align: justify;
+    width: 350px;
 }
 
 .middle-align{

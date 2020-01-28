@@ -1,4 +1,13 @@
 @import "~src/sass/_colors.scss";
+@import "~src/sass/_colors.scss";
+
+@media (min-width: 360px) and (max-width: 480px) {
+
+}
+
+@media (min-width: 1180px) and (max-width: 1920px) {
+
+}
 
 .contact-form {
   padding-top: 135px;

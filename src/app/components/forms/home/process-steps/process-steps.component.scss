@@ -2,7 +2,7 @@
 @import "~src/sass/_colors.scss";
 
 
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 360px) and (max-width: 480px) {
     #inner-flex-container {
         flex-direction: column;
     }
@@ -18,7 +18,7 @@
     }
 }
 
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1180px) and (max-width: 1920px) {
     .titulo{
         padding-top: 65px;
     }

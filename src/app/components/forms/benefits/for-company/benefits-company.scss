@@ -1,103 +1,49 @@
 @import "~src/sass/_colors.scss";
+@import "~src/sass/_colors.scss";
 
+@media (min-width: 360px) and (max-width: 480px) {
+  #beneficios-movil {
+    padding-top: 100px;
+  }
+  #beneficios {
+    display: none;
+  }
+  .beneficio {
+    width: 316px;
+    padding-top: 20px;
+    // margin: 15px;
+  }
+  .titulo-movil {
+    border-bottom: 2px solid $amarillo;
+    padding: 15px 0 25px 0;
+  }
 
-.beneficios {
-  padding-top: 50px;
-  .item {
-    border-radius: 15px;
+}
+
+@media (min-width: 1180px) and (max-width: 1920px) {
+  .empleados {
+    padding: 30px 0 0px 0;
+  }
+  .titulo {
+    padding: 40px 0 40px 0;
+    width: 100%;
+    border-bottom: 2px solid $amarillo;
+  }
+  .fila-dos {
+    padding: 40px 0 50px 0;
+  }
+  #beneficios-movil {
+    display: none;
   }
 }
 
-.beneficio-txt {
-  height: 165px;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
-  & > * {
-    margin: 0 20px 0 20px;
-  }
-  p {
-    text-align: justify;
-    font-size: 17px;
-  }
+#beneficios {
+  padding: 100px 0 50px 0;
 }
 
-.verde {
-  .beneficio-img {
-    background-color: $verde;
-  }
-  .beneficio-txt {
-    color: $green-800;
-    border: 4px solid $verde;
-  }
-}
-
-.naranja {
-  .beneficio-img {
-    background-color: $naranja-fuerte;
-  }
-  .beneficio-txt {
-    color: $naranja-fuerte;
-    border: 4px solid $naranja-fuerte;
-  }
-}
-
-.azul {
-  .beneficio-img {
-    background-color: $azul;
-  }
-  .beneficio-txt {
-    color: $azul;
-    border: 4px solid $azul;
-  }
-}
-
-.melon {
-  .beneficio-img {
-    background-color: $melon;
-  }
-  .beneficio-txt {
-    color: $melon;
-    border: 4px solid $melon;
-  }
-}
-
-.beneficio-img{
-  
-  height: 165px;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+.beneficio {
   img {
-    height: 130px;
-    width: 130px; 
-    border-radius: 85px; //change
-    background-size: cover;
+    width: 124px;
+    height: 124px;;
   }
-}
-
-.benefits-div {
-  padding-top: 96px;
-  height: 100%;
-}
-
-.imagen {
-  img {
-    height: 270px;
-  }
-}
-
-.columna {
-  height: 100%;
-}
-
-.header {
-  background-color: $green-500;
-}
-
-.titulo{
-  background-color: $naranja;
-  border-radius: 35px;
-  color: $grey-600;
-  height: 80px;
-  font-size: 35px;
-  font-style: italic;
 }
