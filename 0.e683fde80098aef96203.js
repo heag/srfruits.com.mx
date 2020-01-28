@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{QpKv:function(n,e,i){"use strict";i.r(e),i.d(e,"config",function(){return p});var p={api:{emailSenderUrl:"http://fruit-webapi-prod.frutas.com/email/send"},type:i("59DX").a.TEST}}}]);
