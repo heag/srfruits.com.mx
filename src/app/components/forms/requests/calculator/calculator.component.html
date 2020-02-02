@@ -1,131 +1,143 @@
-<div id="grande">
-  <div fxLayout="column" fxLayoutGap="35px" fxLayoutAlign="center center">
+<section id="grande">
+  <div fxLayout="column"
+       fxLayoutGap.lg="35px"
+       fxLayoutGap.xs="10px"
+       fxLayoutAlign="center center">
     <div class="titulo">Calcula tu pedido</div>
-    <div fxLayout="row" fxLayoutGap="1px" fxLayoutAlign="center center">
+    <div fxLayout="row"
+         fxLayout.xs="column"
+         fxLayoutAlign="center center">
 
-      <!-- EXPERIMENT TO FIX IE
-          <div fxFlex="50">test1</div>
-          <div fxFlex="50">test2</div> -->
-
-      <div fxLayoutAlign="center center" fxFlex="50">
-        <div fxLayout="column" fxFlex="50">
-          <div class="subtitulo">¿Cuanta fruta necesita mi empresa?</div>
-          <div class="fuente">
-            La dosis recomendada segun la OMS es de 5 porciones al dia.
-            Inserta la cantidad de colaboradores en tu oficina y la cantidad
-            de entregas semanales que necesitas y calcula
+        <!-- EXPERIMENT TO FIX IE
+            <div fxFlex="50">test1</div>
+            <div fxFlex="50">test2</div> -->
+      <div fxLayoutAlign="center center"
+           fxFlex="50">
+          <div fxLayout="column"
+               fxFlex="50"
+               fxFlex.xs="100">
+            <div class="subtitulo">¿Cuanta fruta necesita mi empresa?</div>
+            <div class="fuente">
+              La dosis recomendada segun la OMS es de 5 porciones al dia.
+              Inserta la cantidad de colaboradores en tu oficina y la cantidad
+              de entregas semanales que necesitas y calcula
+            </div>
           </div>
-        </div>
       </div>
+      <div id="tarjeta"
+           fxFlex="50"
+           fxFlex.xs="100">
+          <mat-card>
+            <div [formGroup]="tarjetaForm">
+              <div fxLayout="row"
+                   fxLayout.xs="column"
+                   fxLayoutGap="15px"
+                   fxLayoutAlign="center center">
+                <div fxLayout="column" class="valores" fxLayoutGap="15px" fxFlex="50" fxLayoutAlign="center center">
+                  <div>
+                    <mat-form-field class="example-full-width">
+                      <input formControlName="personasControl" min="5" (input)="calcularCajas()" type="number" matInput
+                             placeholder="Personas" max="2000">
+                      <mat-hint align="end">Mínimo 5 personas</mat-hint>
+                      <mat-error align="end" *ngIf="personasControl.hasError('min') || personasControl.hasError('max')">
+                        Insertar valor entre 5 y 2000
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
+                  <div>
+                    <mat-form-field class="example-full-width">
+                      <input formControlName="entregasControl" min="1" (input)="calcularCajas()" type="number" matInput
+                             placeholder="Entregas semanales" max="5">
+                      <mat-error align="end" *ngIf="entregasControl.hasError('min') || entregasControl.hasError('max')">
+                        Máximo 5 entregas
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
+                  <div fxLayout="row">
+                    <div class="telefono"><img src="assets/phone.png" alt="phone"> 333-333-3365</div>
+                  </div>
+                </div>
+                <div fxLayout="column" class="fuente" fxLayoutGap="10px" fxLayoutAlign="center start" fxFlex="50">
+                  <div class="subtitulo">Tu pedido:</div>
+                  <div fxLayoutGap="10px" fxLayout="row">
+                    <div class="item">Colaboradores . . . .</div>
+                    <div class="valor"> {{personasControl.value}}</div>
+                  </div>
+                  <div fxLayoutGap="10px" fxLayout="row">
+                    <div class="item">Entregas . . . . . .</div>
+                    <div class="valor">{{entregasControl.value}}</div>
+                  </div>
+                  <div fxLayoutGap="10px" fxLayout="row">
+                    <div class="cajas">Cajas por semana . . .</div>
+                    <div class="cajas-resultado">{{boxes}}</div>
+                  </div>
 
-      <div id="tarjeta" fxFlex="50">
-        <mat-card>
-          <div [formGroup]="tarjetaForm">
-            <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="center center">
-              <div fxLayout="column" class="valores" fxLayoutGap="15px" fxFlex="50" fxLayoutAlign="center center">
-                <div>
-                  <mat-form-field class="example-full-width">
-                    <input formControlName="personasControl" min="5" (input)="calcularCajas()" type="number" matInput
-                      placeholder="Personas" max="2000">
-                    <mat-hint align="end">Mínimo 5 personas</mat-hint>
-                    <mat-error align="end" *ngIf="personasControl.hasError('min') || personasControl.hasError('max')">
-                      Insertar valor entre 5 y 2000
-                    </mat-error>
-                  </mat-form-field>
-                </div>
-                <div>
-                  <mat-form-field class="example-full-width">
-                    <input formControlName="entregasControl" min="1" (input)="calcularCajas()" type="number" matInput
-                      placeholder="Entregas semanales" max="5">
-                    <mat-error align="end" *ngIf="entregasControl.hasError('min') || entregasControl.hasError('max')">
-                      Máximo 5 entregas
-                    </mat-error>
-                  </mat-form-field>
-                </div>
-                <div fxLayout="row">
-                  <div class="telefono"><img src="assets/phone.png" alt="phone"> 333-333-3365</div>
-                </div>
-              </div>
-              <div fxLayout="column" class="fuente" fxLayoutGap="10px" fxLayoutAlign="center start" fxFlex="50">
-                <div class="subtitulo">Tu pedido:</div>
-                <div fxLayoutGap="10px" fxLayout="row">
-                  <div class="item">Colaboradores . . . .</div>
-                  <div class="valor"> {{personasControl.value}}</div>
-                </div>
-                <div fxLayoutGap="10px" fxLayout="row">
-                  <div class="item">Entregas . . . . . .</div>
-                  <div class="valor">{{entregasControl.value}}</div>
-                </div>
-                <div fxLayoutGap="10px" fxLayout="row">
-                  <div class="cajas">Cajas por semana . . .</div>
-                  <div class="cajas-resultado">{{boxes}}</div>
+                  <div fxShow.xs fxHide.gt-xs fxLayoutAlign="center center" class="boton-verde">
+                    <button><a href="tel:+521{{numeroDeTelefono}}">Ordenar</a></button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </mat-card>
+          </mat-card>
       </div>
 
     </div>
     <div fxFlex="30px"></div>
   </div>
-</div>
+</section>
 
-<div id="movil">
-  <div fxLayoutAlign="center center" fxLayoutGap="10px" fxLayout="column">
-    <div class="titulo-movil">
-      Calcula tu pedido
-    </div>
+<!--<div id="movil">-->
+<!--  <div fxLayoutAlign="center center" fxLayoutGap="10px" fxLayout="column">-->
+<!--    <div class="titulo-movil">-->
+<!--      Calcula tu pedido-->
+<!--    </div>-->
 
-    <div class="subtitulo-movil">¿Cuanta fruta necesita mi empresa?</div>
-    <div class="parrafo-movil">
-      La dosis recomendada segun la OMS es de 5 porciones al dia.
-      Inserta la cantidad de colaboradores en tu oficina y la cantidad
-      de entregas semanales que necesitas y calcula
-    </div>
-    <div>
-      <mat-card>
-        <div [formGroup]="tarjetaForm">
-          <mat-form-field>
-            <input formControlName="personasControl" min="5" (input)="calcularCajas()" type="number" matInput
-              placeholder="Personas" max="2000">
-            <mat-hint align="end">Mínimo 5 personas</mat-hint>
-            <mat-error align="end" *ngIf="personasControl.hasError('min') || personasControl.hasError('max')">
-              Insertar valor entre 5 y 2000
-            </mat-error>
-          </mat-form-field>
-          <mat-form-field class="example-full-width">
-            <input formControlName="entregasControl" min="1" (input)="calcularCajas()" type="number" matInput
-              placeholder="Entregas semanales" max="5">
-            <mat-error align="end" *ngIf="entregasControl.hasError('min') || entregasControl.hasError('max')">
-              Máximo 5 entregas
-            </mat-error>
-          </mat-form-field>
-          <div class="items-titulo">Tu pedido:</div>
-          <div fxLayoutGap="10px" fxLayout="row">
-            <div class="item">Colaboradores . . . . . . . . . . .</div>
-            <div class="valor">{{personasControl.value}}</div>
-          </div>
-          <div fxLayoutGap="10px" fxLayout="row">
-            <div class="item">Entregas . . . . . . . . . . . . . . . . . . .</div>
-            <div class="valor">{{entregasControl.value}}</div>
-          </div>
-          <div fxLayoutGap="10px" fxLayout="row">
-            <div class="item">Cajas por semana . . . . . . .</div>
-            <div class="cajas-resultado">{{boxes}}</div>
-          </div>
-          <div fxLayoutAlign="center center" class="boton-verde">
-            <button><a href="tel:+521{{numeroDeTelefono}}">Ordenar</a></button>
-          </div>
-          <div fxLayoutAlign="center center" class="telefono">
-            <img src="assets/phone.png" alt="phone"> {{numeroDeTelefono}}
-          </div>
-        </div>
-      </mat-card>
-    </div>
-    <div fxFlex="50px"></div>
-  </div>
-
-
-
-</div>
+<!--    <div class="subtitulo-movil">¿Cuanta fruta necesita mi empresa?</div>-->
+<!--    <div class="parrafo-movil">-->
+<!--      La dosis recomendada segun la OMS es de 5 porciones al dia.-->
+<!--      Inserta la cantidad de colaboradores en tu oficina y la cantidad-->
+<!--      de entregas semanales que necesitas y calcula-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <mat-card>-->
+<!--        <div [formGroup]="tarjetaForm">-->
+<!--          <mat-form-field>-->
+<!--            <input formControlName="personasControl" min="5" (input)="calcularCajas()" type="number" matInput-->
+<!--              placeholder="Personas" max="2000">-->
+<!--            <mat-hint align="end">Mínimo 5 personas</mat-hint>-->
+<!--            <mat-error align="end" *ngIf="personasControl.hasError('min') || personasControl.hasError('max')">-->
+<!--              Insertar valor entre 5 y 2000-->
+<!--            </mat-error>-->
+<!--          </mat-form-field>-->
+<!--          <mat-form-field class="example-full-width">-->
+<!--            <input formControlName="entregasControl" min="1" (input)="calcularCajas()" type="number" matInput-->
+<!--              placeholder="Entregas semanales" max="5">-->
+<!--            <mat-error align="end" *ngIf="entregasControl.hasError('min') || entregasControl.hasError('max')">-->
+<!--              Máximo 5 entregas-->
+<!--            </mat-error>-->
+<!--          </mat-form-field>-->
+<!--          <div class="items-titulo">Tu pedido:</div>-->
+<!--          <div fxLayoutGap="10px" fxLayout="row">-->
+<!--            <div class="item">Colaboradores . . . . . . . . . . .</div>-->
+<!--            <div class="valor">{{personasControl.value}}</div>-->
+<!--          </div>-->
+<!--          <div fxLayoutGap="10px" fxLayout="row">-->
+<!--            <div class="item">Entregas . . . . . . . . . . . . . . . . . . .</div>-->
+<!--            <div class="valor">{{entregasControl.value}}</div>-->
+<!--          </div>-->
+<!--          <div fxLayoutGap="10px" fxLayout="row">-->
+<!--            <div class="item">Cajas por semana . . . . . . .</div>-->
+<!--            <div class="cajas-resultado">{{boxes}}</div>-->
+<!--          </div>-->
+<!--          <div fxLayoutAlign="center center" class="boton-verde">-->
+<!--            <button><a href="tel:+521{{numeroDeTelefono}}">Ordenar</a></button>-->
+<!--          </div>-->
+<!--          <div fxLayoutAlign="center center" class="telefono">-->
+<!--            <img src="assets/phone.png" alt="phone"> {{numeroDeTelefono}}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </mat-card>-->
+<!--    </div>-->
+<!--    <div fxFlex="50px"></div>-->
+<!--  </div>-->
+<!--</div>-->
