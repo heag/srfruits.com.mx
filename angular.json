@@ -28,7 +28,8 @@
               "src/web.config"
             ],
             "styles": [
-              "src/sass/styles.scss"
+              "src/sass/styles.scss",
+              "src/sass/theme.scss"
             ],
             "scripts": []
           },

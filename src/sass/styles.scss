@@ -24,10 +24,9 @@ html {
 body {
   margin: 0 0 110px;
   overflow-x: hidden;
-  background-image: url('src/assets/pattern.png');
+  background-image: url('/src/assets/pattern.png');
   background-repeat: repeat;
 }
-
 
 .content {
   padding-top: 110px;
@@ -156,4 +155,8 @@ body {
 
 .green-bkg {
   background-color: $verde;
+}
+
+.carousel-indicators {
+  display: none;
 }
