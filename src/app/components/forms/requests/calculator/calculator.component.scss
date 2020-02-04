@@ -1,127 +1,73 @@
 @import "~src/sass/_colors.scss";
-@import "~src/sass/_colors.scss";
+@import "~src/sass/_dimensions.scss";
 
-@media (min-width: 360px) and (max-width: 480px) {
-  #grande {
-    display: none;
-  }
-  .telefono {
-    width: 100%;
-    img {
-      padding-right: 10px;
-    }
-  }
-  #movil {
-    width: 100%;
-    mat-card {
-      border-radius: 5px;
-      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
-      width: 316px;
-      .subtitulo-movil {
-        padding-top: 20px;
-      }
-    }
-    mat-form-field {
-      width: 100%;
-    }
-  }
-  .items-titulo {
-    padding: 22px 0 10px 0;
-    font-weight: bolder;
-    font-size: 21px;
-    font-family: 'Poppins';
-    color: $gris;
-  }
-  .titulo-movil {
-    padding: 50px 0 30px 0;
-    width: 250px;
-    text-align: center;
-  }
-  .telefono {
-    padding-bottom: 20px;
-  }
-  .boton-verde {
-    padding: 40px 0 33px 0px;
-    button {      
-      background-color: $verde;
-      width: 183px;
-      border-radius: 40px;
-      height: 53px;
-      border: none;
-    }
-    a {
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-    }
-  }
+.parrafo {
+  width: 320px;
 }
 
-#movil {
-  max-width: 480px
+.titulo {
+  padding-top: 50px;
 }
 
-@media (min-width: 1180px) and (max-width: 1920px) {
-  #movil {
-    display: none !important;
-  }
-  .parrafo {
-    width: 320px;
-  }
-  .titulo {
-    padding-top: 50px;
-  }
-  .valores {
-    padding-top: 25px;
-    label {
-      color: $verde;
-    }
-  }
-  .second-row {
-    padding-bottom: 40px;
-  }
-  #tarjeta {
-    mat-card {
-      width: 600px;
-      height: 330px;
-      border-radius: 5px;
-      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
-    }
-  }
-  .subtitulo {
-    padding-bottom: 10px;
-    color: $gris;
-  }
-  .item {
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Poppins';
-    color: $gris;
-  }
-  .valor {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Poppins';
+.valores {
+  padding-top: 25px;
+
+  label {
     color: $verde;
   }
-  .cajas {
+}
+
+.second-row {
+  padding-bottom: 40px;
+}
+
+#tarjeta {
+  mat-card {
+    //width: 600px;
+    //height: 330px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+  }
+}
+
+.subtitulo {
+  padding-bottom: 10px;
+  color: $gris;
+}
+
+.item {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  color: $gris;
+}
+
+.valor {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  color: $verde;
+}
+
+.cajas {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  color: $gris;
+}
+
+.boton-verde {
+  padding: 50px 0 0 20px;
+
+  button {
+    color: white;
+    background-color: $verde;
+    width: 183px;
+    border-radius: 40px;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Poppins';
-    color: $gris;
-  }
-  .boton-verde {
-    padding: 50px 0 0 20px;
-    button {
-      color: white;
-      background-color: $verde;
-      width: 183px;
-      border-radius: 40px;
-      font-size: 18px;
-      font-weight: bold;
-      height: 53px;
-      border: none;
-    }
+    height: 53px;
+    border: none;
   }
 }
 
@@ -138,12 +84,14 @@
   font-family: 'Poppins';
   color: $gris;
 }
+
 .valor {
   font-size: 16px;
   font-weight: bold;
   font-family: 'Poppins';
   color: $verde;
 }
+
 .cajas-resultado {
   font-size: 19px;
   font-weight: bold;
@@ -153,8 +101,10 @@
 
 #grande {
   background-color: $amarillo;
+  padding: $space-lg;
 }
-#movil{
+
+#movil {
   background-color: $amarillo;
 }
 
@@ -162,3 +112,64 @@
   font-size: 18px;
   text-align: justify;
 }
+
+//@media (min-width: 360px) and (max-width: 480px) {
+//  #grande {
+//    display: none;
+//  }
+//  .telefono {
+//    width: 100%;
+//
+//    img {
+//      padding-right: 10px;
+//    }
+//  }
+//  #movil {
+//    width: 100%;
+//
+//    mat-card {
+//      border-radius: 5px;
+//      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+//
+//      .subtitulo-movil {
+//        padding-top: 20px;
+//      }
+//    }
+//
+//    mat-form-field {
+//      width: 100%;
+//    }
+//  }
+//  .items-titulo {
+//    padding: 22px 0 10px 0;
+//    font-weight: bolder;
+//    font-size: 21px;
+//    font-family: 'Poppins';
+//    color: $gris;
+//  }
+//  .titulo-movil {
+//    padding: 50px 0 30px 0;
+//    text-align: center;
+//  }
+//  .telefono {
+//    padding-bottom: 20px;
+//  }
+//  .boton-verde {
+//    padding: 40px 0 33px 0px;
+//
+//    button {
+//      background-color: $verde;
+//      width: 183px;
+//      border-radius: 40px;
+//      height: 53px;
+//      border: none;
+//    }
+//
+//    a {
+//      color: white;
+//      font-size: 18px;
+//      font-weight: bold;
+//    }
+//  }
+//}
+

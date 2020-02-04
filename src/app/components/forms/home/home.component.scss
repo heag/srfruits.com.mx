@@ -1,72 +1,73 @@
 @import "~src/sass/_colors.scss";
-@import "~src/sass/_colors.scss";
 
-@media (min-width: 360px) and (max-width: 480px) {
-    #home-container {
-        padding-top: 96px;
-    }
-    .slide-container {
-        position: relative;
-    }
-    .slide-content{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 177, 0, .51);
-    }
-    .slide-img {
-        z-index: 9;
-    }
-    .slide-text {
-        display: none;
-    }
-    .contenido {
-        display: none;
-    }
+#home-container {
+  padding-top: 96px;
 }
 
-@media (min-width: 1180px) and (max-width: 1920px) {
-    #home-container {
-        padding-top: 96px;
-    }
-    .slide-container {
-        position: relative;
-    }
-    .slide-content{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 177, 0, .51);
-    }
-    .slide-img {
-        z-index: 9;
-    }
-    .slide-text {
-        top: 55px;
-        left: 250px;
-        width: 408px;
-        height: 240px;
-        position: relative;
-        p {
-            font-size: 54px;
-            font-weight: bold;
-            color: white;
-        }
-        button {
-            width: 180px;
-            background-color: white;
-            color: $amarillo;
-        }
-    }
-    .contenido {
-        top: 180px;
-        left: 100px;
-        width: 350px;
-        position: relative;
-        button {
-            background-color: $verde;
-            width: 180px;
-            color: white;
-        }
-    }
- }
+.slide-container {
+  position: relative;
+}
+
+.slide-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 177, 0, .51);
+}
+
+.slide-img {
+  z-index: 9;
+}
+
+.slide-text {
+  top: 55px;
+  left: 180px;
+  height: 240px;
+  position: relative;
+
+  p {
+    font-size: 54px;
+    font-weight: bold;
+    color: white;
+  }
+
+  button {
+    width: 180px;
+    background-color: white;
+    color: $amarillo;
+  }
+}
+
+.contenido {
+  top: 180px;
+  left: 100px;
+  width: 50%;
+  position: relative;
+
+  button {
+    background-color: $verde;
+    width: 180px;
+    color: white;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  #home-container {
+    padding-top: 96px;
+  }
+  .slide-container {
+    position: relative;
+  }
+  .slide-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 177, 0, .51);
+  }
+  .slide-img {
+    z-index: 9;
+  }
+  .slide-text {
+    display: none;
+  }
+}

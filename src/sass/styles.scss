@@ -12,135 +12,151 @@ $space-l: 50px;
 $verde: rgba(126, 175, 59, 1);
 $strong-green: rgb(3, 96, 42);
 $faded-green: rgba(3, 96, 42, 0.8);
-$verde-ok:rgba(81, 158, 45, 1);
+$verde-ok: rgba(81, 158, 45, 1);
 
-
-.content{
-    padding-top: 110px;
-    overflow: hidden;
-    
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px
 }
 
-.background-strong-green{
-    background-color: $strong-green;    
+body {
+  margin: 0 0 110px;
+  overflow-x: hidden;
+  background-image: url('/src/assets/pattern.png');
+  background-repeat: repeat;
 }
 
-.top-s{
-    margin-top: $space-s;
+.content {
+  padding-top: 110px;
+  overflow: hidden;
+
 }
 
-.top-m{
-    margin-top: $space-m;
+.background-strong-green {
+  background-color: $strong-green;
 }
 
-.half-width{
-    width: 50%;
+.top-s {
+  margin-top: $space-s;
 }
 
-.full-width{
-    width: 100% !important;
+.top-m {
+  margin-top: $space-m;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width {
+  width: 100% !important;
 }
 
 // DESDE AQUI
 .fuente {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .verde {
-    color: #7EAF3B;
+  color: #7EAF3B;
 }
 
 .boton {
-    border-radius: 40px;
-    height: 60px;
-    border: none;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+  border-radius: 40px;
+  height: 60px;
+  border: none;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .titulo-home {
-    color: #7EAF3B;
-    font-size: 36px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+  color: #7EAF3B;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .subtitulo {
-    font-size: 23px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    color: #4F4F4F;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #4F4F4F;
 }
 
 .titulo {
-    font-size: 42px;
-    color: $gris;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  color: $gris;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .titulo-movil {
-    font-size: 40px;
-    color: $gris;
-    font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+  font-size: 40px;
+  color: $gris;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 .subtitulo-movil {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    color: #4F4F4F;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #4F4F4F;
 }
 
 .parrafo {
-    color: #4F4F4F;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20;
+  color: #4F4F4F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20;
 }
 
 .parrafo-movil {
-    color: #4F4F4F;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15;
-    text-align: justify;
-    width: 350px;
+  color: #4F4F4F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15;
+  text-align: justify;
 }
 
-.middle-align{
-    text-align: center !important;
+.middle-align {
+  text-align: center !important;
 }
 
-.left-xs{
-    margin-left: 5px;
+.left-xs {
+  margin-left: 5px;
 }
 
-.right{
-    position: fixed;
-    margin-right: 50px;
+.right {
+  position: fixed;
+  margin-right: 50px;
 }
 
-.green-btn{
-    background-color: $verde;
-    margin-top: $space-m;
-    color: whitesmoke;
+.green-btn {
+  background-color: $verde;
+  margin-top: $space-m;
+  color: whitesmoke;
 }
 
 .cancel-btn {
-    background-color: lightgray;
-    margin-top: $space-m;
-    color: grey;
+  background-color: lightgray;
+  margin-top: $space-m;
+  color: grey;
 }
 
-.green-color{
-    color: $verde;
+.green-color {
+  color: $verde;
 }
 
-.white-color{
-    color: whitesmoke;
+.white-color {
+  color: whitesmoke;
 }
 
-.green-bkg{
-    background-color: $verde;
+.green-bkg {
+  background-color: $verde;
+}
+
+.carousel-indicators {
+  display: none;
 }

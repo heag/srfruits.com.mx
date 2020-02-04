@@ -4,6 +4,24 @@ $back-color-faded: rgba(190, 217, 50, 1);
 $text-color: rgba(0,0,0,.5);
 $verde: rgb(121, 191, 40);
 
+.is-mobile .toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+mat-toolbar {
+  a {
+    display: inline-block;
+    margin: 0 10px;
+    color: $white;
+    text-decoration: none;
+  }
+  mat-icon {
+      color: $white;
+  }
+}
+
 .header-logo{
   text-align: center;
   img{
@@ -30,7 +48,7 @@ $verde: rgb(121, 191, 40);
 }
 
 .navbar-items {
-  padding-top: 10px;  
+  padding-top: 10px;
 }
 
 .social-network{

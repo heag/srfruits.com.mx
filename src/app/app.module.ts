@@ -40,6 +40,8 @@ import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/ex
 import { TittleHeaderComponent } from './components/shell/components/tittle-header/tittle-header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductsComponent } from './components/forms/products/products.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatListModule} from "@angular/material/list";
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule, MatTooltipModule,
@@ -50,7 +52,7 @@ const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientMo
 
 const appComponents = [AppComponent, AppShellComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
-  AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, ProcessStepsComponent, 
+  AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, ProcessStepsComponent,
   ExtraAddInfoComponent, TittleHeaderComponent, ProductsComponent];
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -79,15 +81,15 @@ const routes: Routes = [
   ],
   imports: [...angularCoreModules,
     NgbModule,
-  ...materialModules,
-  RouterModule.forRoot(routes, {useHash: false}),
-  TranslateModule.forRoot({
-    loader: {
-      provide: TranslateLoader,
-      useFactory: HttpLoaderFactory,
-      deps: [HttpClient]
-    }
-  })
+    ...materialModules,
+    RouterModule.forRoot(routes, {useHash: false}),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }), MatSidenavModule, MatListModule
   ],
   exports: [
   ],
