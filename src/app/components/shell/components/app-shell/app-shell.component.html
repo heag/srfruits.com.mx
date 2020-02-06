@@ -24,19 +24,19 @@
       </div>
       <div fxFlex></div>
       <div fxFlexAlign="center">
-        <mat-icon>phone</mat-icon>
-        <span class="telephone">&nbsp;336-333-3333</span>
-        <span class="collapse navbar-collapse">
-                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true">
-                   <mat-icon>language</mat-icon>
-                 </a>
-                 <span class="dropdown-menu" aria-labelledby="">
-                   <a class="dropdown-item"><button (click)="switchLanguage('es')">Español</button></a>
-                   <a class="dropdown-item"><button (click)="switchLanguage('en')">English</button></a>
-                 </span>
-               </span>
+        <mat-icon class="phone">phone</mat-icon>
+        <div class="telephone">
+          <strong>Llama ahora</strong>
+          <span>&nbsp;336-333-3333</span>
+        </div>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>language</mat-icon>
+          <span class="language">ES</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="switchLanguage('es')">Español</button>
+          <button mat-menu-item (click)="switchLanguage('en')">English</button>
+        </mat-menu>
       </div>
     </div>
   </mat-toolbar>
@@ -62,80 +62,3 @@
 
   </mat-sidenav-container>
 </div>
-
-
-
-          <!--<nav class="navbar navbar-expand-lg navbar-light fixed-top  navigation">-->
-<!--    <a class="navbar-brand" routerLink="/home" routerLinkActive="active">-->
-<!--        <div class="header-logo">-->
-<!--            <img src="assets/logo.png">-->
-<!--        </div>-->
-
-<!--    </a>-->
-<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"-->
-<!--        aria-expanded="false" aria-label="Toggle navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--    </button>-->
-
-<!--    <div class="collapse navbar-collapse" id="navbarNavDropdown">-->
-<!--        <ul class="navbar-nav navbar-items">-->
-
-<!--            <li class="nav-item link-item">-->
-<!--                <a class="nav-link" routerLink="/beneficios-empresa" routerLinkActive="active" translate>COMMON.BENEFITS</a>-->
-<!--            </li>-->
-
-<!--            <li class="nav-item link-item">-->
-<!--                <a class="nav-link" routerLink="/oferta" routerLinkActive="active" translate>COMMON.OFFER</a>-->
-<!--            </li>-->
-
-<!--            <li class="nav-item link-item">-->
-<!--                <a class="nav-link" routerLink="/pago" routerLinkActive="active" translate>COMMON.PAYMENT</a>-->
-<!--            </li>-->
-
-<!--            &lt;!&ndash; <li class="nav-item dropdown link-item">-->
-<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"-->
-<!--                    aria-haspopup="true" aria-expanded="false">-->
-<!--                    <span translate>COMMON.REQUEST</span>-->
-<!--                </a>-->
-<!--                <div class="dropdown-menu drop-background" aria-labelledby="navbarDropdownMenuLink">-->
-<!--                    <a class="dropdown-item" routerLink="/calculo" routerLinkActive="active"-->
-<!--                        translate>COMMON.CALCULATE_QTY</a>-->
-<!--                    <a class="dropdown-item" routerLink="/pedido" routerLinkActive="active"-->
-<!--                        translate>COMMON.REQUEST_A_QUOTE</a>-->
-<!--                    <a class="dropdown-item" routerLink="/pago" routerLinkActive="active" translate>COMMON.PAYMENT</a>-->
-<!--                </div>-->
-<!--            </li> &ndash;&gt;-->
-
-<!--            <li class="nav-item dropdown link-item">-->
-<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"-->
-<!--                    aria-haspopup="true" aria-expanded="false"><span translate>COMMON.CONTACT</span>-->
-<!--                </a>-->
-<!--                <div class="dropdown-menu drop-background" aria-labelledby="navbarDropdownMenuLink">-->
-<!--                    <a class="dropdown-item" routerLink="/contact" routerLinkActive="active" translate>COMMON.CONTACT_US</a>-->
-<!--                    <a class="dropdown-item" routerLink="/preguntas" routerLinkActive="active" translate>COMMON.FAQ</a>-->
-<!--                </div>-->
-<!--            </li>-->
-
-<!--        </ul>-->
-<!--    </div>-->
-
-<!--    <div class="collapse navbar-collapse social-network">-->
-<!--        <mat-icon>phone</mat-icon><span class="telephone">&nbsp;336-333-3333</span>-->
-<!--    </div>-->
-
-<!--    &lt;!&ndash; <div class="collapse navbar-collapse">-->
-<!--        <ul class="navbar-nav color-white">-->
-<!--            <li class="nav-item dropdown link-item">-->
-<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"-->
-<!--                    aria-haspopup="true">-->
-<!--                    <mat-icon>language</mat-icon>-->
-<!--                </a>-->
-<!--                <div class="dropdown-menu" aria-labelledby="">-->
-<!--                    <a class="dropdown-item"><button (click)="switchLanguage('es')">Español</button></a>-->
-<!--                    <a class="dropdown-item"><button (click)="switchLanguage('en')">English</button></a>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div> &ndash;&gt;-->
-
-<!--</nav>-->

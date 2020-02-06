@@ -42,6 +42,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductsComponent } from './components/forms/products/products.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
+import {MatCarouselModule} from "@ngmodule/material-carousel";
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule, MatTooltipModule,
@@ -79,18 +80,17 @@ const routes: Routes = [
   declarations: [
     ...appComponents,
   ],
-  imports: [...angularCoreModules,
-    NgbModule,
-    ...materialModules,
-    RouterModule.forRoot(routes, {useHash: false}),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }), MatSidenavModule, MatListModule
-  ],
+    imports: [...angularCoreModules,
+        ...materialModules,
+        RouterModule.forRoot(routes, {useHash: false}),
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }), MatSidenavModule, MatListModule, MatCarouselModule.forRoot(),
+    ],
   exports: [
   ],
   entryComponents: [OfferComponent],

@@ -1,22 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import {Component, AfterViewInit, ChangeDetectorRef} from '@angular/core';
 
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  providers: [NgbCarouselConfig]
+  styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
 
-  constructor(config: NgbCarouselConfig) {
-    config.interval = 3000;
-    config.wrap = true;
-    config.keyboard = false;
-    config.pauseOnHover = false;
+export class HomeComponent implements AfterViewInit {
+
+  constructor(private cdr: ChangeDetectorRef) {
   }
 
-  ngOnInit() {
+  ngAfterViewInit(): void {
+    this.cdr.detectChanges();
   }
-
 }
