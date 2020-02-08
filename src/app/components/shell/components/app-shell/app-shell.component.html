@@ -1,9 +1,9 @@
 <div fxLayout="column" [class.is-mobile]="mobileQuery.matches">
   <mat-toolbar color="primary" class="toolbar">
-    <button mat-icon-button (click)="snav.toggle()" fxHide.gt-xs>
+    <button mat-icon-button (click)="snav.toggle()" fxHide.gt-md>
       <mat-icon>menu</mat-icon>
     </button>
-    <div fxHide.lt-sm fxFlex>
+    <div fxLayout="row" fxFlex fxHide.lt-md class="navigation">
       <div fxFlexAlign="center">
         <a mat-list-item class="nav-link" routerLink="/beneficios-empresa" routerLinkActive="active"><span
           translate>COMMON.BENEFITS</span></a>
@@ -16,11 +16,11 @@
       </div>
       <div fxFlex></div>
       <div fxFlexAlign="center">
-        <h1 class="example-app-name">
+        <div class="example-app-name">
           <div class="header-logo" routerLink="/home" routerLinkActive="active">
             <img src="/assets/logo.png">
           </div>
-        </h1>
+        </div>
       </div>
       <div fxFlex></div>
       <div fxFlexAlign="center" fxLayout="row">
@@ -40,11 +40,11 @@
       </div>
     </div>
   </mat-toolbar>
-  <mat-sidenav-container fxFlexFill class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+  <mat-sidenav-container fxFlexFill class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
     <mat-sidenav #snav
                  [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [opened]="mobileQuery.matches"
-                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+                 [fixedInViewport]="mobileQuery.matches">
       <mat-nav-list>
         <a mat-list-item class="nav-link" routerLink="/beneficios-empresa" routerLinkActive="active"><span translate>COMMON.BENEFITS</span></a>
         <a mat-list-item class="nav-link" routerLink="/oferta" routerLinkActive="active"><span
@@ -54,6 +54,14 @@
         <a mat-list-item class="nav-link" routerLink="/contact" routerLinkActive="active"><span
           translate>COMMON.CONTACT</span></a>
       </mat-nav-list>
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>language</mat-icon>
+        <span class="language">ES</span>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="switchLanguage('es')">Español</button>
+        <button mat-menu-item (click)="switchLanguage('en')">English</button>
+      </mat-menu>
     </mat-sidenav>
 
     <mat-sidenav-content>

@@ -46,12 +46,6 @@ mat-toolbar {
   }
 }
 
-.navigation{
-  background-color: $naranja;
-  height: 96px;
-  top: 0;
-}
-
 .bar-items-text{
   padding-bottom: 5px;
 }
@@ -106,4 +100,26 @@ mat-icon.phone {
 
 .drop-background{
   background-color: $back-color-faded;
+}
+
+@media screen and (max-width: 960px){
+  .mat-drawer:not(.mat-drawer-side) {
+    width: 100%;
+    background-color: $naranja;
+    padding: 80px 20px;
+    .mat-nav-list .mat-list-item {
+      color: $white;
+      font-size: 28px;
+      font-weight: 700;
+      padding: 20px;
+    }
+    mat-icon, .language {
+      margin-right: .5rem;
+      color: $white;
+      font-size: 24px;
+    }
+  }
+  .navigation{
+    display: none;
+  }
 }
