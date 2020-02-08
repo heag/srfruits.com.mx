@@ -1,8 +1,23 @@
 <div fxLayout="column" [class.is-mobile]="mobileQuery.matches">
   <mat-toolbar color="primary" class="toolbar">
-    <button mat-icon-button (click)="snav.toggle()" fxHide.gt-md>
-      <mat-icon>menu</mat-icon>
-    </button>
+    <div fxLayout="row" fxFlex fxHide.gt-md>
+      <button mat-icon-button (click)="snav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div fxFlex></div>
+      <div fxFlexAlign="center center">
+        <div class="header-logo" routerLink="/home" routerLinkActive="active">
+          <img src="/assets/logo.png">
+        </div>
+      </div>
+      <div fxFlex></div>
+      <div>
+        <mat-icon class="phone">phone</mat-icon>
+        <div class="telephone">
+          <strong translate>COMMON.CALL_US</strong>
+        </div>
+      </div>
+    </div>
     <div fxLayout="row" fxFlex fxHide.lt-md class="navigation">
       <div fxFlexAlign="center">
         <a mat-list-item class="nav-link" routerLink="/beneficios-empresa" routerLinkActive="active"><span
@@ -16,17 +31,17 @@
       </div>
       <div fxFlex></div>
       <div fxFlexAlign="center">
-        <div class="example-app-name">
-          <div class="header-logo" routerLink="/home" routerLinkActive="active">
-            <img src="/assets/logo.png">
-          </div>
+        <div class="header-logo" routerLink="/home" routerLinkActive="active">
+          <img src="/assets/logo.png">
         </div>
       </div>
       <div fxFlex></div>
       <div fxFlexAlign="center" fxLayout="row">
-        <div><mat-icon class="phone">phone</mat-icon></div>
+        <div>
+          <mat-icon class="phone">phone</mat-icon>
+        </div>
         <div class="telephone">
-          <strong>Llama ahora</strong>
+          <strong translate>COMMON.CALL_US</strong>
           <span>336-333-3333</span>
         </div>
         <button mat-button [matMenuTriggerFor]="menu">

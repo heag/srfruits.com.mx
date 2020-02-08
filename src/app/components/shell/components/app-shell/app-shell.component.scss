@@ -122,4 +122,19 @@ mat-icon.phone {
   .navigation{
     display: none;
   }
+  .header-logo{
+    margin-top: 0;
+    height: 80px;
+    img{
+      height: 50px;
+    }
+  }
+  .telephone {
+    strong {
+      white-space: normal;
+      line-height: 1;
+      width: 80px;
+      font-size: .6em;
+    }
+  }
 }
