@@ -1,24 +1,15 @@
-<footer fxLayout="row" fxLayout.gt-sm="column">
-  <div class="footer-right">
+<footer fxLayout="row"
+        fxFlex
+        fxLayout.lt-md="column">
+  <div fxLayoutAlign="center center" fxLayout.lt-md="column" fxFlex class="navigation">
+    <flat-navigation></flat-navigation>
+    <div fxFlex></div>
+    <p class="mat-typography">Señor Fruits &copy; {{currentYear}}</p>
+    <div fxFlex></div>
+    <div class="footer-right">
       <a href="http://www.instagram.com/srfruits_mx" target="_blank"><i class="fa fa-instagram"></i></a>
       <a href="https://www.facebook.com/srfruitsmx" target="_blank"><i class="fa fa-facebook"></i></a>
       <a href="https://twitter.com/srfruitsmx" target="_blank"><i class="fa fa-twitter"></i></a>
     </div>
-  <div class="footer-left">
-
-      <span class="footer-links">
-        <a routerLink="/home" routerLinkActive="active">Home</a>
-        ·
-        <a routerLink="/beneficios-empresa" routerLinkActive="active">Beneficios</a>
-        ·
-        <a routerLink="/oferta" routerLinkActive="active">Oferta</a>
-        ·
-        <a routerLink="/pedido" routerLinkActive="active">Pedidos</a>
-        ·
-        <a routerLink="/contacto" routerLinkActive="active">Contacto</a>
-      </span>
-
-      <p>Señor Fruits &copy; {{currentYear}}</p>
-    </div>
-<div fxFlex></div>
+  </div>
 </footer>

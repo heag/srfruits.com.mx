@@ -1,48 +1,63 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { Http, HttpModule } from '@angular/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { EmailRestService } from './services/email.service';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgModule} from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HttpModule} from '@angular/http';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {EmailRestService} from './services/email.service';
 
-import { environment } from '../environments/environment';
-import { ENVIRONMENT } from '../environments/common';
+import {environment} from '../environments/environment';
+import {ENVIRONMENT} from '../environments/common';
 
-import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { AppShellComponent } from './components/shell/components/app-shell/app-shell.component';
+import {RouterModule, Routes} from '@angular/router';
+import {AppComponent} from './app.component';
+import {AppShellComponent} from './components/shell/components/app-shell/app-shell.component';
 import {
-  MatToolbarModule, MatSelectModule, MatInputModule, MatIconModule, MatFormFieldModule,
-  MatCardModule, MatButtonModule, MatMenuModule, MatProgressSpinnerModule, MatSnackBarModule,
-  MatButtonToggleModule, MatProgressBarModule, MatSlideToggleModule, MatCheckboxModule, MatDialogModule,
-  MatTreeModule, MatExpansionModule, MatGridListModule, MatTooltipModule
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatDialogModule,
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatMenuModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatSelectModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatToolbarModule,
+  MatTooltipModule,
+  MatTreeModule
 } from '@angular/material';
-import { SocialNetworkComponent } from './components/shell/components/social-network/social-network.component';
-import { ContactComponent } from './components/forms/contact/contact/contact.component';
-import { OfferComponent } from './components/forms/products/offer/offer.component';
-import { FooterComponent } from './components/shell/components/footer/footer.component';
-import { HomeComponent } from './components/forms/home/home.component';
-import { AdvantagesComponent } from './components/forms/about-us/advantages/advantages.component';
-import { MisionVisionComponent } from './components/forms/about-us/mision-vision/mision-vision.component';
-import { AchievementsComponent } from './components/forms/about-us/achievements/achievements.component';
-import { BenefitsEmployeeComponent } from './components/forms/benefits/for-employee/benefits-employee';
-import { BenefitsCompanyComponent } from './components/forms/benefits/for-company/benefits-company';
-import { RequestComponent } from './components/forms/requests/request/request.component';
-import { CalculatorComponent } from './components/forms/requests/calculator/calculator.component';
-import { PaymentComponent } from './components/forms/requests/payment/payment.component';
-import { QuestionsComponent } from './components/forms/contact/questions/questions.component';
-import { ProcessStepsComponent } from './components/forms/home/process-steps/process-steps.component';
-import { ExtraAddInfoComponent } from './components/forms/home/extra-add-info/extra-add-info.component';
-import { TittleHeaderComponent } from './components/shell/components/tittle-header/tittle-header.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { ProductsComponent } from './components/forms/products/products.component';
+import {SocialNetworkComponent} from './components/shell/components/social-network/social-network.component';
+import {ContactComponent} from './components/forms/contact/contact/contact.component';
+import {OfferComponent} from './components/forms/products/offer/offer.component';
+import {FooterComponent} from './components/shell/components/footer/footer.component';
+import {HomeComponent} from './components/forms/home/home.component';
+import {AdvantagesComponent} from './components/forms/about-us/advantages/advantages.component';
+import {MisionVisionComponent} from './components/forms/about-us/mision-vision/mision-vision.component';
+import {AchievementsComponent} from './components/forms/about-us/achievements/achievements.component';
+import {BenefitsEmployeeComponent} from './components/forms/benefits/for-employee/benefits-employee';
+import {BenefitsCompanyComponent} from './components/forms/benefits/for-company/benefits-company';
+import {RequestComponent} from './components/forms/requests/request/request.component';
+import {CalculatorComponent} from './components/forms/requests/calculator/calculator.component';
+import {PaymentComponent} from './components/forms/requests/payment/payment.component';
+import {QuestionsComponent} from './components/forms/contact/questions/questions.component';
+import {ProcessStepsComponent} from './components/forms/home/process-steps/process-steps.component';
+import {ExtraAddInfoComponent} from './components/forms/home/extra-add-info/extra-add-info.component';
+import {TittleHeaderComponent} from './components/shell/components/tittle-header/tittle-header.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {ProductsComponent} from './components/forms/products/products.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {MatCarouselModule} from "@ngmodule/material-carousel";
+import {FlatNavigationComponent} from './components/shell/components/flat-navigation/flat-navigation.component';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule, MatTooltipModule,
@@ -79,6 +94,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     ...appComponents,
+    FlatNavigationComponent,
   ],
     imports: [...angularCoreModules,
         ...materialModules,

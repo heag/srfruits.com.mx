@@ -123,10 +123,10 @@ mat-icon.phone {
     display: none;
   }
   .header-logo{
-    margin-top: 0;
-    height: 80px;
+    margin-top: -10px;
+    height: 70px;
     img{
-      height: 50px;
+      height: 40px;
     }
   }
   .telephone {
@@ -136,5 +136,9 @@ mat-icon.phone {
       width: 80px;
       font-size: .6em;
     }
+  }
+  .language-selector {
+    margin-left: 2rem;
+    padding: 20px;
   }
 }
