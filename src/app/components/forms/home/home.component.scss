@@ -20,21 +20,29 @@
 }
 
 .slide-text {
-  top: 55px;
-  left: 180px;
+  top: 140px;
+  left: 150px;
   height: 240px;
+  width: 30%;
   position: relative;
 
   p {
-    font-size: 54px;
-    font-weight: bold;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 130%;
     color: white;
   }
 
   button {
-    width: 180px;
+    border-radius: 30px;
+    padding: .75rem 2.5rem;
+    margin-top: 2rem;
+    height: 60px;
     background-color: white;
     color: $amarillo;
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 
@@ -45,9 +53,13 @@
   position: relative;
 
   button {
+    border-radius: 30px;
+    padding: .5rem 2rem;
     background-color: $verde;
     width: 180px;
     color: white;
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 

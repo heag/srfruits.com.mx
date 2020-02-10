@@ -160,3 +160,9 @@ body {
 .carousel-indicators {
   display: none;
 }
+
+@media screen and (max-width: 960px){
+  body {
+    margin: 0;
+  }
+}

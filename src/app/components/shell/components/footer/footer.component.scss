@@ -1,56 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import "~src/sass/_colors.scss";
-
-$back-color: #ffbf00;
-$text-color: rgba(0, 0, 0, .5);
 
 footer {
   width: 100%;
-  background-color: $naranja;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: $verde;
   box-sizing: border-box;
-  text-align: left;
-  font: normal 16px sans-serif;
   position: absolute;
   padding: 10px 50px;
   margin-top: 80px;
   height: 110px;
   overflow: hidden;
   bottom: 0;
-}
-
-.footer-left span {
-  color: $text-color;
-  font-size: 12px;
-  margin: 0;
-}
-
-/* Footer links */
-
-span.footer-links {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 0 10px;
-  padding: 0;
-}
-
-span.footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: $text-color;
-}
-
-.footer-right {
-  float: right;
-  margin-top: 6px;
+  p {
+    color: $white;
+  }
+  ::ng-deep .mat-list-item-content span {
+    font-size: 18px;
+  }
 }
 
 .footer-right a {
   display: inline-block;
   width: 35px;
   height: 35px;
-  background-color: #33383b;
   border-radius: 2px;
   font-size: 20px;
   color: #ffffff;
@@ -59,21 +30,15 @@ span.footer-links a {
   margin-left: 3px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+@media screen and (max-width: 960px){
 
-@media (max-width: 600px) {
-
-  .footer-left,
-  .footer-right {
-    text-align: center;
+  footer {
+    position: relative;
+    height: 460px;
+    margin-top: 0;
+    ::ng-deep a.mat-list-item {
+      padding: 5px;
+    }
   }
 
-  .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-
-  .footer-left span.footer-links {
-    line-height: 1.8;
-  }
 }

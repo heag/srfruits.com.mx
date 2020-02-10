@@ -1,60 +1,16 @@
 @import "~src/sass/_colors.scss";
-@import "~src/sass/_colors.scss";
 
-
-@media (min-width: 360px) and (max-width: 480px) {
-    #inner-flex-container {
-        flex-direction: column;
-    }
-    .tarjeta {
-        margin: 30px;
-    }
-    #container{
-        width: 100%;
-    }
+.wrapper {
+  padding: 3rem;
+  background-color: $gris-claro;
 }
 
-@media (min-width: 1180px) and (max-width: 1920px) {
-    .titulo{
-        padding-top: 65px;
-    }
-    #outer-flex-container {
-        display: inline-block;
-        flex-direction: column;
-        height: 100%;
-    }
-    #inner-flex-container {
-        display: flex;
-        height: calc(100% - 40px);
-    }
-    #container{
-        height: 730px;
-    }
-    .tarjeta {
-        width: 230px;
-        margin: 0 25px 0 25px;
-    }
-}
-
-#outer-flex-container {
-    display: inline-block;
-    flex-direction: column;
-    height: 100%;
+#container {
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .paso-texto {
     font-size: 15px;
     width: 100%;
-}
-
-#inner-flex-container {
-    display: flex;
-    height: calc(100% - 40px);
-}
-
-#container {
-    div {
-        background-color: $gris-claro;
-    }
-    background-color: $gris-claro;
 }
