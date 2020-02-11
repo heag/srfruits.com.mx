@@ -24,6 +24,7 @@ html {
 body {
   margin: 0 0 110px;
   overflow-x: hidden;
+  overflow-y: auto;
   background-image: url('src/assets/pattern.png');
   background-repeat: repeat;
 }
@@ -31,7 +32,6 @@ body {
 .content {
   padding-top: 110px;
   overflow: hidden;
-
 }
 
 .background-strong-green {
@@ -164,5 +164,6 @@ body {
 @media screen and (max-width: 960px){
   body {
     margin: 0;
+    overflow-y: auto;
   }
 }

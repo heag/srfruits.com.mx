@@ -51,12 +51,11 @@
   ></mat-carousel-slide>
 
 </mat-carousel>
-
-<div fxLayout="row">
-  <div fxFlex="50">
+<div fxLayout="row" fxLayout.lt-md="column">
+  <div fxFlex="50" fxFlexOrder.lt-md="2" >
     <img src='assets/our-products-home.png' alt="products">
   </div>
-  <div fxFlex="50" fxLayout.sm="column">
+  <div fxFlex fxLayout.sm="column" fxFlexOrder.lt-md="1" >
     <div class="contenido">
       <p class="titulo-home">Nuestros productos</p>
       <p class="parrafo">Consulta nuestros paquetes que ofrecen la mejor selección y variedad de nuestros
@@ -65,14 +64,15 @@
     </div>
   </div>
 </div>
+
 <process-steps></process-steps>
 
 <app-advantages></app-advantages>
 
 <app-calculator></app-calculator>
 
-<div fxLayout="row">
-  <div fxFlex="50" fxLayoutAlign="center start">
+<div fxLayout="row" fxLayout.lt-md="column">
+  <div fxFlex="50" fxLayout.sm="column" fxLayoutAlign="center start">
     <div class="contenido">
       <p class="titulo-home">Atención inmediata</p>
       <p class="parrafo">¿Alguna pregunta? contacta Señor Fruits por cualquiera de sus canales</p>

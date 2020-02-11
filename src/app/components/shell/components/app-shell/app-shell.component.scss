@@ -4,6 +4,10 @@ $back-color-faded: rgba(190, 217, 50, 1);
 $text-color: rgba(0,0,0,.5);
 $verde: rgb(121, 191, 40);
 
+mat-sidenav-content {
+  overflow-y: auto;
+}
+
 .is-mobile .toolbar {
   position: fixed;
   /* Make sure the toolbar will stay on top of the content as it scrolls past. */
