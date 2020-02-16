@@ -1,5 +1,6 @@
 {
     "COMMON": {
+        "HOME": "Home",
         "PAGE_NAME": "Señor Fruits",
         "ABOUT_US": "Nosotros",
         "BENEFITS": "Beneficios",
@@ -12,7 +13,8 @@
         "PAYMENT": "Pago",
         "CONTACT": "Contacto",
         "CONTACT_US": "Contactanos",
-        "FAQ": "Preguntas Frecuentes"
+        "FAQ": "Preguntas Frecuentes",
+        "CALL_US": "Llama ahora"
     },
 
     "HOME": {
@@ -20,39 +22,39 @@
             "Tittle": "¿Como funciona?"
         }
     },
-    
+
     "ABOUT_US": {
         "WHO_WE_ARE": {
             "Tittle": "¿Quienes somos?",
             "Description": "Algunos de nuestros tantos beneficios que puedes encontrar en Señor Fruits&reg;"
-        }        
+        }
     },
 
     "BENEFITS": {
-        
+
     },
 
     "PRODUCTS": {
-        
+
     },
 
     "REQUEST_A_QUOTE": {
-        
+
     },
 
     "CALCULATE_QTY": {
-        
+
     },
 
     "PAYMENT": {
-        
+
     },
 
     "CONTACT": {
-        
+
     },
 
     "FAQ": {
-        
+
     }
 }
