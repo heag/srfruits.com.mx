@@ -35,10 +35,10 @@
           <strong translate>COMMON.CALL_US</strong>
           <span>336-333-3333</span>
         </div>
-        <button mat-button [matMenuTriggerFor]="menu">
+        <!-- <button mat-button [matMenuTriggerFor]="menu">
           <mat-icon>language</mat-icon>
           <span class="language">ES</span>
-        </button>
+        </button> -->
         <mat-menu #menu="matMenu">
           <button mat-menu-item (click)="switchLanguage('es')">Español</button>
           <button mat-menu-item (click)="switchLanguage('en')">English</button>
