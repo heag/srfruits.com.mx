@@ -25,7 +25,7 @@
   margin-right: 10%;
   mat-card {
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 8px 20px 1px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -120,4 +120,21 @@
 .fuente {
   font-size: 18px;
   text-align: justify;
+}
+
+@media screen and (max-width: 960px) {
+  #tarjeta {
+    margin-right: 0;
+  }
+  mat-card {
+    margin-top: 20px;
+    padding: 40px;
+  }
+  .boton-verde {
+    padding: 20px;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
 }
