@@ -1,19 +1,15 @@
 @import "~src/sass/_colors.scss";
-@import "~src/sass/_colors.scss";
 
-@media (min-width: 360px) and (max-width: 480px) {
-
+.circle-yellow {
+  position: absolute;
+  left: 0;
+  z-index: -1;
 }
 
-@media (min-width: 1180px) and (max-width: 1920px) {
-  .parrafo {
-    width: 320px;
-  }
-  .titulo {
-    padding-top: 50px;
-  }
+.advantages {
+  margin-bottom: 60px;
+}
 
-  .second-row {
-    padding-bottom: 40px;
-  }
+.parrafo {
+  margin-bottom: 50px;
 }
