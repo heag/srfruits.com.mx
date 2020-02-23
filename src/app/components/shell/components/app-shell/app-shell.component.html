@@ -42,12 +42,11 @@
   <mat-sidenav-container fxFlexFill class="sidenav-container">
     <mat-sidenav #snav
                  [mode]="mobileQuery.matches ? 'over' : 'side'"
-                 [fixedInViewport]="mobileQuery.matches"
-                 (click)="snav.toggle()">
+                 [fixedInViewport]="mobileQuery.matches">
       <mat-nav-list>
-        <flat-navigation></flat-navigation>
+        <flat-navigation (sidenavClose)="snav.toggle()"></flat-navigation>
       </mat-nav-list>
-      <language-switcher></language-switcher>
+      <language-switcher (sidenavClose)="snav.toggle()"></language-switcher>
     </mat-sidenav>
     <mat-sidenav-content>
       <router-outlet></router-outlet>

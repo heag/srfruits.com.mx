@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
@@ -8,6 +8,8 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class LanguageSwitcherComponent implements OnInit {
   selectedLanguage = 'es';
+  @Output() sidenavClose = new EventEmitter();
+
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('es');
   }
@@ -17,7 +19,7 @@ export class LanguageSwitcherComponent implements OnInit {
 
   switchLanguage(language: string) {
     this.translate.use(language);
-    this.selectedLanguage = language
+    this.selectedLanguage = language;
+    this.sidenavClose.emit()
   }
-
 }

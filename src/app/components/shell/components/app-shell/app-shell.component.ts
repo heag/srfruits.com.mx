@@ -1,6 +1,7 @@
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import {ChangeDetectorRef, Component, HostListener, Input, OnDestroy} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MediaMatcher } from "@angular/cdk/layout";
+import {Subject} from "rxjs";
 
 @Component({
   selector: 'app-shell',
@@ -9,6 +10,7 @@ import { MediaMatcher } from "@angular/cdk/layout";
 })
 export class AppShellComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
+  @Input() isLanguageSwitcherClicked: boolean
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private translate: TranslateService) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
