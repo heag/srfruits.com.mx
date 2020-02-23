@@ -1,0 +1,9 @@
+<button mat-button class="language-selector" [matMenuTriggerFor]="menu">
+  <mat-icon>language</mat-icon>
+  <span class="language" *ngIf="selectedLanguage == 'es'">ES</span>
+  <span class="language" *ngIf="selectedLanguage == 'en'">EN</span>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="switchLanguage('es')">Español</button>
+  <button mat-menu-item (click)="switchLanguage('en')">English</button>
+</mat-menu>

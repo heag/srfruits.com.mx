@@ -14,15 +14,10 @@ export class AppShellComponent implements OnDestroy {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this.mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this.mobileQueryListener);
-    translate.setDefaultLang('es');
   }
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this.mobileQueryListener);
-  }
-
-  switchLanguage(language: string) {
-    this.translate.use(language);
   }
 
   private readonly mobileQueryListener: () => void;
