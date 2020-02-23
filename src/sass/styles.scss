@@ -34,6 +34,11 @@ body {
   overflow: hidden;
 }
 
+#container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 .background-strong-green {
   background-color: $strong-green;
 }
@@ -165,5 +170,9 @@ body {
   body {
     margin: 0;
     overflow-y: auto;
+  }
+  #container {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }

@@ -35,10 +35,6 @@
           <strong translate>COMMON.CALL_US</strong>
           <span>336-333-3333</span>
         </div>
-        <!-- <button mat-button [matMenuTriggerFor]="menu">
-          <mat-icon>language</mat-icon>
-          <span class="language">ES</span>
-        </button> -->
         <mat-menu #menu="matMenu">
           <button mat-menu-item (click)="switchLanguage('es')">Español</button>
           <button mat-menu-item (click)="switchLanguage('en')">English</button>
@@ -46,10 +42,11 @@
       </div>
     </div>
   </mat-toolbar>
-  <mat-sidenav-container fxFlexFill class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+  <mat-sidenav-container fxFlexFill class="sidenav-container">
     <mat-sidenav #snav
                  [mode]="mobileQuery.matches ? 'over' : 'side'"
-                 [fixedInViewport]="mobileQuery.matches">
+                 [fixedInViewport]="mobileQuery.matches"
+                 (click)="snav.toggle()">
       <mat-nav-list>
         <flat-navigation></flat-navigation>
       </mat-nav-list>
