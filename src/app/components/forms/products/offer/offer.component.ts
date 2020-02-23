@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferComponent implements OnInit {
 
-  constructor() { }
+  flag: boolean;
+
+  constructor() {
+    this.flag = false
+  }
 
   ngOnInit() {
   }

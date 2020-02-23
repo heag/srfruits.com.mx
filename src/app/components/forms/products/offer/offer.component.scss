@@ -2,38 +2,45 @@
 @import "~src/sass/_dimensions.scss";
 
 .verde {
-  border: 2px solid $green-500;
-  .contenido{
-    background-color: $green-500;
+  background-color: #F2FBEF;
+
+  .contenido {
+    background-color: #DDF4D5;
     color: $grey-800;
   }
 }
 
-.amarillo{
-  border: 2px solid $amarillo;
-  .contenido{
-    background-color: $amarillo;
+.amarillo {
+  background-color: #FFF7E8;
+
+  .contenido {
+    background-color: #FEEFD1;
     color: $grey-700;
   }
 }
 
 .contenido {
-  width: 100%;
+  & {
+    width: 100%;
+    padding: $dimension-sm;
+  }
+
   h3 {
     padding-top: $space-xs;
   }
 }
 
-.naranja{
-  border: 2px solid $naranja-fuerte;
-  .contenido{
-    background-color: $naranja-fuerte;
+.naranja {
+  background-color: #FDEEEF;
+
+  .contenido {
+    background-color: #FADEDF;
     color: $grey-700;
   }
 }
 
 
-.imagen {  
+.imagen {
   img {
     height: 200px;
   }
@@ -43,5 +50,58 @@
 .temporada {
   mat-icon {
     font-size: 16px;
+  }
+}
+
+.mobile-action {
+  background: $verde;
+  border-radius: 33px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  height: 65px;
+  color: $white;
+
+  &.show {
+    .icon {
+      background: #FFBF00;
+    }
+
+    .telephone {
+      padding: 10px 20px;
+      width: 205px;
+      font-size: 24px;
+    }
+  }
+
+  .icon {
+    background: $verde;
+    position: relative;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    overflow: hidden;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2.5;
+  }
+
+  .telephone {
+    width: 0;
+    padding: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    font-size: 24px;
   }
 }

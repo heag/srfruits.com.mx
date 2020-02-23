@@ -2,13 +2,13 @@
   <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="45px">
 
     <div fxLayout="column" fxFlex="250px" class="verde" fxLayoutAlign="center center">
+      <div>
+        <h3>Standar</h3>
+      </div>
       <div class="imagen" fxFlex="180px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
-      <div fxFlex="150px" fxLayout="column" fxLayoutAlign="start center" class="contenido">
-        <div>
-          <h3>Standar</h3>
-        </div>
+      <div class="description">
         <div>5 kg platano</div>
         <div>2 kg manzana</div>
         <div fxLayout="row" class="temporada" matTooltip="Puede ser guayaba, mango, kiwi, pera">
@@ -18,20 +18,30 @@
           </div>
         </div>
       </div>
+
+      <div fxFlex fxLayout="column" fxLayoutAlign="start center" class="contenido">
+        <div class="mobile-action" (mouseenter)="flag=true" (mouseleave)="flag=false" [ngClass]="{'show':flag==true, '':flag==false}">
+          <mat-icon class="icon">arrow_forward_ios</mat-icon>
+          <span class="telephone">
+            <strong translate>COMMON.CALL_US</strong>
+            <span translate>COMMON.PHONENUMBER</span>
+          </span>
+        </div>
+      </div>
     </div>
 
     <div fxLayout="column" fxFlex="250px" class="amarillo" fxLayoutAlign="center center">
+      <div>
+        <h3>Más</h3>
+      </div>
       <div class="imagen" fxFlex="180px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
-      <div fxFlex="150px" fxLayout="column" fxLayoutAlign="start center" class="contenido">
-        <div>
-          <h3>Standar</h3>
-        </div>
-        <div>5 kg platano</div>
+      <div fxFlex fxLayout="column" fxLayoutAlign="start center" class="contenido">
+        <div>3 kg platano</div>
         <div>2 kg manzana</div>
         <div fxLayout="row" class="temporada" matTooltip="Puede ser guayaba, mango, kiwi, pera">
-          <div>2 kg Fruta de temporada&nbsp;</div>
+          <div>3 kg Fruta de temporada&nbsp;</div>
           <div>
             <mat-icon>info</mat-icon>
           </div>
@@ -40,17 +50,18 @@
     </div>
 
     <div fxLayout="column" fxFlex="250px" class="naranja" fxLayoutAlign="center center">
+      <div>
+        <h3>Prima</h3>
+      </div>
       <div class="imagen" fxFlex="180px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
-      <div fxFlex="150px" fxLayout="column" fxLayoutAlign="start center" class="contenido">
-        <div>
-          <h3>Standar</h3>
-        </div>
-        <div>5 kg platano</div>
+      <div fxFlex fxLayout="column" fxLayoutAlign="start center" class="contenido">
+        <div>2 kg platano</div>
         <div>2 kg manzana</div>
+        <div>1 kg de uva</div>
         <div fxLayout="row" class="temporada" matTooltip="Puede ser guayaba, mango, kiwi, pera">
-          <div>2 kg Fruta de temporada&nbsp;</div>
+          <div>3 kg Fruta de temporada&nbsp;</div>
           <div>
             <mat-icon>info</mat-icon>
           </div>
