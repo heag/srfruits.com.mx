@@ -59,6 +59,7 @@ import {MatListModule} from "@angular/material/list";
 import {MatCarouselModule} from "@ngmodule/material-carousel";
 import {FlatNavigationComponent} from './components/shell/components/flat-navigation/flat-navigation.component';
 import { LanguageSwitcherComponent } from './components/shell/components/language-switcher/language-switcher.component';
+import { PhoneSliderComponent } from './components/forms/products/offer/phone-slider/phone-slider.component';
 
 const materialModules = [MatToolbarModule, FormsModule, ReactiveFormsModule, MatFormFieldModule,
   MatSelectModule, MatIconModule, MatCardModule, MatButtonModule, MatSlideToggleModule, MatTooltipModule,
@@ -97,6 +98,7 @@ const routes: Routes = [
     ...appComponents,
     FlatNavigationComponent,
     LanguageSwitcherComponent,
+    PhoneSliderComponent,
   ],
     imports: [...angularCoreModules,
         ...materialModules,
