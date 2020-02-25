@@ -1,6 +1,6 @@
 <div fxLayout="column" [class.is-mobile]="mobileQuery.matches">
   <mat-toolbar color="primary" class="toolbar">
-    <div fxLayout="row" fxFlex fxHide.gt-md>
+    <div fxLayout="row" fxFlex fxHide fxShow.lt-md>
       <button mat-icon-button (click)="snav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div fxFlex></div>
-      <div fxFlexAlign="center" fxLayout="row">
+      <div fxFlexAlign="center" fxLayout="row" class="call-us">
         <div>
           <mat-icon class="phone">phone</mat-icon>
         </div>

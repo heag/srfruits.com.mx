@@ -1,24 +1,20 @@
-<mat-carousel
-  timings="250ms ease-in"
-  [autoplay]="true"
-  interval="4000"
-  color="primary"
-  maxWidth="auto"
-  proportion="35"
-  slides="3"
-  [loop]="true"
-  [hideArrows]="true"
-  [hideIndicators]="false"
-  [useKeyboard]="true"
-  [useMouseWheel]="false"
-  orientation="ltr"
->
-  <mat-carousel-slide
-    #matCarouselSlide
-    [image]="'assets/carrusel-beneficios.jpg'"
-    overlayColor="rgba(255, 177, 0, .51)"
-    [hideOverlay]="false"
-  >
+<mat-carousel timings="250ms ease-in"
+              [autoplay]="true"
+              interval="4000"
+              color="primary"
+              maxWidth="auto"
+              proportion="35"
+              slides="3"
+              [loop]="true"
+              [hideArrows]="true"
+              [hideIndicators]="false"
+              [useKeyboard]="true"
+              [useMouseWheel]="false"
+              orientation="ltr">
+  <mat-carousel-slide #matCarouselSlide
+                      [image]="'assets/carrusel-beneficios.jpg'"
+                      overlayColor="rgba(255, 177, 0, .51)"
+                      [hideOverlay]="false">
     <div class="slide-container">
       <div class="slide-content">
         <div class="slide-text fuente">
@@ -28,12 +24,10 @@
       </div>
     </div>
   </mat-carousel-slide>
-  <mat-carousel-slide
-    #matCarouselSlide
-    [image]="'assets/carrusel-pedido.jpg'"
-    overlayColor="rgba(255, 177, 0, .51)"
-    [hideOverlay]="false"
-  >
+  <mat-carousel-slide #matCarouselSlide
+                      [image]="'assets/carrusel-pedido.jpg'"
+                      overlayColor="rgba(255, 177, 0, .51)"
+                      [hideOverlay]="false">
     <div class="slide-container">
       <div class="slide-content">
         <div class="slide-text fuente">
@@ -43,23 +37,21 @@
       </div>
     </div>
   </mat-carousel-slide>
-  <mat-carousel-slide
-    #matCarouselSlide
-    [image]="'assets/carrusel-seleccion.jpg'"
-    overlayColor="rgba(255, 177, 0, .51)"
-    [hideOverlay]="false"
-  ></mat-carousel-slide>
+  <mat-carousel-slide #matCarouselSlide
+                      [image]="'assets/carrusel-seleccion.jpg'"
+                      overlayColor="rgba(255, 177, 0, .51)"
+                      [hideOverlay]="false"></mat-carousel-slide>
 
 </mat-carousel>
 <div fxLayout="row" fxLayout.lt-md="column">
-  <div fxFlex="50" fxFlexOrder.lt-md="2" >
-    <img class="products" src='assets/our-products-home.png' alt="products">
+  <div fxFlex="45" fxFlex.lt-md="100" fxFlexOrder.lt-md="2">
+    <img class="products" src='assets/our-products-home.svg' alt="products">
   </div>
-  <div fxFlex fxLayout.sm="column" fxFlexOrder.lt-md="1" >
-    <div class="contenido">
+  <div fxFlex fxLayoutAlign="center center" fxLayout.sm="column" fxFlexOrder.lt-md="1">
+    <div class="contenido" fxFlex="50" fxFlex.lt-md="100">
       <p class="titulo-home">Nuestros productos</p>
       <p class="parrafo">Consulta nuestros paquetes que ofrecen la mejor selección y variedad de nuestros
-          productos</p>
+        productos</p>
       <button mat-button routerLink="/oferta" routerLinkActive="active">Catálogo</button>
     </div>
   </div>
@@ -71,15 +63,4 @@
 
 <app-calculator></app-calculator>
 
-<div fxLayout="row" fxLayout.lt-md="column">
-  <div fxFlex="50" fxLayout.sm="column" fxLayoutAlign="center start">
-    <div class="contenido">
-      <p class="titulo-home">¿Alguna pregunta?</p>
-      <p class="parrafo">Aqui puedes consultar las preguntas mas comunes de nuestros clientes</p>
-      <button class="boton" routerLink="/preguntas" routerLinkActive="active">Ver</button>
-    </div>
-  </div>
-  <div fxFlex="50" fxLayoutAlign="end end">
-    <img class="atencion" src='assets/atencion-personal.png' alt="atencion">
-  </div>
-</div>
+<app-preguntas></app-preguntas>
