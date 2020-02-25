@@ -1,63 +1,65 @@
 <div fxLayout="column" fxLayoutGap="60px">
-  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="45px">
+  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center start" fxLayoutGap="45px">
 
-    <div fxLayout="column" fxFlex="250px" class="verde" fxLayoutAlign="center center">
-      <div class="imagen" fxFlex="180px" fxLayoutAlign="center center">
+    <div fxLayout="column" fxFlex="33%" class="verde" fxLayoutAlign="center center">
+      <h2>Standar</h2>
+      <div class="imagen" fxFlex="240px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
-      <div fxFlex="150px" fxLayout="column" fxLayoutAlign="start center" class="contenido">
-        <div>
-          <h3>Standar</h3>
-        </div>
-        <div>5 kg platano</div>
-        <div>2 kg manzana</div>
-        <div fxLayout="row" class="temporada" matTooltip="Puede ser guayaba, mango, kiwi, pera">
-          <div>2 kg Fruta de temporada&nbsp;</div>
-          <div>
-            <mat-icon>info</mat-icon>
-          </div>
-        </div>
+      <mat-list class="description">
+        <mat-list-item *ngFor="let standar of standar">
+          <mat-icon mat-list-icon>new_releases</mat-icon>
+          <p mat-line matTooltip="{{standar.tooltip}}">
+            <strong>{{standar.kilo}} kg</strong>
+            {{standar.title}}
+            <mat-icon *ngIf="standar.tooltip">info</mat-icon>
+          </p>
+        </mat-list-item>
+      </mat-list>
+      <div fxFlex fxLayout="column" fxLayoutAlign="start center" class="contenido">
+        <phone-slider></phone-slider>
       </div>
     </div>
 
-    <div fxLayout="column" fxFlex="250px" class="amarillo" fxLayoutAlign="center center">
-      <div class="imagen" fxFlex="180px" fxLayoutAlign="center center">
+    <div fxLayout="column" fxFlex="33%" class="amarillo" fxLayoutAlign="center center">
+      <h2>Más</h2>
+      <div class="imagen" fxFlex="240px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
-      <div fxFlex="150px" fxLayout="column" fxLayoutAlign="start center" class="contenido">
-        <div>
-          <h3>Standar</h3>
-        </div>
-        <div>5 kg platano</div>
-        <div>2 kg manzana</div>
-        <div fxLayout="row" class="temporada" matTooltip="Puede ser guayaba, mango, kiwi, pera">
-          <div>2 kg Fruta de temporada&nbsp;</div>
-          <div>
-            <mat-icon>info</mat-icon>
-          </div>
-        </div>
+      <mat-list class="description">
+        <mat-list-item *ngFor="let standar of mas">
+          <mat-icon mat-list-icon>new_releases</mat-icon>
+          <p mat-line matTooltip="{{standar.tooltip}}">
+            <strong>{{standar.kilo}} kg</strong>
+            {{standar.title}}
+            <mat-icon *ngIf="standar.tooltip">info</mat-icon>
+          </p>
+        </mat-list-item>
+      </mat-list>
+      <div fxFlex fxLayout="column" fxLayoutAlign="start center" class="contenido">
+        <phone-slider></phone-slider>
       </div>
     </div>
 
-    <div fxLayout="column" fxFlex="250px" class="naranja" fxLayoutAlign="center center">
-      <div class="imagen" fxFlex="180px" fxLayoutAlign="center center">
+    <div fxLayout="column" fxFlex="33%" class="naranja" fxLayoutAlign="center center">
+      <h2>Prima</h2>
+      <div class="imagen" fxFlex="240px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
-      <div fxFlex="150px" fxLayout="column" fxLayoutAlign="start center" class="contenido">
-        <div>
-          <h3>Standar</h3>
-        </div>
-        <div>5 kg platano</div>
-        <div>2 kg manzana</div>
-        <div fxLayout="row" class="temporada" matTooltip="Puede ser guayaba, mango, kiwi, pera">
-          <div>2 kg Fruta de temporada&nbsp;</div>
-          <div>
-            <mat-icon>info</mat-icon>
-          </div>
-        </div>
+      <mat-list class="description">
+        <mat-list-item *ngFor="let standar of prima">
+          <mat-icon mat-list-icon>new_releases</mat-icon>
+          <p mat-line matTooltip="{{standar.tooltip}}">
+            <strong>{{standar.kilo}} kg</strong>
+            {{standar.title}}
+            <mat-icon *ngIf="standar.tooltip">info</mat-icon>
+          </p>
+        </mat-list-item>
+      </mat-list>
+      <div fxFlex fxLayout="column" fxLayoutAlign="start center" class="contenido">
+        <phone-slider></phone-slider>
       </div>
     </div>
 
   </div>
-
 </div>

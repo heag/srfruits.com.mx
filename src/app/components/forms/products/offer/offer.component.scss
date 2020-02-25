@@ -2,46 +2,77 @@
 @import "~src/sass/_dimensions.scss";
 
 .verde {
-  border: 2px solid $green-500;
-  .contenido{
-    background-color: $green-500;
+  padding-top: 30px;
+  background-color: #F2FBEF;
+
+  .contenido {
+    background-color: #DDF4D5;
     color: $grey-800;
   }
 }
 
-.amarillo{
-  border: 2px solid $amarillo;
-  .contenido{
-    background-color: $amarillo;
+.amarillo {
+  padding-top: 30px;
+  background-color: #FFF7E8;
+
+  .contenido {
+    background-color: #FEEFD1;
     color: $grey-700;
   }
 }
 
+.naranja {
+  padding-top: 30px;
+  background-color: #FDEEEF;
+
+  .contenido {
+    background-color: #FADEDF;
+    color: $grey-700;
+  }
+}
+
+.description {
+  padding: 20px 10px;
+}
+
 .contenido {
-  width: 100%;
+  & {
+    width: 100%;
+    padding: $dimension-sm;
+  }
+
   h3 {
     padding-top: $space-xs;
   }
 }
 
-.naranja{
-  border: 2px solid $naranja-fuerte;
-  .contenido{
-    background-color: $naranja-fuerte;
-    color: $grey-700;
-  }
-}
-
-
-.imagen {  
+.imagen {
   img {
-    height: 200px;
+    display: block;
+    padding: 30px 10px;
+    width: 100%;
   }
 }
-
 
 .temporada {
   mat-icon {
     font-size: 16px;
+  }
+}
+
+mat-list-item {
+  & {
+    height: 46px !important;
+  }
+
+  mat-icon {
+    color: $verde;
+  }
+
+  p {
+    mat-icon {
+      font-size: 14px;
+      color: $green-300;
+    }
   }
 }

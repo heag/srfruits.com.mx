@@ -1,12 +1,15 @@
 @import "~src/sass/_colors.scss";
 @import "~src/sass/_dimensions.scss";
 
-.tarjetas {
-    padding-top: $space-lg;
+:host {
+  .titulo {
+    top: 10rem;
+    padding: 140px 0 40px 0;
+    width: 100%;
+    border-bottom: 2px solid $amarillo;
+  }
 }
 
-.tarjeta {
-    mat-icon {
-        margin-right: 10px;
-    }
+offer, .advantages {
+  margin: 3rem auto;
 }

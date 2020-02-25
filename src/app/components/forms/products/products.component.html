@@ -1,14 +1,35 @@
-<div class="content" fxFlexLayout="column">
-    <div>
-        <offer></offer>
-    </div>
-    <div fxLayoutAlign="center center" class="tarjeta tarjetas">
-        <div fxFlex="550px" fxLayoutAlign="start center" class="alert alert-primary" role="alert">
-            <mat-icon>person</mat-icon>Cada caja rinde aproximadamente para 35 personas
+<div class="titulo" fxLayoutAlign="center center" translate>COMMON.OFFER</div>
+<div id="container" fxLayout="column">
+  <offer></offer>
+  <div fxLayout="column" fxLayoutGap="60px" class="advantages">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center start" fxLayoutGap="45px">
+      <div fxLayout="column" fxFlex="30" fxFlex.lt-md="45" fxLayoutAlign="start center">
+        <div>
+          <img src="assets/icons/user35.svg" alt="step1">
         </div>
+        <div class="subtitulo">Suficiente para 35 personas</div>
+        <div class="parrafo ">
+          Cada caja rinde aproximadamente para 35 personas
+        </div>
+      </div>
+      <div fxLayout="column" fxFlex="30" fxFlex.lt-md="45" fxLayoutAlign="start center">
+        <div>
+          <img src="assets/free-truck.png" alt="step1">
+        </div>
+        <div class="subtitulo">La entrega de manera gratuita</div>
+        <div class="parrafo ">
+          La entrega es hasta la puerta de su oficina y de manera gratuita
+        </div>
+      </div>
+      <div fxLayout="column" fxFlex="30" fxFlex.lt-md="45" fxLayoutAlign="start center">
+        <div>
+          <img src="assets/icons/calendar.svg" alt="calendar">
+        </div>
+        <div class="subtitulo">Pay monthly</div>
+        <div class="parrafo ">
+          Some information how to pay
+        </div>
+      </div>
     </div>
-    <div  fxLayoutAlign="center center"  class="tarjeta">
-        <div fxFlex="550px" fxLayoutAlign="start center" class="alert alert-primary" role="alert">
-            <mat-icon>local_shipping</mat-icon>La entrega es hasta la puerta de su oficina y de manera gratuita
-    </div>
+  </div>
 </div>
