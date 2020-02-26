@@ -15,37 +15,37 @@ export class OfferComponent implements OnInit {
   standar: Fruits[] = [
     {
       kilo: 5,
-      title: 'platano',
+      title: 'plátano',
+    },
+    {
+      kilo: 3,
+      title: 'manzana',
+    },
+    {
+      kilo: 1,
+      title: 'Fruta de temporada',
+      tooltip: 'Puede ser guayaba, mango, kiwi, pera'
+    }
+  ];
+  plus: Fruits[] = [
+    {
+      kilo: 4,
+      title: 'plátano',
     },
     {
       kilo: 2,
       title: 'manzana',
     },
     {
-      kilo: 2,
-      title: 'Fruta de temporada',
-      tooltip: 'Puede ser guayaba, mango, kiwi, pera'
-    }
-  ];
-  mas: Fruits[] = [
-    {
-      kilo: 3,
-      title: 'platano',
-    },
-    {
-      kilo: 2,
-      title: 'manzana',
-    },
-    {
       kilo: 3,
       title: 'Fruta de temporada',
       tooltip: 'Puede ser guayaba, mango, kiwi, pera'
     }
   ];
-  prima: Fruits[] = [
+  premium: Fruits[] = [
     {
-      kilo: 2,
-      title: 'platano',
+      kilo: 3,
+      title: 'plátano',
     },
     {
       kilo: 2,
@@ -53,12 +53,13 @@ export class OfferComponent implements OnInit {
     },
     {
       kilo: 1,
-      title: 'de uva',
+      title: 'verdura',
+      tooltip: 'Puede ser pepino, zanahoria, pimiento'
     },
     {
-      kilo: 3,
+      kilo: 4,
       title: 'Fruta de temporada',
-      tooltip: 'Puede ser guayaba, mango, kiwi, pera'
+      tooltip: 'Puede ser guayaba, uva, mango, kiwi, pera'
     }
   ];
 

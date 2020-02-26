@@ -2,11 +2,14 @@
 
 .wrapper {
   padding: 3rem;
-  background-color: $gris-claro;
+  background-color: $green-200;
 }
 
 .paso-texto {
-  font-size: 15px;
+  font-size: 16px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 10px 0 10px;
 }
 
 img {

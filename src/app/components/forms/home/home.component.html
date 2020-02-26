@@ -1,48 +1,53 @@
-<mat-carousel timings="250ms ease-in"
-              [autoplay]="true"
-              interval="4000"
-              color="primary"
-              maxWidth="auto"
-              proportion="35"
-              slides="3"
-              [loop]="true"
-              [hideArrows]="true"
-              [hideIndicators]="false"
-              [useKeyboard]="true"
-              [useMouseWheel]="false"
-              orientation="ltr">
-  <mat-carousel-slide #matCarouselSlide
-                      [image]="'assets/carrusel-beneficios.jpg'"
-                      overlayColor="rgba(255, 177, 0, .51)"
-                      [hideOverlay]="false">
+<mat-carousel 
+  timings="500ms ease-in" 
+  [autoplay]="true" 
+  interval="3000" 
+  color="primary" 
+  maxWidth="auto" 
+  proportion="35"
+  slides="3" 
+  [loop]="true" 
+  [hideArrows]="true" 
+  [hideIndicators]="false" 
+  [useKeyboard]="true" 
+  [useMouseWheel]="false"
+  orientation="ltr">
+  <mat-carousel-slide #matCarouselSlide [image]="'assets/carrusel-beneficios.jpg'" overlayColor="rgba(255, 177, 0, .51)"
+    [hideOverlay]="false">
     <div class="slide-container">
       <div class="slide-content">
         <div class="slide-text fuente">
           <p>Conoce los beneficios de Señor Fruits</p>
-          <button mat-button routerLink="/beneficios-empresa" routerLinkActive="active">Ver</button>
+          <button mat-button routerLink="/beneficios-empresa" routerLinkActive="active">Beneficios</button>
         </div>
       </div>
     </div>
   </mat-carousel-slide>
-  <mat-carousel-slide #matCarouselSlide
-                      [image]="'assets/carrusel-pedido.jpg'"
-                      overlayColor="rgba(255, 177, 0, .51)"
-                      [hideOverlay]="false">
+  <mat-carousel-slide #matCarouselSlide [image]="'assets/carrusel-pedido.jpg'" overlayColor="rgba(255, 177, 0, .51)"
+    [hideOverlay]="false">
     <div class="slide-container">
       <div class="slide-content">
         <div class="slide-text fuente">
           <p>Checa nuestra selección de paquetes</p>
-          <button mat-button routerLink="/oferta" routerLinkActive="active">Ver</button>
+          <button mat-button routerLink="/oferta" routerLinkActive="active">Oferta</button>
         </div>
       </div>
     </div>
   </mat-carousel-slide>
-  <mat-carousel-slide #matCarouselSlide
-                      [image]="'assets/carrusel-seleccion.jpg'"
-                      overlayColor="rgba(255, 177, 0, .51)"
-                      [hideOverlay]="false"></mat-carousel-slide>
+  <mat-carousel-slide #matCarouselSlide [image]="'assets/carrusel-seleccion.jpg'" overlayColor="rgba(255, 177, 0, .51)"
+    [hideOverlay]="false">
+    <div class="slide-container">
+      <div class="slide-content">
+        <div class="slide-text fuente">
+          <p>Preguntas frecuentes</p>
+          <button mat-button routerLink="/preguntas" routerLinkActive="active">Ver</button>
+        </div>
+      </div>
+    </div>
+  </mat-carousel-slide>
 
 </mat-carousel>
+
 <div fxLayout="row" fxLayout.lt-md="column">
   <div fxFlex="45" fxFlex.lt-md="100" fxFlexOrder.lt-md="2">
     <img class="products" src='assets/our-products-home.svg' alt="products">
@@ -50,9 +55,7 @@
   <div fxFlex fxLayoutAlign="center center" fxLayout.sm="column" fxFlexOrder.lt-md="1">
     <div class="contenido" fxFlex="50" fxFlex.lt-md="100">
       <p class="titulo-home">Nuestros productos</p>
-      <p class="parrafo">Consulta nuestros paquetes que ofrecen la mejor selección y variedad de nuestros
-        productos</p>
-      <button mat-button routerLink="/oferta" routerLinkActive="active">Catálogo</button>
+      <button mat-button routerLink="/oferta" routerLinkActive="active">Ver Catálogo</button>
     </div>
   </div>
 </div>
