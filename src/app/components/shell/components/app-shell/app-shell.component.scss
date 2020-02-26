@@ -94,6 +94,10 @@ mat-icon.phone {
   background-color: $back-color-faded;
 }
 
+.call-us {
+  padding-top: 1.2em;
+}
+
 @media screen and (max-width: 960px){
   .mat-drawer:not(.mat-drawer-side) {
     width: 100%;

@@ -48,23 +48,6 @@
   }
 }
 
-.contenido {
-  top: 180px;
-  margin: 0 30px;
-  position: relative;
-  overflow-y: auto;
-
-  button {
-    border-radius: 30px;
-    padding: .5rem 2rem;
-    background-color: $verde;
-    width: 180px;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-  }
-}
-
 @media (min-width: 360px) and (max-width: 480px) {
   #home-container {
     padding-top: 96px;
