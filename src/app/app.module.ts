@@ -50,7 +50,6 @@ import {CalculatorComponent} from './components/forms/requests/calculator/calcul
 import {PaymentComponent} from './components/forms/requests/payment/payment.component';
 import {QuestionsComponent} from './components/forms/contact/questions/questions.component';
 import {ProcessStepsComponent} from './components/forms/home/process-steps/process-steps.component';
-import {ExtraAddInfoComponent} from './components/forms/home/extra-add-info/extra-add-info.component';
 import {TittleHeaderComponent} from './components/shell/components/tittle-header/tittle-header.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {ProductsComponent} from './components/forms/products/products.component';
@@ -72,7 +71,7 @@ const angularCoreModules = [BrowserModule, BrowserAnimationsModule, HttpClientMo
 const appComponents = [AppComponent, AppShellComponent, SocialNetworkComponent, BenefitsCompanyComponent,
   BenefitsEmployeeComponent, MisionVisionComponent, ContactComponent, OfferComponent, FooterComponent, HomeComponent, AdvantagesComponent,
   AchievementsComponent, RequestComponent, CalculatorComponent, PaymentComponent, QuestionsComponent, ProcessStepsComponent,
-  ExtraAddInfoComponent, TittleHeaderComponent, ProductsComponent];
+  TittleHeaderComponent, ProductsComponent];
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);

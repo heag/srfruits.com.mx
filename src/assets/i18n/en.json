@@ -1,65 +1,114 @@
 {
-    "COMMON": {
-        "HOME": "Home",
-        "PAGE_NAME": "Señor Fruits",
-        "ABOUT_US": "ABOUT US",
-        "BENEFITS": "BENEFITS",
-        "BENEFITS_FOR_EMPLOYEE": "For Employee",
-        "BENEFITS_FOR_COMPANY": "For Company",
-        "OFFER": "PRODUCTS",
-        "REQUEST": "REQUEST",
-        "REQUEST_A_QUOTE": "Request a Quote",
-        "CALCULATE_QTY": "Calculate Quantity",
-        "PAYMENT": "Payment",
-        "CONTACT": "CONTACT",
-        "CONTACT_US": "Contact us",
-        "FAQ": "FAQ's",
-        "CALL_US": "Call Us",
-        "PHONENUMBER": "336 059 8886"
+    "Navigation": {
+        "Home": "Home",
+        "PageName": "Señor Fruits",
+        "Benefits": "Benefits",
+        "Products": "Products",
+        "Contact": "Contact",
+        "CallUs": "Call us",
+        "PhoneNumber": "336 059 8886"
+    },
+
+    "Carousel": {
+        "1": {
+            "Text": "What are the benefits of Señor Fruits?",
+            "BtnText": "Benefits"
+        },
+        "2": {
+            "Text": "We deliver the best products fo you",
+            "BtnText": "Catalog"
+        },
+        "3": {
+            "Text": "Any question?",
+            "BtnText": "Go"
+        }
     },
 
     "Home": {
-        "ProcessSteps": {
-            "HowItWorks": "¿Como funciona?"
+        "OurProducts": "Our producst",
+        "ViewCatalog": "Catalog",
+        "PhoneNumber": "336 059 8886",
+        "EmailAddress": "srfruits@srfruits.com.mx",
+        "BtnSeeText": "Go"
+    },
+
+    "HowWorks": {
+        "Tittle": "¿How Señor Fruits works?",
+        "1": {
+            "Tittle": "Calcula tu pedido",
+            "Text": "Use calculator to determine the ammount of fruit that you need in your office"
+        },
+        "2": {
+            "Tittle": "Order",
+            "Text": "Contact Señor Fruits to create your request, it will be a fast process."
+        },
+        "3": {
+            "Tittle": "Recibe tu pedido",
+            "Text": "We deliver for free to your office into the Metropolitan are of Guadalajara"
+        },
+        "4": {
+            "Tittle": "Flexible payments",
+            "Text": "You can pay monthly only after receiving your products and your invoice"
         }
     },
 
-    "ABOUT_US": {
-        "WHO_WE_ARE": {
-            "Tittle": "¿Who are we?",
-            "Description": "We are a family company concerned about the welfare of employees in companies, we started in 2018, we currently work in the Metropolitan Area of Guadalajara with expansion plans to other cities in the Mexican Republic. Through Señor Fruits we want to improve the daily life of many people inside and outside their workplaces by making healthy alternatives available in snacks and foods."
-        }
+    "WhySrFruits": {
+        "FreeDelivery": "Free Delivery",
+        "Personal": "Personal attention",
+        "Quality": "Best quality",
+        "Fresh": "Fresh",
+        "Hygiene": "Clean",
+        "Recycle": "Retornable containers"
     },
 
-    "BENEFITS_FOR_EMPLOYEE": {
-
+    "Calculator": {
+        "Tittle": "Calculate",
+        "HowMuchFruit": "How much fruit my office needs?",
+        "DescriptionText": "The ammount of fruit recommended by the World Health Organization is 5 portions per day, insert the number of people and deliveries per week and check how much fruit you need",
+        "OutOfRangeErrorText": "Insert value between 5 and 2000",
+        "MinHintText": "Minimun 5 persons",
+        "Persons": "Persons",
+        "OutOfRangeDeliveryErrorText": "Insert between 1 and 5",
+        "YourRequest": "Summary",
+        "Deliveries": "Deliveries",
+        "WeeklyDeliveries": "Weekly deliveries",
+        "BoxesPerWeek": "Boxes per week",
+        "Order": "Order"
+    },
+    
+    "Benefits": {
+        "BenefitsForEmployee": "Benefits for people",
+        "ModernImage": "Modern company image",
+        "GreaterSatisfaction": "Satisfaction and disposition",
+        "FriendlyEnvironment": "Healthy and friendly environment",
+        "LessAbsentism": "Less absenteeism",
+        "HealthAndInmunity": "Health and immunity",
+        "MoreEnergy": "More energy",
+        "Snacks": "Delicious snacks in the office",
+        "GoodHumor": "Good humor"
     },
 
-    "BENEFITS_FOR_COMPANY": {
-
+    "Products": {
+        "Tittle": "Packages",
+        "Banana": "banana",
+        "Apple": "apple",
+        "SeasonFruit": "Season fruit",
+        "Guayaba": "guayaba",
+        "Pear": "pear",
+        "Vegetable": "vegetable",
+        "SeasonFruitTooltipText": "Can be guayaba, mango, kiwi, pear, melon",
+        "VegetableTooltipText": "Can be cucumber, carrot, pepper",
+        "Capacity": "Capacity",
+        "CapacityText": "Each box can provide fruit for 35 persons",
+        "FreeDelivery": "Free delivery",
+        "DeliveryText": "We deliver the products to your office for free",
+        "MonthlyPayment": "Monthly payment",
+        "MonthlyPaymentText": "You can pay after receiving your products and your invoice"
     },
 
-    "PRODUCTS": {
-
-    },
-
-    "REQUEST_A_QUOTE": {
-
-    },
-
-    "CALCULATE_QTY": {
-
-    },
-
-    "PAYMENT": {
-
-    },
-
-    "CONTACT": {
-
-    },
-
-    "FAQ": {
-
+    "Faq": {
+        "Tittle": "Frequent questions",
+        "Faq": "Frequent questions",
+        "AnyQuestion": "Any question?"        
     }
 }

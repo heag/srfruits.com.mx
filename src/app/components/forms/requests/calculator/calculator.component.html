@@ -4,7 +4,7 @@
        fxLayoutGap.lg="35px"
        fxLayoutGap.xs="10px"
        fxLayoutAlign="center center">
-    <div class="titulo">Calcula tu pedido</div>
+    <div class="titulo">{{"Calculator.Tittle" | translate }}</div>
     <div fxLayout="row"
          fxLayout.lt-md="column"
          fxLayoutAlign="center center">
@@ -13,12 +13,8 @@
           <div fxLayout="column"
                fxFlex="50"
                fxFlex.xs="100">
-            <div class="subtitulo">¿Cuanta fruta necesita mi empresa?</div>
-            <div class="fuente">
-              La dosis recomendada segun la OMS es de 5 porciones al dia.
-              Inserta la cantidad de colaboradores en tu oficina y la cantidad
-              de entregas semanales que necesitas y calcula
-            </div>
+            <div class="subtitulo">{{ "Calculator.HowMuchFruit" | translate }}</div>
+            <div class="fuente">{{ "Calculator.DescriptionText" | translate }}</div>
           </div>
       </div>
       <div id="tarjeta"
@@ -34,44 +30,43 @@
                   <div>
                     <mat-form-field class="example-full-width">
                       <input formControlName="personasControl" min="5" (input)="calcularCajas()" type="number" matInput
-                             placeholder="Personas" max="2000">
-                      <mat-hint align="end">Mínimo 5 personas</mat-hint>
+                             placeholder='{{"Calculator.Persons" | translate}}' max="2000">
+                      <mat-hint align="end">{{ "Calculator.MinHintText" | translate }}</mat-hint>
                       <mat-error align="end" *ngIf="personasControl.hasError('min') || personasControl.hasError('max')">
-                        Insertar valor entre 5 y 2000
+                        {{ "Calculator.OutOfRangeErrorText" | translate }}
                       </mat-error>
                     </mat-form-field>
                   </div>
                   <div>
                     <mat-form-field class="example-full-width">
                       <input formControlName="entregasControl" min="1" (input)="calcularCajas()" type="number" matInput
-                             placeholder="Entregas semanales" max="5">
+                             placeholder='{{"Calculator.WeeklyDeliveries" | translate }}' max="5">
                       <mat-error align="end" *ngIf="entregasControl.hasError('min') || entregasControl.hasError('max')">
-                        Máximo 5 entregas
+                        {{"Calculator.OutOfRangeDeliveryErrorText" | translate }}
                       </mat-error>
                     </mat-form-field>
                   </div>
                   <div fxLayout="row" class="telefono">
                       <mat-icon class="phone">phone</mat-icon>
-                      <span>{{numeroDeTelefono}}</span>
+                      {{"Home.PhoneNumber" | translate}}
                   </div>
                 </div>
                 <div fxLayout="column" class="fuente" fxLayoutGap="10px" fxLayoutAlign="center start" fxFlex="50">
-                  <div class="subtitulo">Tu pedido:</div>
+                  <div class="subtitulo">{{"Calculator.YourRequest" | translate }}:</div>
                   <div fxLayoutGap="10px" fxLayout="row">
-                    <div class="item">Colaboradores . . . .</div>
+                    <div class="item">{{"Calculator.Persons" | translate }} . . . .</div>
                     <div class="valor"> {{personasControl.value}}</div>
                   </div>
                   <div fxLayoutGap="10px" fxLayout="row">
-                    <div class="item">Entregas . . . . . .</div>
+                    <div class="item">{{"Calculator.Deliveries" | translate }} . . . . . .</div>
                     <div class="valor">{{entregasControl.value}}</div>
                   </div>
                   <div fxLayoutGap="10px" fxLayout="row">
-                    <div class="cajas">Cajas por semana . . .</div>
+                    <div class="cajas"><span translate>Calculator.BoxesPerWeek</span> . . .</div>
                     <div class="cajas-resultado">{{boxes}}</div>
                   </div>
-
                   <div fxShow.xs fxHide.gt-xs fxLayoutAlign="center center" class="boton-verde">
-                    <button><a href="tel:+521{{numeroDeTelefono}}">Ordenar</a></button>
+                    <button><a href="tel:+521{{numeroDeTelefono}}">{{"Calculator.Order" | translate }}</a></button>
                   </div>
                 </div>
               </div>

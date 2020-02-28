@@ -1,24 +1,25 @@
 <mat-carousel 
-  timings="500ms ease-in" 
-  [autoplay]="true" 
-  interval="3000" 
-  color="primary" 
-  maxWidth="auto" 
-  proportion="35"
-  slides="3" 
-  [loop]="true" 
-  [hideArrows]="true" 
-  [hideIndicators]="false" 
-  [useKeyboard]="true" 
-  [useMouseWheel]="false"
+timings="500ms ease-in" 
+[autoplay]="true" 
+interval="3000" 
+color="white" 
+maxWidth="auto" 
+proportion="35"
+slides="3" 
+[loop]="true" 
+[hideArrows]="true" 
+[hideIndicators]="false" 
+[useKeyboard]="true" 
+[useMouseWheel]="false"
   orientation="ltr">
   <mat-carousel-slide #matCarouselSlide [image]="'assets/carrusel-beneficios.jpg'" overlayColor="rgba(255, 177, 0, .51)"
     [hideOverlay]="false">
     <div class="slide-container">
       <div class="slide-content">
         <div class="slide-text fuente">
-          <p>Conoce los beneficios de Señor Fruits</p>
-          <button mat-button routerLink="/beneficios-empresa" routerLinkActive="active">Beneficios</button>
+          <p translate>Carousel.1.Text</p>
+          <button mat-button routerLink="/beneficios-empresa" routerLinkActive="active">
+            <span translate>Carousel.1.BtnText</span></button>
         </div>
       </div>
     </div>
@@ -28,8 +29,10 @@
     <div class="slide-container">
       <div class="slide-content">
         <div class="slide-text fuente">
-          <p>Checa nuestra selección de paquetes</p>
-          <button mat-button routerLink="/oferta" routerLinkActive="active">Oferta</button>
+          <p translate>Carousel.2.Text</p>
+          <button mat-button routerLink="/oferta" routerLinkActive="active">
+            <span translate>Carousel.2.BtnText</span>
+          </button>
         </div>
       </div>
     </div>
@@ -39,8 +42,10 @@
     <div class="slide-container">
       <div class="slide-content">
         <div class="slide-text fuente">
-          <p>Preguntas frecuentes</p>
-          <button mat-button routerLink="/preguntas" routerLinkActive="active">Ver</button>
+          <p translate>Carousel.3.Text</p>
+          <button mat-button routerLink="/preguntas" routerLinkActive="active">
+            <span translate>Carousel.3.BtnText</span>
+          </button>
         </div>
       </div>
     </div>
@@ -54,8 +59,10 @@
   </div>
   <div fxFlex fxLayoutAlign="center center" fxLayout.sm="column" fxFlexOrder.lt-md="1">
     <div class="contenido" fxFlex="50" fxFlex.lt-md="100">
-      <p class="titulo-home">Nuestros productos</p>
-      <button mat-button routerLink="/oferta" routerLinkActive="active">Ver Catálogo</button>
+      <p class="titulo-home" translate>Home.OurProducts</p>
+      <button mat-button routerLink="/oferta" routerLinkActive="active">
+        <span translate>Home.ViewCatalog</span>
+      </button>
     </div>
   </div>
 </div>

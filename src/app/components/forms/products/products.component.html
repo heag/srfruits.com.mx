@@ -1,4 +1,4 @@
-<div class="titulo" fxLayoutAlign="center center" translate>COMMON.OFFER</div>
+<div class="titulo" fxLayoutAlign="center center" translate>Products.Tittle</div>
 <div id="container" fxLayout="column">
   <offer></offer>
   <div fxLayout="column" fxLayoutGap="60px" class="advantages">
@@ -7,27 +7,27 @@
         <div>
           <img src="assets/icons/user35.svg" alt="step1">
         </div>
-        <div class="subtitulo">Suficiente para 35 personas</div>
+        <div class="subtitulo">{{ "Products.Capacity" | translate }}</div>
         <div class="parrafo ">
-          Cada caja rinde aproximadamente para 35 personas
+          {{ "Products.CapacityText" | translate }}
         </div>
       </div>
       <div fxLayout="column" fxFlex="30" fxFlex.lt-md="45" fxLayoutAlign="start center">
         <div>
           <img src="assets/free-truck.png" alt="step1">
         </div>
-        <div class="subtitulo">La entrega de manera gratuita</div>
+        <div class="subtitulo">{{ "Products.FreeDelivery" | translate }}</div>
         <div class="parrafo ">
-          La entrega es hasta la puerta de su oficina y de manera gratuita
+          {{ "Products.DeliveryText" | translate }}
         </div>
       </div>
       <div fxLayout="column" fxFlex="30" fxFlex.lt-md="45" fxLayoutAlign="start center">
         <div>
           <img src="assets/icons/calendar.svg" alt="calendar">
         </div>
-        <div class="subtitulo">Pago mensual</div>
+        <div class="subtitulo">{{ "Products.MonthlyPayment" | translate }}</div>
         <div class="parrafo ">
-          Paga despues de recibir tu producto y tu factura.
+          {{ "Products.MonthlyPaymentText" | translate }}
         </div>
       </div>
     </div>

@@ -1,61 +1,114 @@
 {
-    "COMMON": {
-        "HOME": "Home",
-        "PAGE_NAME": "Señor Fruits",
-        "ABOUT_US": "Nosotros",
-        "BENEFITS": "Beneficios",
-        "BENEFITS_FOR_EMPLOYEE": "Trabajadores",
-        "BENEFITS_FOR_COMPANY": "Empresa",
-        "OFFER": "Productos",
-        "REQUEST": "Pedido",
-        "REQUEST_A_QUOTE": "Realizar Pedido",
-        "CALCULATE_QTY": "Calculadora",
-        "PAYMENT": "Pago",
-        "CONTACT": "Contacto",
-        "CONTACT_US": "Contactanos",
-        "FAQ": "Preguntas Frecuentes",
-        "CALL_US": "Llámanos",
-        "PHONENUMBER": "336 059 8886"
+    "Navigation": {
+        "Home": "Inicio",
+        "PageName": "Señor Fruits",
+        "Benefits": "Beneficios",
+        "Products": "Productos",
+        "Contact": "Contacto",
+        "CallUs": "Llámanos",
+        "PhoneNumber": "336 059 8886"
     },
 
-    "HOME": {
-        "PROCESS": {
-            "Tittle": "¿Como funciona?"
+    "Carousel": {
+        "1": {
+            "Text": "Conoce los beneficios de Señor Fruits",
+            "BtnText": "Beneficios"
+        },
+        "2": {
+            "Text": "Conoce nuestra selección de paquetes",
+            "BtnText": "Oferta"
+        },
+        "3": {
+            "Text": "Preguntas frecuentes",
+            "BtnText": "Ver"
         }
     },
 
-    "ABOUT_US": {
-        "WHO_WE_ARE": {
-            "Tittle": "¿Quienes somos?",
-            "Description": "Algunos de nuestros tantos beneficios que puedes encontrar en Señor Fruits&reg;"
+    "Home": {
+        "OurProducts": "Nuestros Productos",
+        "ViewCatalog": "Catálogo",
+        "PhoneNumber": "336 059 8886",
+        "EmailAddress": "srfruits@srfruits.com.mx",
+        "BtnSeeText": "Ver"
+    },
+
+    "HowWorks": {
+        "Tittle": "¿Como funciona?",
+        "1": {
+            "Tittle": "Calcula tu pedido",
+            "Text": "Puedes utilizar nuestra calculadora para saber la cantidad de fruta que necesitas en tu oficina."
+        },
+        "2": {
+            "Tittle": "Ordena",
+            "Text": "Contáctanos y realiza tu pedido con los paquetes y cantidas de tu elección."
+        },
+        "3": {
+            "Tittle": "Recibe tu pedido",
+            "Text": "Las entregas dentro de la ZMG son de manera gratuita directo en tu oficina."
+        },
+        "4": {
+            "Tittle": "Pagos flexibles",
+            "Text": "El pago se realiza despues de recibir tu pedido y tu factura mensualmente."
         }
     },
 
-    "BENEFITS": {
-
+    "WhySrFruits": {
+        "FreeDelivery": "Entrega sin costo",
+        "Personal": "Trato personal",
+        "Quality": "Productos de calidad",
+        "Fresh": "Frescura",
+        "Hygiene": "Higiene",
+        "Recycle": "Envases retornables"
     },
 
-    "PRODUCTS": {
-
+    "Calculator": {
+        "Tittle": "Calcula tu pedido",
+        "HowMuchFruit": "¿Cuanta fruta necesita mi empresa?",
+        "DescriptionText": "La dosis recomendada segun la OMS es de 5 porciones al dia. Inserta la cantidad de colaboradores en tu oficina y la cantidad de entregas semanales que necesitas y calcula",
+        "OutOfRangeErrorText": "Insertar valor entre 5 y 2000",
+        "MinHintText": "Mínimo 5 personas",
+        "Persons": "Personas",
+        "OutOfRangeDeliveryErrorText": "Inserta entre 1 y 5",
+        "YourRequest": "Tu pedido",
+        "Deliveries": "Entregas",
+        "WeeklyDeliveries": "Entregas semanales",
+        "BoxesPerWeek": "Cajas por semana",
+        "Order": "Ordenar"
+    },
+    
+    "Benefits": {
+        "BenefitsForEmployee": "Beneficios para el personal",
+        "ModernImage": "Una imagen moderna a la empresa",
+        "GreaterSatisfaction": "Satisfacción y mayor disposición",
+        "FriendlyEnvironment": "Un ambiente amigable y saludable",
+        "LessAbsenteeism": "Menor ausentismo",
+        "HealthAndInmunity": "Salud e inmunidad",
+        "MoreEnergy": "Mayor energía",
+        "Snacks": "Sabrosos aperitivos en el trabajo",
+        "GoodHumor": "Buen humor"
     },
 
-    "REQUEST_A_QUOTE": {
-
+    "Products": {
+        "Tittle": "Paquetes",
+        "Banana": "plátano",
+        "Apple": "manzana",
+        "SeasonFruit": "Fruta de temporada",
+        "Guayaba": "guayaba",
+        "Pear": "pera",
+        "Vegetable": "verdura",
+        "SeasonFruitTooltipText": "Puede ser guayaba, mango, kiwi, pera, melón",
+        "VegetableTooltipText": "Puede ser pepino, zanahoria, pimientos",
+        "Capacity": "Capacidad",
+        "CapacityText": "Cada caja rinde aproximadamente para 35 personas",
+        "FreeDelivery": "Entrega gratuita",
+        "DeliveryText": "La entrega es hasta la puerta de su oficina y de manera gratuita",
+        "MonthlyPayment": "Pago mensual",
+        "MonthlyPaymentText": "Paga despues de recibir tu producto y tu factura"
     },
 
-    "CALCULATE_QTY": {
-
-    },
-
-    "PAYMENT": {
-
-    },
-
-    "CONTACT": {
-
-    },
-
-    "FAQ": {
-
+    "Faq": {
+        "Tittle": "Preguntas frecuentes",
+        "Faq": "Preguntas frecuentes",
+        "AnyQuestion": "¿Alguna pregunta?"        
     }
 }
