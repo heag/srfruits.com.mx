@@ -53,12 +53,13 @@
     },
 
     "WhySrFruits": {
+        "Tittle": "¿Por qué elegir Señor Fruits?",
         "FreeDelivery": "Entrega sin costo",
         "Personal": "Trato personal",
         "Quality": "Productos de calidad",
         "Fresh": "Frescura",
         "Hygiene": "Higiene",
-        "Recycle": "Envases retornables"
+        "Recycle": "Cajas retornables"
     },
 
     "Calculator": {

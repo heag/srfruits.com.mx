@@ -35,15 +35,15 @@
     "HowWorks": {
         "Tittle": "¿How Señor Fruits works?",
         "1": {
-            "Tittle": "Calcula tu pedido",
-            "Text": "Use calculator to determine the ammount of fruit that you need in your office"
+            "Tittle": "Estimate your order",
+            "Text": "Use calculator to estimate the ammount of fruit that you need in your office"
         },
         "2": {
             "Tittle": "Order",
-            "Text": "Contact Señor Fruits to create your request, it will be a fast process."
+            "Text": "Contact Señor Fruits to create your order, it will be a fast process."
         },
         "3": {
-            "Tittle": "Recibe tu pedido",
+            "Tittle": "Receive your order",
             "Text": "We deliver for free to your office into the Metropolitan are of Guadalajara"
         },
         "4": {
@@ -53,6 +53,7 @@
     },
 
     "WhySrFruits": {
+        "Tittle": "¿Why choose Señor Fruits?",
         "FreeDelivery": "Free Delivery",
         "Personal": "Personal attention",
         "Quality": "Best quality",
@@ -69,7 +70,7 @@
         "MinHintText": "Minimun 5 persons",
         "Persons": "Persons",
         "OutOfRangeDeliveryErrorText": "Insert between 1 and 5",
-        "YourRequest": "Summary",
+        "YourOrder": "Your order",
         "Deliveries": "Deliveries",
         "WeeklyDeliveries": "Weekly deliveries",
         "BoxesPerWeek": "Boxes per week",
