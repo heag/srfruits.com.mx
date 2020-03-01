@@ -12,10 +12,9 @@
       </div>
       <div fxFlex></div>
       <div>
-        
-        <div class="telephone">
-          <a href="tel:+521{{numeroDeTelefono}}" translate><mat-icon class="phone">phone</mat-icon>Navigation.CallUs</a>
-        </div>
+        <call-us [subcaption]="'Navigation.CallUs'"
+                 [phonenumber]="'Navigation.PhoneNumber'">
+        </call-us>
       </div>
     </div>
     <div fxLayout="row" fxFlex fxHide.lt-md class="navigation">
@@ -28,13 +27,9 @@
       </div>
       <div fxFlex></div>
       <div fxFlexAlign="center" fxLayout="row" class="call-us">
-        <div>
-          <mat-icon class="phone">phone</mat-icon>
-        </div>
-        <div class="telephone">
-          <strong translate>Navigation.CallUs</strong>
-          <span translate>Navigation.PhoneNumber</span>
-        </div>
+        <call-us [subcaption]="'Navigation.CallUs'"
+                 [phonenumber]="'Navigation.PhoneNumber'">
+        </call-us>
         <language-switcher></language-switcher>
       </div>
     </div>

@@ -1,19 +1,28 @@
 @import "~src/sass/_colors.scss";
 
-@media (min-width: 360px) and (max-width: 480px) {
-
+:host {
+  .titulo {
+    top: 10rem;
+    padding: 140px 0 40px 0;
+    width: 100%;
+    border-bottom: 2px solid $amarillo;
+    margin-bottom: 3rem;
+  }
 }
 
-@media (min-width: 1180px) and (max-width: 1920px) {
 
+::ng-deep {
+  .green {
+    color: $verde;
+  }
 }
+
 
 .contact-form {
   padding-top: 135px;
 }
 
 .contact {
-  background-color: $verde;
   border-radius: 30px;
   min-height: 650px;
   margin: 30px 0 30px 0;
@@ -32,16 +41,17 @@
 
 .social-network {
   font-size: 35px;
+
   i {
     color: $grey-700;
   }
 }
 
-.contact-details{
-  background-color: $amarillo;
+.contact-details {
+  background-color: $crema-ligera;
   height: 375px;
-  margin-top: -65px;
   color: $grey-700;
   font-size: 22px;
   border-radius: 25px;
 }
+
