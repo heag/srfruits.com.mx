@@ -1,43 +1,19 @@
 @import "~src/sass/_colors.scss";
 
-@media (min-width: 360px) and (max-width: 480px) {
-  #beneficios-movil {
-    padding-top: 100px;
-  }
-  #beneficios {
-    display: none;
-  }
-  .beneficio {
-    width: 316px;
-    padding-top: 20px;
-  }
-
-  .margin-footer {
-    padding-bottom: 40px;
-  }
-
-  .titulo-movil {
-    border-bottom: 2px solid $amarillo;
-    padding: 15px 0 25px 0;
-  }
-
+.empleados {
+  padding: 30px 0 0 0;
 }
 
-@media (min-width: 1180px) and (max-width: 1920px) {
-  .empleados {
-    padding: 30px 0 0px 0;
-  }
-  .titulo {
-    padding: 40px 0 40px 0;
-    width: 100%;
-    border-bottom: 2px solid $amarillo;
-  }
-  .fila-dos {
-    padding: 40px 0 50px 0;
-  }
-  #beneficios-movil {
-    display: none;
-  }
+.titulo {
+  top: 10rem;
+  padding: 140px 0 40px 0;
+  width: 100%;
+  border-bottom: 2px solid $amarillo;
+  text-align: center;
+}
+
+.fila-dos {
+  padding: 40px 0 50px 0;
 }
 
 #beneficios {
@@ -48,5 +24,13 @@
   img {
     width: 124px;
     height: 124px;;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .beneficio {
+    margin: 30px;
+    width: 90%;
   }
 }
