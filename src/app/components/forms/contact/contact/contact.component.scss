@@ -14,9 +14,31 @@
 ::ng-deep {
   .green {
     color: $verde;
+    font-weight: bold;
+    mat-icon.phone {
+      border: solid 1px $verde;
+    }
   }
 }
 
+.WorkingHours {
+  text-align: center;
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $grey;
+}
+.red {
+  color: $melon-ligera;
+  font-weight: bold;
+}
+
+.mat-list {
+  width: 220px;
+  .mat-list-item {
+    height: 32px;
+  }
+}
 
 .contact-form {
   padding-top: 135px;
@@ -24,7 +46,6 @@
 
 .contact {
   border-radius: 30px;
-  min-height: 650px;
   margin: 30px 0 30px 0;
 }
 
@@ -39,19 +60,36 @@
   margin-top: 35px;
 }
 
+.email {
+  margin-left: 5rem;
+}
+
 .social-network {
-  font-size: 35px;
+  font-size: 28px;
+  text-align: justify;
 
   i {
-    color: $grey-700;
+    color: $verde;
   }
 }
 
 .contact-details {
+  padding: 20px;
   background-color: $crema-ligera;
-  height: 375px;
-  color: $grey-700;
-  font-size: 22px;
-  border-radius: 25px;
+  color: $verde;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 5rem;
+  width: 440px;
 }
 
+@media screen and (max-width: 960px) {
+  .contact-details {
+    margin-bottom: 1rem;
+  }
+  .imagen {
+    img {
+      width: 325px;
+    }
+  }
+}

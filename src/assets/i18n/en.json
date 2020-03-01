@@ -6,6 +6,7 @@
     "Products": "Products",
     "Contact": "Contact",
     "CallUs": "Call us",
+    "WhatsUp": "also WhatsApp",
     "PhoneNumber": "336 059 8886"
   },
   "Carousel": {
@@ -114,7 +115,8 @@
       "Thursday": "Thursday",
       "Friday": "Friday",
       "Saturday": "Saturday",
-      "Sunday": "Sunday"
+      "Sunday": "Sunday",
+      "DayOff": "DayOff"
     }
   }
 }

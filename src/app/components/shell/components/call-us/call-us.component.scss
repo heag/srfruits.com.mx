@@ -13,4 +13,16 @@ mat-icon.phone {
   font-size: 30px;
   color: $white;
   display: inline-block;
+  line-height: 1.25;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  a {
+    color: $verde;
+  }
 }

@@ -134,3 +134,10 @@ mat-icon.phone {
     }
   }
 }
+::ng-deep {
+    a.white {
+      font-weight: bold;
+      font-size: 18px;
+      color: white !important;
+    }
+}

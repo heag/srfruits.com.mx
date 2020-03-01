@@ -1,18 +1,18 @@
 <div class="titulo" fxLayoutAlign="center center">{{ "Contact.Title" | translate}}</div>
 
-<div id="container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center start" fxLayoutGap="45px">
-  <div fxFlex="440px" fxFlexOffset="10">
-    <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="25px" class="contact-details">
+<div id="container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="45px">
+  <div fxFlexOffset="10">
+    <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="15px" class="contact-details">
 
       <div><img class="logo" src="assets/logo.png"></div>
 
-      <call-us [class]="'green'"
-               [subcaption]="'Navigation.CallUs'"
+      <call-us [style]="'green'"
+               [subcaption]="'Navigation.WhatsUp'"
                [phonenumber]="'Navigation.PhoneNumber'">
       </call-us>
 
-      <div>
-        <span translate>Home.EmailAddress</span>
+      <div class="email">
+        <span>{{"Home.EmailAddress" | translate }}</span>
       </div>
 
       <div class="social-network">
@@ -21,10 +21,28 @@
         <a href="https://twitter.com/srfruitsmx" target="_blank"><i class="fa fa-twitter"></i></a>
       </div>
 
+      <div>
+        <p class="WorkingHours">{{"Contact.WorkingHours.Title" | translate}}</p>
+        <div fxLayout="row">
+          <mat-list class="WorkingWeek">
+            <mat-list-item *ngFor="let day of week">
+              <div fxFlex class="WorkingWeekRow" fxLayout="row">
+                <strong>{{day.day | translate}}:</strong>
+              </div>
+
+              <div fxLayoutAlign="start center">
+                <p class="{{day.style}}">{{day.hours | translate}}</p>
+              </div>
+
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div fxFlex="680px">
+  <div fxLayoutAlign="end">
     <div class="imagen">
       <img src="assets/contact-us-image.svg" alt="contacto">
     </div>
