@@ -36,7 +36,9 @@ footer {
     position: relative;
     height: 460px;
     margin-top: 0;
+    padding-bottom: 30px;
     ::ng-deep a.mat-list-item {
+      height: 30px;
       padding: 5px;
     }
   }
