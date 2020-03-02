@@ -15,51 +15,51 @@ export class OfferComponent implements OnInit {
   standar: Fruits[] = [
     {
       kilo: 5,
-      title: 'plátano',
+      title: 'Products.Banana',
     },
     {
       kilo: 3,
-      title: 'manzana',
+      title: 'Products.Apple',
     },
     {
       kilo: 1,
-      title: 'Fruta de temporada',
-      tooltip: 'Puede ser guayaba, mango, kiwi, pera'
+      title: 'Products.SeasonFruit',
+      tooltip: 'Products.SeasonFruitTooltipText'
     }
   ];
   plus: Fruits[] = [
     {
       kilo: 4,
-      title: 'plátano',
+      title: 'Products.Banana',
     },
     {
       kilo: 2,
-      title: 'manzana',
+      title: 'Products.Apple',
     },
     {
       kilo: 3,
-      title: 'Fruta de temporada',
-      tooltip: 'Puede ser guayaba, mango, kiwi, pera'
+      title: 'Products.SeasonFruit',
+      tooltip: 'Products.SeasonFruitTooltipText'
     }
   ];
   premium: Fruits[] = [
     {
       kilo: 3,
-      title: 'plátano',
+      title: 'Products.Banana',
     },
     {
       kilo: 2,
-      title: 'manzana',
+      title: 'Products.Apple',
     },
     {
       kilo: 1,
-      title: 'verdura',
-      tooltip: 'Puede ser pepino, zanahoria, pimiento'
+      title: 'Products.Vegetable',
+      tooltip: 'Products.VegetableTooltipText'
     },
     {
       kilo: 4,
-      title: 'Fruta de temporada',
-      tooltip: 'Puede ser guayaba, uva, mango, kiwi, pera'
+      title: 'Products.SeasonFruit',
+      tooltip: 'Products.SeasonFruitTooltipText'
     }
   ];
 
