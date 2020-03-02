@@ -3,15 +3,15 @@
 
     <div fxLayout="column" fxFlex="33%" class="verde" fxLayoutAlign="center center">
       <h2>Standar</h2>
-      <div class="imagen" fxFlex="240px" fxLayoutAlign="center center">
+      <div class="imagen" fxFlex="250px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
       <mat-list class="description">
         <mat-list-item *ngFor="let standar of standar">
           <mat-icon mat-list-icon>new_releases</mat-icon>
-          <p mat-line matTooltip="{{standar.tooltip}}">
+          <p mat-line matTooltip="{{standar.tooltip | translate}}">
             <strong>{{standar.kilo}} kg</strong>
-            {{standar.title}}
+            {{standar.title | translate}}
             <mat-icon *ngIf="standar.tooltip">info</mat-icon>
           </p>
         </mat-list-item>
@@ -23,15 +23,15 @@
 
     <div fxLayout="column" fxFlex="33%" class="amarillo" fxLayoutAlign="center center">
       <h2>Plus</h2>
-      <div class="imagen" fxFlex="240px" fxLayoutAlign="center center">
+      <div class="imagen" fxFlex="250px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
       <mat-list class="description">
         <mat-list-item *ngFor="let standar of plus">
           <mat-icon mat-list-icon>new_releases</mat-icon>
-          <p mat-line matTooltip="{{standar.tooltip}}">
+          <p mat-line matTooltip="{{standar.tooltip | translate}}">
             <strong>{{standar.kilo}} kg</strong>
-            {{standar.title}}
+            {{standar.title | translate}}
             <mat-icon *ngIf="standar.tooltip">info</mat-icon>
           </p>
         </mat-list-item>
@@ -43,15 +43,15 @@
 
     <div fxLayout="column" fxFlex="33%" class="naranja" fxLayoutAlign="center center">
       <h2>Premium</h2>
-      <div class="imagen" fxFlex="240px" fxLayoutAlign="center center">
+      <div class="imagen" fxFlex="250px" fxLayoutAlign="center center">
         <img src="assets/wood-box.png" alt="Campesinos">
       </div>
       <mat-list class="description">
         <mat-list-item *ngFor="let standar of premium">
           <mat-icon mat-list-icon>new_releases</mat-icon>
-          <p mat-line matTooltip="{{standar.tooltip}}">
+          <p mat-line matTooltip="{{standar.tooltip | translate}}">
             <strong>{{standar.kilo}} kg</strong>
-            {{standar.title}}
+            {{standar.title | translate}}
             <mat-icon *ngIf="standar.tooltip">info</mat-icon>
           </p>
         </mat-list-item>
