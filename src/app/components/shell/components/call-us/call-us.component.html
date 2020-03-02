@@ -1,0 +1,11 @@
+<div fxLayout="row" class="telephone">
+  <div class="{{style}}">
+    <mat-icon class="phone">phone</mat-icon>
+  </div>
+  <div fxLayout="column">
+    <strong class="{{style}}">{{ subcaption | translate}}</strong>
+    <a class="{{style}}" fxHide fxShow.lt-md href="tel:{{numeroDeTelefono}}">{{ phonenumber| translate}}</a>
+    <span class="{{style}}" fxHide.lt-md>{{ phonenumber| translate}}</span>
+  </div>
+
+</div>

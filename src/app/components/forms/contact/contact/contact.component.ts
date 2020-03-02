@@ -1,37 +1,49 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
-import { EmailData } from '../../../../index';
+import {Component} from '@angular/core';
 
+export interface WorkingWeek {
+  day: string,
+  hours: string,
+  style?: string
+}
 @Component({
   selector: 'contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit, AfterViewInit {
-
-  emailData: EmailData;
-
-  email = new FormControl('', [Validators.required, Validators.email]);
-  name = new FormControl('', [Validators.required]);
-  comment = new FormControl('', [Validators.required]);
-  telephone = new FormControl('', [Validators.required, Validators.minLength(10)]);
-
-  isValidForm: boolean;
-  isNameValid: boolean;
-  isEmailValid: boolean;
-  isCommentValid: boolean;
+export class ContactComponent{
 
   constructor() { }
 
-  ngOnInit() {
-    // const s = document.getElementById('formFooter').setAttribute('style', 'display: none');
-    // s.setAttribute('type', 'text/javascript');
-    // s.src = 'https://form.jotform.co/jsform/90997349015871';
-    // document.getElementById('formw').appendChild(s);
-  }
-
-  ngAfterViewInit() {
-    // const s = document.getElementById('formFooter').setAttribute('style', 'display: none');
-  }
-
+  week: WorkingWeek[] = [
+    {
+      day: 'Contact.WorkingHours.Monday',
+      hours: '8 am - 6 pm'
+    },
+    {
+      day: 'Contact.WorkingHours.Tuesday',
+      hours: '8 am - 6 pm'
+    },
+    {
+      day: 'Contact.WorkingHours.Wednesday',
+      hours: '8 am - 6 pm'
+    },
+    {
+      day: 'Contact.WorkingHours.Thursday',
+      hours: '8 am - 6 pm'
+    },
+    {
+      day: 'Contact.WorkingHours.Friday',
+      hours: '8 am - 6 pm'
+    },
+    {
+      day: 'Contact.WorkingHours.Saturday',
+      hours: 'Contact.WorkingHours.DayOff',
+      style: 'red'
+    },
+    {
+      day: 'Contact.WorkingHours.Sunday',
+      hours: 'Contact.WorkingHours.DayOff',
+      style: 'red'
+    }
+  ]
 }

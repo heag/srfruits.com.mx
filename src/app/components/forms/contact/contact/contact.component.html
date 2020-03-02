@@ -1,31 +1,51 @@
-<div class="contact-form" fxLayout="row" fxLayoutAlign="center">
-  <div fxLayout="row" fxFlex="950px" class="contact" fxLayoutAlign="start center">
-    <div fxFlex="280px" fxFlexOffset="10">
-      <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="25px" class="contact-details">
+<div class="titulo" fxLayoutAlign="center center">{{ "Contact.Title" | translate}}</div>
 
-        <div><img class="logo" src="assets/logo.png"></div>
-        <div fxLayoutGap="45px" class="phone">
-          <mat-icon>call</mat-icon>{{ "Navigation.PhoneNumber" | translate}}
-        </div>
+<div id="container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="45px">
+  <div fxFlexOffset="10">
+    <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="15px" class="contact-details">
 
-        <div>
-          <span translate>Home.EmailAddress</span>
-        </div>
+      <div><img class="logo" src="assets/logo.png"></div>
 
-        <div class="social-network">
-          <a href="http://www.instagram.com/srfruits_mx" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
-          <a href="https://www.facebook.com/srfruitsmx" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
-          <a href="https://twitter.com/srfruitsmx" target="_blank"><i class="fa fa-twitter"></i></a>
-        </div>
+      <call-us [style]="'green'"
+               [subcaption]="'Navigation.WhatsUp'"
+               [phonenumber]="'Navigation.PhoneNumber'">
+      </call-us>
 
-      </div>
-    </div>
-
-    <div fxFlex="400px">
-      <div class="imagen">
-        <img src="assets/contacto.png" alt="contacto">
+      <div class="email">
+        <span>{{"Home.EmailAddress" | translate }}</span>
       </div>
 
+      <div class="social-network">
+        <a href="http://www.instagram.com/srfruits_mx" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/srfruitsmx" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/srfruitsmx" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div>
+        <p class="WorkingHours">{{"Contact.WorkingHours.Title" | translate}}</p>
+        <div fxLayout="row">
+          <mat-list class="WorkingWeek">
+            <mat-list-item *ngFor="let day of week">
+              <div fxFlex class="WorkingWeekRow" fxLayout="row">
+                <strong>{{day.day | translate}}:</strong>
+              </div>
+
+              <div fxLayoutAlign="start center">
+                <p class="{{day.style}}">{{day.hours | translate}}</p>
+              </div>
+
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </div>
+
     </div>
+  </div>
+
+  <div fxLayoutAlign="end">
+    <div class="imagen">
+      <img src="assets/contact-us-image.svg" alt="contacto">
+    </div>
+
   </div>
 </div>
