@@ -12,6 +12,14 @@
   text-align: center;
 }
 
+.titulo-employees {
+  top: 10rem;
+  padding: 20px 0 40px 0;
+  width: 100%;
+  border-bottom: 2px solid $amarillo;
+  text-align: center;
+}
+
 .fila-dos {
   padding: 40px 0 50px 0;
 }
@@ -23,7 +31,9 @@
 .beneficio {
   img {
     width: 124px;
-    height: 124px;;
+    height: 124px;
+    border-radius: 50%;
+    border: 6px solid $verde;
   }
 }
 

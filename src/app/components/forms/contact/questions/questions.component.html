@@ -1,11 +1,10 @@
 <div class="content" fxLayout="row" fxLayoutAlign="center center">
-
-  <div fxFlex="80" fxLayout="column" fxLayoutAlign="start">
-    <div class="titulo" fxLayout="row" fxLayoutGap="50px" fxLayoutAlign="center center">
-      <div fxFlex="200px">
+  <div fxFlex="95" fxLayout="column" fxLayoutAlign="start">
+    <div class="tittle" fxLayout="row" fxLayoutGap="50px" fxLayoutAlign="center center">
+      <div class="img-tittle">
         <img src="assets/faq.png" alt="faq">
       </div>
-      <div fxFlex="800px" fxLayout="column" fxLayoutGap="25px">
+      <div fxLayout="column" fxLayoutAlign="center center">
         <div id="text">
             Preguntas frecuentes
         </div>
@@ -17,7 +16,7 @@
         <div fxFlex="80">
           <mat-accordion id="questions">
 
-            <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel [expanded]="false">
               <mat-expansion-panel-header>
                 <mat-panel-title class="pregunta">
                   ¿De donde proviene la fruta?

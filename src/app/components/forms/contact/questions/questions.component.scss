@@ -18,8 +18,7 @@
   }
 }
 
-.titulo {
-  
+.tittle {
   border-radius: 15px;
   margin: 30px 0 35px 0;
   font-size: 65px;
@@ -33,5 +32,47 @@
     background-color: $verde;
     height: 100px;
     border-radius: 30px;
+  }
+}
+
+.img-tittle {
+  width: 200px;
+}
+
+.content {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  .tittle {
+    background-color: $verde;
+    text-align: center;
+    #text{
+      color: $white;
+      height: 35px;
+      border-radius: 7px;
+      font-size: 22px;
+      width: 340px;
+      font-weight: 500;
+    }
+  }
+  .img-tittle {
+    display: none;
+  }
+  .pregunta {
+    font-size: 14px;
+    color: $green-800;
+    font-weight: bold;
+  }
+  
+  .respuesta {
+    font-size: 14px;
+    color: $grey-700;
+  }
+  #questions {
+    mat-expansion-panel {
+      border-left: 5px solid $green-600;
+      margin: 10px;
+    }
   }
 }

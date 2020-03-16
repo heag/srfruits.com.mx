@@ -24,7 +24,7 @@
     }
   },
   "Home": {
-    "OurProducts": "Our producst",
+    "OurProducts": "Our products",
     "ViewCatalog": "Catalog",
     "PhoneNumber": "336 059 8886",
     "EmailAddress": "srfruits@srfruits.com.mx",
@@ -85,12 +85,12 @@
   },
   "Products": {
     "Tittle": "Products",
-    "Banana": "banana",
-    "Apple": "apple",
+    "Banana": "Banana",
+    "Apple": "Apple",
     "SeasonFruit": "Season fruit",
-    "Guayaba": "guayaba",
-    "Pear": "pear",
-    "Vegetable": "vegetable",
+    "Guayaba": "Guayaba",
+    "Pear": "Pear",
+    "Vegetable": "Vegetables",
     "SeasonFruitTooltipText": "Can be guayaba, mango, kiwi, pear, melon",
     "VegetableTooltipText": "Can be cucumber, carrot, pepper",
     "Capacity": "Capacity",

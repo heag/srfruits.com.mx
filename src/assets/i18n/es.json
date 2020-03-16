@@ -15,7 +15,7 @@
       "BtnText": "Beneficios"
     },
     "2": {
-      "Text": "Conoce nuestra selección de paquetes",
+      "Text": "La mejor selección de paquetes",
       "BtnText": "Oferta"
     },
     "3": {
@@ -34,7 +34,7 @@
     "Tittle": "¿Como funciona?",
     "1": {
       "Tittle": "Calcula tu pedido",
-      "Text": "Puedes utilizar nuestra calculadora para saber la cantidad de fruta que necesitas en tu oficina."
+      "Text": "Utiliza la calculadora para saber la cantidad de fruta que necesitas en tu oficina."
     },
     "2": {
       "Tittle": "Ordena",
@@ -85,12 +85,12 @@
   },
   "Products": {
     "Tittle": "Paquetes",
-    "Banana": "plátano",
-    "Apple": "manzana",
+    "Banana": "Plátano",
+    "Apple": "Manzana",
     "SeasonFruit": "Fruta de temporada",
-    "Guayaba": "guayaba",
-    "Pear": "pera",
-    "Vegetable": "verdura",
+    "Guayaba": "Guayaba",
+    "Pear": "Pera",
+    "Vegetable": "Verdura",
     "SeasonFruitTooltipText": "Puede ser guayaba, mango, kiwi, pera, melón",
     "VegetableTooltipText": "Puede ser pepino, zanahoria, pimientos",
     "Capacity": "Capacidad",
