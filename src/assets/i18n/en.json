@@ -15,7 +15,7 @@
       "BtnText": "Benefits"
     },
     "2": {
-      "Text": "We deliver the best products fo you",
+      "Text": "We deliver the best products for you",
       "BtnText": "Catalog"
     },
     "3": {
@@ -81,7 +81,15 @@
     "HealthAndInmunity": "Health and immunity",
     "MoreEnergy": "More energy",
     "Snacks": "Delicious snacks in the office",
-    "GoodHumor": "Good humor"
+    "GoodHumor": "Good humor",
+    "ModernImageText": "The companies nowadays are trying to compete in the working market to find the best candidates. Create a healthy and friendly environment and at the same time to take care of people is an important elemet that impacts directly in the image of the company.",
+    "GreaterSatisfactionText": "When offering a healthy snack you prove that health and wellness of your team are important to your company. Healthy employees are willing to develop their daily dutties with more satisfaction, therefore they are more efective.",
+    "FriendlyEnvironmentText": "A heathy snack in the morning its a great distinction for a company in the current market, employees can feel proud of their working place and the company will be in the spotlight like a great place to work.",
+    "LessAbsenteeismText": "For some people, fruits are the only source for daily vitamins, offer fruits to your people and you will reduce the number of sickness. Taking care of people's health will reduce the ammount of sick leaves that affects your company.",
+    "HealthAndInmunityText": "English people says 'An apple a day keeps the doctor away', everyone knows the daily consumption of fruits and vegetables has a positive effect in health. Vitamins and minerals provided by fruits increse our inmune system and provides a feeling of wellness and a great source for energy.",
+    "MoreEnergyText": "Minerals inside fruits impact our mood and provides with energy that can be translated in greater disposition to do ... anything. Healthy products in the office can increase our efficiency up to 20%.",
+    "SnacksText": "Everyone loves snacks in the office, unfortunately the typical options contains a lot of sugar, fat and chemicals. Thats why we deliver the product right to your kitchen to access them anytime.",
+    "GoodHumorText": "The fruits contain vitamins that produce serotonin and endorphin, natural chemicals responsible for inducing the feeling of happiness, therefore, fruit in the office translates into better humor."
   },
   "Products": {
     "Tittle": "Products",

@@ -81,7 +81,15 @@
     "HealthAndInmunity": "Salud e inmunidad",
     "MoreEnergy": "Mayor energía",
     "Snacks": "Sabrosos aperitivos en el trabajo",
-    "GoodHumor": "Buen humor"
+    "GoodHumor": "Buen humor",
+    "ModernImageText": "Las empresas están tratando de distinguirse en el mercado laboral para encontrar los mejores candidatos.  Crear un lugar de trabajo saludable y amigable y, al mismo tiempo, cuidar la salud de los empleados es un elemento que impacta directamente en la imagen de la empresa.",
+    "GreaterSatisfactionText": "Al ofrecer un bocadillo saludable, demuestra que la salud y el bienestar de su equipo son importantes para su empresa. Los empleados satisfechos están más dispuestos a realizar sus tareas, obtener una mayor satisfacción en el trabajo y, por lo tanto, son más eficaces.",
+    "FriendlyEnvironmentText": "Una merienda saludable para los empleados es una muy buena distinción para el empleador en el mercado laboral. Las persona pueden sentirse orgullosas del lugar de trabajo y su empresa llamará la atención  por ser un gran lugar de trabajo.",
+    "LessAbsenteeismText": "La fruta para el trabajo es para muchas personas la única fuente de vitaminas durante todo el día. Ofrecer frutas a sus colaboradores y mejorará su resistencia a muchas enfermedades. Cuide la salud de su equipo y reduzca el numero de ausentismo por enfermedad en su empresa.",
+    "HealthAndInmunityText": "Los ingleses dicen 'Una manzana al día mantiene alejado al médico'.  El consumo diario de frutas y verduras tiene un efecto positivo en nuestra salud. Las vitaminas y los minerales que contienen las frutas aumentan nuestra inmunidad y nos hacen sentir más saludables y llenos de energía.",
+    "MoreEnergyText": "Los minerales contenidos en las frutas afectan positivamente nuestro estado de ánimo y nos dan energía que, en efecto, se traduce en una mayor disposición para hacer ... cualquier cosa. Comer productos saludables en el trabajo puede aumentar nuestra eficiencia hasta en un 20%.",
+    "SnacksText": "A todos les gusta comer bocadillos en el trabajo, desafortunadamente los chips y barras que se encuentran en las máquinas contienen mucha azúcar, grasas trans, endurecedores y conservantes. Es por eso que los entregamos las frutas directamente a la cocina de la compañía para su acceso en cualquier momento.",
+    "GoodHumorText": "Las frutas contienen vitaminas que producen serotonina y endorfina, químicos naturales encargados de inducir la sensación de felicidad. Por la tanto, la fruta en la oficina se traduce en mejor humor."
   },
   "Products": {
     "Tittle": "Paquetes",
