@@ -397,20 +397,20 @@ SOFTWARE.
 
 @angular/material/icon
 
+@ngx-translate/core
+MIT
+
 @angular/material/card
 
 @angular/material/form-field
 
-@angular/material/expansion
-
-@angular/material/toolbar
-
-@ngx-translate/core
-MIT
-
 @angular/material/core
 
 @angular/material/list
+
+@angular/material/expansion
+
+@angular/material/toolbar
 
 @angular/material/menu
 

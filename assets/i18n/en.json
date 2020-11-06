@@ -1,65 +1,130 @@
 {
-    "COMMON": {
-        "HOME": "Home",
-        "PAGE_NAME": "Señor Fruits",
-        "ABOUT_US": "ABOUT US",
-        "BENEFITS": "BENEFITS",
-        "BENEFITS_FOR_EMPLOYEE": "For Employee",
-        "BENEFITS_FOR_COMPANY": "For Company",
-        "OFFER": "PRODUCTS",
-        "REQUEST": "REQUEST",
-        "REQUEST_A_QUOTE": "Request a Quote",
-        "CALCULATE_QTY": "Calculate Quantity",
-        "PAYMENT": "Payment",
-        "CONTACT": "CONTACT",
-        "CONTACT_US": "Contact us",
-        "FAQ": "FAQ's",
-        "CALL_US": "Call Us"
+  "Navigation": {
+    "Home": "Home",
+    "PageName": "Señor Fruits",
+    "Benefits": "Benefits",
+    "Products": "Products",
+    "Contact": "Contact",
+    "CallUs": "Call us",
+    "WhatsUp": "also WhatsApp",
+    "PhoneNumber": "336 059 8886"
+  },
+  "Carousel": {
+    "1": {
+      "Text": "What are the benefits of Señor Fruits?",
+      "BtnText": "Benefits"
     },
-
-    "Home": {
-        "ProcessSteps": {
-            "HowItWorks": "¿Como funciona?",
-            ""
-        }
+    "2": {
+      "Text": "We deliver the best products for you",
+      "BtnText": "Catalog"
     },
-
-    "ABOUT_US": {
-        "WHO_WE_ARE": {
-            "Tittle": "¿Who are we?",
-            "Description": "We are a family company concerned about the welfare of employees in companies, we started in 2018, we currently work in the Metropolitan Area of Guadalajara with expansion plans to other cities in the Mexican Republic. Through Señor Fruits we want to improve the daily life of many people inside and outside their workplaces by making healthy alternatives available in snacks and foods."
-        }
-    },
-
-    "BENEFITS_FOR_EMPLOYEE": {
-
-    },
-
-    "BENEFITS_FOR_COMPANY": {
-
-    },
-
-    "PRODUCTS": {
-
-    },
-
-    "REQUEST_A_QUOTE": {
-
-    },
-
-    "CALCULATE_QTY": {
-
-    },
-
-    "PAYMENT": {
-
-    },
-
-    "CONTACT": {
-
-    },
-
-    "FAQ": {
-
+    "3": {
+      "Text": "Any question?",
+      "BtnText": "Go"
     }
+  },
+  "Home": {
+    "OurProducts": "Our products",
+    "ViewCatalog": "Catalog",
+    "PhoneNumber": "336 059 8886",
+    "EmailAddress": "srfruits@srfruits.com.mx",
+    "BtnSeeText": "Go"
+  },
+  "HowWorks": {
+    "Tittle": "¿How Señor Fruits works?",
+    "1": {
+      "Tittle": "Estimate your order",
+      "Text": "Use calculator to estimate the ammount of fruit that you need in your office"
+    },
+    "2": {
+      "Tittle": "Order",
+      "Text": "Contact Señor Fruits to create your order, it will be a fast process."
+    },
+    "3": {
+      "Tittle": "Receive your order",
+      "Text": "We deliver for free to your office into the Metropolitan are of Guadalajara"
+    },
+    "4": {
+      "Tittle": "Flexible payments",
+      "Text": "You can pay monthly only after receiving your products and your invoice"
+    }
+  },
+  "WhySrFruits": {
+    "Tittle": "¿Why choose Señor Fruits?",
+    "FreeDelivery": "Free Delivery",
+    "Personal": "Personal attention",
+    "Quality": "Best quality",
+    "Fresh": "Fresh",
+    "Hygiene": "Clean",
+    "Recycle": "Retornable containers"
+  },
+  "Calculator": {
+    "Tittle": "Calculate",
+    "HowMuchFruit": "How much fruit my office needs?",
+    "DescriptionText": "The ammount of fruit recommended by the World Health Organization is 5 portions per day, insert the number of people and deliveries per week and check how much fruit you need",
+    "OutOfRangeErrorText": "Insert value between 5 and 2000",
+    "MinHintText": "Minimun 5 persons",
+    "Persons": "Persons",
+    "OutOfRangeDeliveryErrorText": "Insert between 1 and 5",
+    "YourOrder": "Your order",
+    "Deliveries": "Deliveries",
+    "WeeklyDeliveries": "Weekly deliveries",
+    "BoxesPerWeek": "Boxes per week",
+    "Order": "Order"
+  },
+  "Benefits": {
+    "BenefitsForEmployee": "Benefits for people",
+    "ModernImage": "Modern company image",
+    "GreaterSatisfaction": "Satisfaction and disposition",
+    "FriendlyEnvironment": "Healthy and friendly environment",
+    "LessAbsenteeism": "Less absenteeism",
+    "HealthAndInmunity": "Health and immunity",
+    "MoreEnergy": "More energy",
+    "Snacks": "Delicious snacks in the office",
+    "GoodHumor": "Good humor",
+    "ModernImageText": "The companies nowadays are trying to compete in the working market to find the best candidates. Create a healthy and friendly environment and at the same time to take care of people is an important elemet that impacts directly in the image of the company.",
+    "GreaterSatisfactionText": "When offering a healthy snack you prove that health and wellness of your team are important to your company. Healthy employees are willing to develop their daily dutties with more satisfaction, therefore they are more efective.",
+    "FriendlyEnvironmentText": "A heathy snack in the morning its a great distinction for a company in the current market, employees can feel proud of their working place and the company will be in the spotlight like a great place to work.",
+    "LessAbsenteeismText": "For some people, fruits are the only source for daily vitamins, offer fruits to your people and you will reduce the number of sickness. Taking care of people's health will reduce the ammount of sick leaves that affects your company.",
+    "HealthAndInmunityText": "English people says 'An apple a day keeps the doctor away', everyone knows the daily consumption of fruits and vegetables has a positive effect in health. Vitamins and minerals provided by fruits increse our inmune system and provides a feeling of wellness and a great source for energy.",
+    "MoreEnergyText": "Minerals inside fruits impact our mood and provides with energy that can be translated in greater disposition to do ... anything. Healthy products in the office can increase our efficiency up to 20%.",
+    "SnacksText": "Everyone loves snacks in the office, unfortunately the typical options contains a lot of sugar, fat and chemicals. Thats why we deliver the product right to your kitchen to access them anytime.",
+    "GoodHumorText": "The fruits contain vitamins that produce serotonin and endorphin, natural chemicals responsible for inducing the feeling of happiness, therefore, fruit in the office translates into better humor."
+  },
+  "Products": {
+    "Tittle": "Products",
+    "Banana": "Banana",
+    "Apple": "Apple",
+    "SeasonFruit": "Season fruit",
+    "Guayaba": "Guayaba",
+    "Pear": "Pear",
+    "Vegetable": "Vegetables",
+    "SeasonFruitTooltipText": "Can be guayaba, mango, kiwi, pear, melon",
+    "VegetableTooltipText": "Can be cucumber, carrot, pepper",
+    "Capacity": "Capacity",
+    "CapacityText": "Each box can provide fruit for 35 persons",
+    "FreeDelivery": "Free delivery",
+    "DeliveryText": "We deliver the products to your office for free",
+    "MonthlyPayment": "Monthly payment",
+    "MonthlyPaymentText": "You can pay after receiving your products and your invoice"
+  },
+  "Faq": {
+    "Tittle": "Frequent questions",
+    "Faq": "Frequent questions",
+    "AnyQuestion": "Any question?"
+  },
+  "Contact": {
+    "Title": "Contact us",
+    "WorkingHours": {
+      "Title": "Office Hours",
+      "Monday": "Monday",
+      "Tuesday": "Tuesday",
+      "Wednesday": "Wednesday",
+      "Thursday": "Thursday",
+      "Friday": "Friday",
+      "Saturday": "Saturday",
+      "Sunday": "Sunday",
+      "DayOff": "DayOff"
+    }
+  }
 }
