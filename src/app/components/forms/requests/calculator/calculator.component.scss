@@ -6,7 +6,8 @@
 }
 
 .titulo {
-  padding-top: 50px;
+  padding-top: $space-lg;
+  padding-bottom: $space-md;
 }
 
 .valores {
@@ -17,8 +18,12 @@
   }
 }
 
-.second-row {
-  padding-bottom: 40px;
+.container {
+  padding-bottom: $space-xxl;
+}
+
+.info-row {
+  padding-bottom: $space-md;
 }
 
 #tarjeta {
@@ -110,7 +115,7 @@
 
 .grande {
   background-color: $amarillo;
-  padding: $space-lg;
+  margin-top: $space-xxl;
 }
 
 #movil {

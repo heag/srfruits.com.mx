@@ -10,7 +10,6 @@ import {Subject} from "rxjs";
 })
 export class AppShellComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
-  numeroDeTelefono = '3360598886';
   
   @Input() isLanguageSwitcherClicked: boolean
 

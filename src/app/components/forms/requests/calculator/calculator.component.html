@@ -1,77 +1,65 @@
 <section class="grande">
-  <div id="container"
-       fxLayout="column"
-       fxLayoutGap.lg="35px"
-       fxLayoutGap.xs="10px"
-       fxLayoutAlign="center center">
+  <div id="container" fxLayout="column" fxLayoutGap.lg="35px" fxLayoutGap.xs="10px" fxLayoutAlign="center center">
+
     <div class="titulo">{{"Calculator.Tittle" | translate }}</div>
-    <div fxLayout="row"
-         fxLayout.lt-md="column"
-         fxLayoutAlign="center center">
-      <div fxLayoutAlign="center center"
-           fxFlex="50">
-          <div fxLayout="column"
-               fxFlex="50"
-               fxFlex.xs="100">
-            <div class="subtitulo">{{ "Calculator.HowMuchFruit" | translate }}</div>
-            <div class="fuente">{{ "Calculator.DescriptionText" | translate }}</div>
-          </div>
+
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" class="info-row">
+      <div fxLayoutAlign="center center" fxFlex="50">
+        <div fxLayout="column" fxFlex="50" fxFlex.xs="100">
+          <div class="subtitulo">{{ "Calculator.HowMuchFruit" | translate }}</div>
+          <div class="fuente">{{ "Calculator.DescriptionText" | translate }}</div>
+        </div>
       </div>
-      <div id="tarjeta"
-           fxFlex="50"
-           fxFlex.xs="100">
-          <mat-card>
-            <div [formGroup]="tarjetaForm">
-              <div fxLayout="row"
-                   fxLayout.xs="column"
-                   fxLayoutGap="15px"
-                   fxLayoutAlign="center center">
-                <div fxLayout="column" class="valores" fxLayoutGap="15px" fxFlex="50" fxLayoutAlign="center center">
-                  <div>
-                    <mat-form-field class="example-full-width">
-                      <input formControlName="personasControl" min="5" (input)="calcularCajas()" type="number" matInput
-                             placeholder='{{"Calculator.Persons" | translate}}' max="2000">
-                      <mat-hint align="end">{{ "Calculator.MinHintText" | translate }}</mat-hint>
-                      <mat-error align="end" *ngIf="personasControl.hasError('min') || personasControl.hasError('max')">
-                        {{ "Calculator.OutOfRangeErrorText" | translate }}
-                      </mat-error>
-                    </mat-form-field>
-                  </div>
-                  <div>
-                    <mat-form-field class="example-full-width">
-                      <input formControlName="entregasControl" min="1" (input)="calcularCajas()" type="number" matInput
-                             placeholder='{{"Calculator.WeeklyDeliveries" | translate }}' max="5">
-                      <mat-error align="end" *ngIf="entregasControl.hasError('min') || entregasControl.hasError('max')">
-                        {{"Calculator.OutOfRangeDeliveryErrorText" | translate }}
-                      </mat-error>
-                    </mat-form-field>
-                  </div>
-                  <div fxLayout="row" class="telefono">
-                      <mat-icon class="phone">phone</mat-icon>
-                      {{"Home.PhoneNumber" | translate}}
-                  </div>
+      <div id="tarjeta" fxFlex="50" fxFlex.xs="100">
+        <mat-card>
+          <div [formGroup]="tarjetaForm">
+            <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="15px" fxLayoutAlign="center center">
+              <div fxLayout="column" class="valores" fxLayoutGap="15px" fxFlex="50" fxLayoutAlign="center center">
+                <div>
+                  <mat-form-field class="example-full-width">
+                    <input formControlName="personasControl" min="5" (input)="calcularCajas()" type="number" matInput
+                      placeholder='{{"Calculator.Persons" | translate}}' max="2000">
+                    <mat-hint align="end">{{ "Calculator.MinHintText" | translate }}</mat-hint>
+                    <mat-error align="end" *ngIf="personasControl.hasError('min') || personasControl.hasError('max')">
+                      {{ "Calculator.OutOfRangeErrorText" | translate }}
+                    </mat-error>
+                  </mat-form-field>
                 </div>
-                <div fxLayout="column" class="fuente" fxLayoutGap="10px" fxLayoutAlign="center start" fxFlex="50">
-                  <div class="subtitulo">{{"Calculator.YourOrder" | translate }}:</div>
-                  <div fxLayoutGap="10px" fxLayout="row">
-                    <div class="item">{{"Calculator.Persons" | translate }} . . . .</div>
-                    <div class="valor"> {{personasControl.value}}</div>
-                  </div>
-                  <div fxLayoutGap="10px" fxLayout="row">
-                    <div class="item">{{"Calculator.Deliveries" | translate }} . . . . . .</div>
-                    <div class="valor">{{entregasControl.value}}</div>
-                  </div>
-                  <div fxLayoutGap="10px" fxLayout="row">
-                    <div class="cajas"><span translate>Calculator.BoxesPerWeek</span> . . .</div>
-                    <div class="cajas-resultado">{{boxes}}</div>
-                  </div>
-                  <div fxShow.xs fxHide.gt-xs fxLayoutAlign="center center" class="boton-verde">
-                    <button><a href="tel:+521{{numeroDeTelefono}}">{{"Calculator.Order" | translate }}</a></button>
-                  </div>
+                <div>
+                  <mat-form-field class="example-full-width">
+                    <input formControlName="entregasControl" min="1" (input)="calcularCajas()" type="number" matInput
+                      placeholder='{{"Calculator.WeeklyDeliveries" | translate }}' max="5">
+                    <mat-error align="end" *ngIf="entregasControl.hasError('min') || entregasControl.hasError('max')">
+                      {{"Calculator.OutOfRangeDeliveryErrorText" | translate }}
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <div fxLayout="row" class="telefono">
+                  <mat-icon class="phone">phone</mat-icon>
+                  {{"Home.PhoneNumber" | translate}}
+                </div>
+              </div>
+              <div fxLayout="column" class="fuente" fxLayoutGap="10px" fxLayoutAlign="center start" fxFlex="50">
+                <div class="subtitulo">{{"Calculator.YourOrder" | translate }}:</div>
+                <div fxLayoutGap="10px" fxLayout="row">
+                  <div class="item">{{"Calculator.Persons" | translate }} . . . .</div>
+                  <div class="valor"> {{personasControl.value}}</div>
+                </div>
+                <div fxLayoutGap="10px" fxLayout="row">
+                  <div class="item">{{"Calculator.Deliveries" | translate }} . . . . . .</div>
+                  <div class="valor">{{entregasControl.value}}</div>
+                </div>
+                <div fxLayoutGap="10px" fxLayout="row">
+                  <div class="cajas"><span translate>Calculator.BoxesPerWeek</span> . . .</div>
+                  <div class="cajas-resultado">{{boxes}}</div>
+                </div>
+                <div fxShow.xs fxHide.gt-xs fxLayoutAlign="center center" class="boton-verde">
+                  <button><a href="tel:+521{{numeroDeTelefono}}">{{"Calculator.Order" | translate }}</a></button>
                 </div>
               </div>
             </div>
-          </mat-card>
+          </div>
+        </mat-card>
       </div>
 
     </div>

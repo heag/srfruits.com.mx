@@ -25,7 +25,8 @@
             "assets": [
               "src/apple.ico",
               "src/assets",
-              "src/web.config"
+              "src/web.config",
+              "src/CNAME"
             ],
             "styles": [
               "src/sass/styles.scss",

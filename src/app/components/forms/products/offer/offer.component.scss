@@ -1,6 +1,10 @@
 @import "~src/sass/_colors.scss";
 @import "~src/sass/_dimensions.scss";
 
+img {
+  max-width: 336px;
+}
+
 .verde {
   padding-top: 30px;
   background-color: #F2FBEF;
